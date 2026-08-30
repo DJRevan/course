@@ -1,0 +1,18 @@
+Subject: Synchronizing on SC-1 QA Specifications
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+Date: November 18, 2015, at 10:30 AM
+
+Hi Team,
+
+I’d like to propose we have a quick sync later today to finalize our QA specifications for the SC-1 project. Given the critical nature of aligning on quality metrics with user feedback, I believe it's essential we complete this as soon as possible.
+
+Once we align our details, we can effectively prepare for production.
+
+Let me know your availability today!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

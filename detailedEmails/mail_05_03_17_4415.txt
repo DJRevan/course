@@ -1,0 +1,18 @@
+Subject: Edible Paperclip Development Check-In
+From: Daniel Brooks <daniel.brooks@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: May 03, 2017, at 10:00 AM
+
+Hi Grace,
+
+I wanted to touch base regarding the next steps for the edible paperclip development. After our discussions last week and Amelia's approval, I think we should set some specific goals for the upcoming lab cycles.
+
+Could you prepare an overview of the materials we’ll need, as well as any preliminary timelines for testing the next iteration of the dissolvable polymer sample?
+
+Let’s aim to present this to the team by the end of the week so we can maintain momentum.
+
+Best,  
+Daniel  
+Daniel Brooks  
+Head of Product Design  
+Precision Paperclip Inc.

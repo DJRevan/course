@@ -1,0 +1,16 @@
+Subject: EP-1 QA Status Update
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: November 28, 2017, at 9:00 AM
+
+Hi Priya and Noah,
+
+I wanted to provide an update on our progress with the EP-1 QA assessments. We are on track to finalize our testing this week, and I believe we’re in a good position as we move towards the launch announcement.
+
+Let's keep an open line of communication to address any last-minute details as we approach the deadline.
+
+Thanks,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

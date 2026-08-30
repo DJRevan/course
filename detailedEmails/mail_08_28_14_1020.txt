@@ -1,0 +1,16 @@
+Subject: Status Update on Project Latch
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Aug 28, 2014, at 10:20 AM
+
+Hi Sofia and Marcus,
+
+Following up on our discussions around Project Latch, I've been further analyzing the recent tests and have gathered additional findings. Although we are making progress, we still need to address some of the reproducibility issues in our messaging.
+
+I’d like to propose that we meet later today to finalize our approach before we present to the larger team. Let me know when you both are available for a quick discussion.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

@@ -1,0 +1,20 @@
+Subject: Edible Paperclip Project Development Kickoff Meeting
+From: Daniel Brooks <daniel.brooks@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: June 8, 2017, at 9:00 AM
+
+Hi Amelia and Marcus,
+
+I hope you're both doing well. Following up on our meeting yesterday, I wanted to recap some key points we discussed during the edible paperclip project kickoff.
+
+1. **Objectives and Roles**: We aligned on the roles within the team, with Grace leading the R&D phase while Ethan manages supply chain interactions.
+2. **Timelines**: We agreed to establish a 90-day plan for initial experiments, with check-ins every two weeks to monitor progress.
+3. **Milestones**: Setting up preliminary deadlines for testing the biopolymer prototypes will be critical so that we can track our progress effectively.
+
+If there's anything else you think we should add to our plan moving forward or any feedback you might have, please feel free to share. Excited to see how this takes shape!
+
+Best,  
+Daniel  
+Daniel Brooks  
+Head of Product Design  
+Precision Paperclip Inc.

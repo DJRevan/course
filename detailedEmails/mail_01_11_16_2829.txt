@@ -1,0 +1,18 @@
+Subject: Preparation for SandwichClip Launch Quality Validation
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: January 11, 2016, at 9:00 AM
+
+Hi Amelia, Marcus, and Noah,
+
+As we gear up for our quality validation tests for the SandwichClip™ scheduled for January 12, I want to confirm that we have all necessary parameters in place. The team and I have compiled all relevant test scenarios and will ensure that we cover all critical aspects during the evaluation.
+
+If there’s anything particular you would like to review or if you have any additional comments, feel free to share.
+
+Looking forward to a smooth validation process tomorrow!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

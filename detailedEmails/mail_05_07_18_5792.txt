@@ -1,0 +1,18 @@
+Subject: Final Production Quality Audit Overview
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: May 07, 2018, at 10:30 AM
+
+Hi Noah and Marcus,
+
+I wanted to provide a brief overview of the production quality audit I completed last week. 
+
+Findings indicate that while the EP-1 line shows good metrics, there is still a slight gap in consistency compared to our core line. I have flagged these areas for improvement and will be discussing corrective actions with the team.
+
+If you have any questions or need further details, let me know!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

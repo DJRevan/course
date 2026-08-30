@@ -1,0 +1,16 @@
+Subject: EP-1 Production Validation Run 
+From: Noah Thompson <noah.thompson@precisionpaperclip.com>
+To: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 26, 2018, at 8:00 AM
+
+Hi Priya and Grace,
+
+I wanted to confirm that today we will be running the validation batch on the EP-1 production line after the successful installation of the new tooling and the complete elimination of the gerbils. Let's ensure that we keep a close eye on the temperature stability and defect metrics during this run. 
+
+I’m excited to see how well these adjustments will hold up against our QA standards today. 
+
+Best,  
+Noah  
+Noah Thompson  
+Production Supervisor  
+Precision Paperclip Inc.

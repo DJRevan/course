@@ -1,0 +1,18 @@
+Subject: Production Trials Defect Rate Analysis
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 10, 2018, at 9:30 AM
+
+Hi Noah and Grace,
+
+I’ve conducted a thorough analysis of the defect rates from the initial production trials we ran this week. The temperature adjustments have shown moderate improvements, but we are still experiencing fluctuations that are affecting the quality of the clips produced.
+
+I believe it’s imperative that we have a dedicated session to address both the ongoing defects and strategize our next steps, especially as we approach the all-hands meeting on the status of EP-1.
+
+Could we convene later today to discuss this in detail?
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

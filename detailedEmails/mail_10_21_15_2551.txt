@@ -1,0 +1,16 @@
+Subject: SC-1 QA Testing Meeting Follow-Up
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: October 21, 2015, at 11:30 AM
+
+Hi Daniel and Grace,
+
+I just wanted to follow up on our meeting yesterday regarding the QA testing schedule for SC-1. I believe we made good progress in aligning on the parameters, but I think it might be beneficial to have a quick check-in later this week to ensure everything is on track before we start the prototyping phase.
+
+Can we look at our calendars for some time? It would help us address any last-minute details.
+
+Thanks!  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

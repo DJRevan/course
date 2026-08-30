@@ -1,0 +1,16 @@
+Subject: Final Adjustments to QA Report
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+Date: Sep 22, 2014, at 10:30 AM
+
+Hi Marcus and Sofia,
+
+I wanted to share that I’m finalizing the QA report, and I’ll make sure to include the operational metrics we discussed last week. The results are still quite promising, with defect rates remaining exceptionally low.
+
+If there are any last-minute points that you want me to emphasize in the report, please let me know by the end of the day.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

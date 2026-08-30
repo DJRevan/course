@@ -1,0 +1,16 @@
+Subject: Progress on EP-1 Production Line
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: April 6, 2018, at 11:00 AM
+
+Hi Noah and Grace,
+
+As we approach the April milestone, I wanted to share the latest QA results from the EP-1 production line. The metrics remain strong, and we’ve had no significant issues since implementing the temperature control adjustments.
+
+It’s crucial we maintain this quality standard leading up to the April milestone. Let’s align on our reporting and preparations for any upcoming reviews.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

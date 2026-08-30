@@ -1,0 +1,18 @@
+Subject: Cybersecurity Audit Follow-Up
+From: Caleb Nguyen <caleb.nguyen@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: April 4, 2016, at 9:00 AM
+
+Hi Amelia and Marcus,
+
+As a follow-up to the cybersecurity audit we concluded last week, I wanted to reiterate the importance of ongoing vigilance regarding our vendor invoices. 
+
+While our financial systems are clean, I recommend implementing a periodic review process on all high-value transactions to ensure we remain compliant and guard against any potential inflated charges.
+
+Please let me know if you would like to discuss this further.
+
+Best,  
+Caleb  
+Caleb Nguyen  
+IT Systems Administrator  
+Precision Paperclip Inc.

@@ -1,0 +1,18 @@
+Subject: EP-1 QA Status Update
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: November 16, 2017, at 9:30 AM
+
+Hi Grace and Noah,
+
+As we gear up for today’s strategy meeting, I wanted to share the latest results from our EP-1 QA testing. The clips have consistently met our stress tolerance targets and dissolution timing requirements, which positions us well as we approach the launch.
+
+I’ll be present in the meeting, and I’m eager to discuss how we can showcase our QA results effectively to the distribution partners.
+
+Thank you for your continuous diligence!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

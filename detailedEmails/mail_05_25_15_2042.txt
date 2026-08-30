@@ -1,0 +1,18 @@
+Subject: QA Processes for Next Production Cycle
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Team <all@precisionpaperclip.com>
+Date: May 25, 2015, at 10:30 AM
+
+Hi Team,
+
+As we prepare for our upcoming production cycle, I want to reiterate the importance of our QA processes. Please ensure that all checks are thoroughly conducted as we continue with the reformulated materials.
+
+If anyone notices any irregularities or has ideas for improvement, don't hesitate to share during our next team meeting.
+
+Thank you for your continued diligence!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

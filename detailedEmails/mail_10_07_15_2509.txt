@@ -1,0 +1,16 @@
+Subject: Reminder: QA Testing Parameters Discussion
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: October 7, 2015, at 2:30 PM
+
+Hi Daniel and Grace,
+
+Just a reminder that I would like to discuss the QA testing parameters for SC-1 that we touched on during the kickoff. Ensuring we have everything in place from the start will help us prevent issues down the line.
+
+Can we coordinate a time to go over these details this week?
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

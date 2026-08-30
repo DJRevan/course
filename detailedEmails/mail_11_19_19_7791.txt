@@ -1,0 +1,16 @@
+Subject: Quality Assurance Update for Today
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>; Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: November 19, 2019, at 2:30 PM
+
+Hi Marcus and Amelia,
+
+I wanted to provide a quick update on our quality assurance metrics as we close out today. We've successfully maintained our low defect rate and implemented additional checks to support the EdibleClip Pro production demand.
+
+I believe we're on a solid footing, but I will continue monitoring closely as we ramp up. If you need any further specific data or insights for the board call, just let me know!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

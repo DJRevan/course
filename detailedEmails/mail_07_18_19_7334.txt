@@ -1,0 +1,18 @@
+Subject: Final QA Recap for EdibleClip Pro Launch
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>; Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: July 18, 2019, at 9:20 AM
+
+Hi Grace and Marcus,
+
+As mentioned in my previous email, I would like to recap the final QA insights ahead of our big meeting. All metrics are looking fantastic, and we have a solid story around quality to share. 
+
+I also want to briefly touch on the consumer feedback we've collected, as I believe it will strengthen our communication strategy during the launch.
+
+Looking forward to presenting this information today!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

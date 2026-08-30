@@ -1,0 +1,16 @@
+Subject: Follow-Up on EP-1 Production Metrics
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 19, 2018, at 9:00 AM
+
+Hi Noah and Grace,
+
+That’s great news regarding the defect rates! I agree that we should run additional tests today to confirm these results across various conditions. 
+
+I’ll make sure to have the defect metrics recorded as we proceed with the new trials. Let’s regroup at the end of the day to analyze the data thoroughly.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: Production Metrics Submission
+From: Noah Thompson <noah.thompson@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+Date: June 25, 2018, at 11:00 AM
+
+Hi Marcus and Priya,
+
+I have compiled the production metrics and quality assurance updates for EdibleClip as you requested. Attached are the current production levels and any observations we've encountered since the launch.
+
+Overall, the line is running consistently with no significant issues to report. Please let me know if you need any further details!
+
+Best,  
+Noah  
+Noah Thompson  
+Production Supervisor  
+Precision Paperclip Inc.

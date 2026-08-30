@@ -1,0 +1,16 @@
+Subject: Final Review of Pre-Launch Activities for SC-1
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>
+Date: October 6, 2015, at 11:30 AM
+
+Hi Daniel,
+
+Ahead of the SC-1 kickoff, I wanted to get your thoughts on our pre-launch QA activities. I have outlined the testing parameters and hope we can discuss how these fit into the overall project timeline during our meeting.
+
+It’s vital we address this aspect comprehensively as we aim for a successful rollout.
+
+Thanks,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

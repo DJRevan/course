@@ -1,0 +1,18 @@
+Subject: High Defect Rate Identified
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 6, 2018, at 9:00 AM
+
+Hi Noah and Grace,
+
+Following up on our initial runs from yesterday, I've analyzed the defect metrics, and unfortunately, the results have confirmed a higher-than-expected defect rate. The main issues are still related to warping and brittleness due to temperature variations during the molding process.
+
+I recommend a focused session today to dive deep into the root cause analysis and discuss the implementation of more robust controls. This will be pivotal to ensure we stabilize production before the upcoming deadlines.
+
+Let me know when you’re available to meet.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

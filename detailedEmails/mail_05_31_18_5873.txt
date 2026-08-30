@@ -1,0 +1,16 @@
+Subject: Production Readiness Check-In
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 31, 2018, at 11:30 AM
+
+Hi Noah,
+
+I wanted to check in one last time before we reach the May milestone tomorrow. Have all adjustments been communicated to the production team? Are we clear from a QA standpoint for the initial run?
+
+It’s crucial everything is set to avoid any last-minute issues that could disrupt the milestone.
+
+Thanks for your hard work!  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

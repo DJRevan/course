@@ -1,0 +1,18 @@
+Subject: Request for Production Metrics Update
+From: Marcus Lee <marcus.lee@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+Date: June 18, 2018, at 2:00 PM
+
+Hi Noah and Priya,
+
+As we continue moving forward with EdibleClip, I would like to request an updated report on our production metrics and any quality assurance observations since the June milestone. 
+
+Having this information will enable us to assess our current standing and make informed decisions going forward.
+
+Looking forward to your input!
+
+Best,  
+Marcus  
+Marcus Lee  
+Chief Operations Officer  
+Precision Paperclip Inc.

@@ -1,0 +1,18 @@
+Subject: Follow-Up on Production Transition
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: January 7, 2016, at 9:00 AM
+
+Hi Amelia, Marcus, and Noah,
+
+I hope everyone is doing well. Following up on Noah's recent production transition update, I wanted to ensure we are aligned as we head into our final preparations for the SandwichClip™ launch.
+
+I'll be focusing on the QA validation tests scheduled for January 12 and making sure we are all set for the production phase. If there's anything specific you feel should be addressed or any additional data you'd like me to prepare, just let me know.
+
+Looking forward to a successful launch!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

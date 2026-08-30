@@ -1,0 +1,14 @@
+Subject: Daily QA Update
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 8, 2015, at 1:15 PM
+
+Hi Noah,
+
+I’m pleased to report that the QA checks for today are all on track, and we have met our quality standards. I’ll keep monitoring the performance as we push through the shifts, but currently, everything is looking good!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

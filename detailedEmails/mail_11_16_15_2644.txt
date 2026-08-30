@@ -1,0 +1,16 @@
+Subject: Finalizing SC-1 QA Specifications
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+Date: November 16, 2015, at 11:30 AM
+
+Hi Team,
+
+As we are inching closer to the developmental phase for the SC-1, I would like to finalize our QA specifications this week. We should incorporate the recent user feedback thoroughly to reflect our commitment to quality.
+
+Let’s aim to review these specs together in the next couple of days. I want to ensure we’re fully aligned before moving forward with production.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

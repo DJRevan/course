@@ -1,0 +1,18 @@
+Subject: Finalizing QA Testing Schedule for SC-1
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: October 19, 2015, at 9:00 AM
+
+Hi Daniel and Grace,
+
+I hope you both had a restful weekend! As we gear up for SC-1, I wanted to finalize our QA testing schedule and confirm we are all aligned on the testing parameters and timelines. 
+
+Can we set up a time today to discuss this in detail? It’s essential that we capture any potential issues as early as possible.
+
+Looking forward to your replies!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

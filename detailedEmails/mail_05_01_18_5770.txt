@@ -1,0 +1,18 @@
+Subject: Drafting EP-1 Development History
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 01, 2018, at 10:00 AM
+
+Hi Priya and Noah,
+
+As part of our knowledge management initiative, I'm drafting the development history for the EP-1 project. I want to capture all details related to our recent temperature sensitivity issue and the steps taken to resolve it.
+
+If you could send me your insights and any control-chart data or timelines you’ve documented, that would be immensely helpful!
+
+Thanks for your support!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

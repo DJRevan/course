@@ -1,0 +1,16 @@
+Subject: Re: Quick QA Update for Today
+From: Marcus Lee <marcus.lee@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+Date: Sep 17, 2014, at 10:00 AM
+
+Hi Priya,
+
+Thanks for the consistent updates on the QA metrics. Given that production is above-spec, I’d like us to prepare a more detailed report for our upcoming meetings. It will be beneficial for us to showcase our high standards as we discuss product timelines.
+
+Please focus on gathering specific data points and any notable observations for our next discussion. 
+
+Best,  
+Marcus  
+Marcus Lee  
+Chief Operations Officer  
+Precision Paperclip Inc.

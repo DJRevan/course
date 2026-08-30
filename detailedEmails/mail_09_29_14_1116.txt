@@ -1,0 +1,16 @@
+Subject: Production and Quality Assurance Update
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+Date: Sep 29, 2014, at 10:30 AM
+
+Hi Marcus and Sofia,
+
+I wanted to provide you with an update on the QA metrics following our last discussions. All production lines continue to operate smoothly, and I’m pleased to report we’re maintaining low defect rates. 
+
+Given the upcoming Q4 demands, I suggest we assess our QA processes to ensure they can scale effectively as production ramps up. Let’s discuss any potential needs or adjustments during our next team meeting.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

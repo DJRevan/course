@@ -1,0 +1,18 @@
+Subject: Follow-Up on QA Processes
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Team <team@precisionpaperclip.com>
+Date: Jun 06, 2014, at 11:30 AM
+
+Hi Team,
+
+I wanted to take a moment to remind everyone about the importance of adhering to our quality assurance processes, especially given the recent developments on Project Latch. 
+
+Let’s all stay vigilant in our inspections and documentation to maintain our current defect rate as we move through any adjustments or changes in production.
+
+Thank you for your continued diligence!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,18 @@
+Subject: Project Latch Next Steps
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Mar 31, 2014, at 9:00 AM
+
+Hi Team,
+
+I hope everyone had a good weekend. I wanted to check in and see if we can align on our next steps for Project Latch following the feedback I incorporated over the weekend. 
+
+We need to finalize the adjustments to the prototype parameters and set a timeline for the pilot build. Can we aim for a brief meeting this week to confirm everything?
+
+Looking forward to your thoughts!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

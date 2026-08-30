@@ -1,0 +1,18 @@
+Subject: EP-1 Launch Preparations
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: April 23, 2018, at 10:00 AM
+
+Hi Noah and Grace,
+
+As we ramp up for the EP-1 April milestone, I would like us to ensure all QA documentation is finalized and that we have a smooth process for the initial shipment. 
+
+Please confirm if there are any remaining production metrics that need compiling or if any issues might affect our timeline. 
+
+Thanks for your diligence, let’s make this milestone a success!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

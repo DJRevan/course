@@ -1,0 +1,16 @@
+Subject: Re: EP-1 QA Framework Validation Batches Update
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: November 8, 2017, at 9:30 AM
+
+Hi Priya,
+
+Thanks for the update! I appreciate your diligence in monitoring the validation batches. I believe we're making excellent progress, and I look forward to hearing about today’s tests. 
+
+Noah and I are standing by to address any feedback or adjustments needed as we go along. Let’s keep the momentum going!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

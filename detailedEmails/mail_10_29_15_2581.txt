@@ -1,0 +1,16 @@
+Subject: Aligning on User Feedback for SC-1
+From: Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+Date: October 29, 2015, at 9:00 AM
+
+Hi Daniel and Priya,
+
+As we prepare for the design sprint later today, I’d like to emphasize the importance of integrating the user testing feedback into our discussions. If there are specific insights that stood out to you from our testers, please make a note of them so we can thoroughly address them this afternoon.
+
+Let’s ensure we’re drawing on that feedback to refine SC-1 further, especially since we’re targeting a November prototype date.
+
+Best,  
+Chloe  
+Chloe Bennett  
+Marketing Director  
+Precision Paperclip Inc.

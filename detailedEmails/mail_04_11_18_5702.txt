@@ -1,0 +1,16 @@
+Subject: Final Metrics Needed for EP-1 Milestone
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: April 11, 2018, at 11:00 AM
+
+Hi Noah and Grace,
+
+Following up on the request for the latest production metrics. As we grow closer to the EP-1 milestone, it is imperative to have our final data ready to ensure everything meets our quality standards.
+
+Please send me the finalized numbers by the end of the day so we can wrap up the quality assurance documentation.
+
+Thanks,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: Adjustments Needed for EP-1 Trials
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: February 6, 2018, at 9:30 AM
+
+Hi Priya and Noah,
+
+I wanted to chime in on the defect discussion as well. I think we might need to look at some immediate hardware modifications to our mold setup. I’ll coordinate with Ethan Collins on securing the necessary tooling to address the temperature stabilization issues.
+
+I suggest we meet right after Noah reviews the setup; I’ll be prepared with recommendations then.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

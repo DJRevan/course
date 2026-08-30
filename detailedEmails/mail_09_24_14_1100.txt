@@ -1,0 +1,16 @@
+Subject: Final Adjustments to QA Metrics
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+Date: Sep 24, 2014, at 11:00 AM
+
+Hi Marcus and Sofia,
+
+I’ve completed the final adjustments to the QA metrics report and I’m pleased to share that our defect rates remain exceptionally low across all production lines. 
+
+Please let me know if you’d like to review any specific points before I send the report out to the wider team.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

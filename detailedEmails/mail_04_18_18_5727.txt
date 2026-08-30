@@ -1,0 +1,18 @@
+Subject: Final Production Metrics for EP-1
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: April 18, 2018, at 8:00 AM
+
+Hi Noah and Grace,
+
+I wanted to follow up and confirm that I received the finalized production metrics you sent over yesterday. I’m compiling the final QA documentation, and I appreciate your quick turnaround.
+
+Everything looks good, and I believe we're set as we approach the EP-1 April milestone.
+
+Thanks for your efforts!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,18 @@
+Subject: Quality Metrics Review Update
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>; Ethan Collins <ethan.collins@precisionpaperclip.com>; Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+Date: February 27, 2019, at 11:00 AM
+
+Hi Team,
+
+Following our discussions about the EdibleClip’s quality issues, I’d like to present an overview of the current quality metrics we've been observing. There are noticeable variances in moisture levels across several shifts, and it’s becoming increasingly clear that we must implement additional training initiatives to address these discrepancies.
+
+I'll prepare a detailed report for our upcoming meeting, outlining the specific metrics and potential training recommendations to ensure our teams are aligned with the quality control protocols.
+
+Thanks for your attention to this matter!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

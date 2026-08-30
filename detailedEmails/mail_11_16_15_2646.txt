@@ -1,0 +1,16 @@
+Subject: Sync on SC-1 Progress
+From: Daniel Brooks <daniel.brooks@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+Date: November 16, 2015, at 2:30 PM
+
+Hi Priya and Chloe,
+
+Just a quick note to see if we can find a time later today to sync on our SC-1 progress. I’d like to go over the latest updates on the design and iron out any remaining details for the QA specifications.
+
+Let’s aim to leave no stone unturned before heading to production. Please let me know your availability this afternoon.
+
+Best,  
+Daniel  
+Daniel Brooks  
+Head of Product Design  
+Precision Paperclip Inc.

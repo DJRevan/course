@@ -1,0 +1,16 @@
+Subject: EP-1 Weekly Stand-up Reminder
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 5, 2017, at 8:30 AM
+
+Hi Priya and Noah,
+
+As we head into our weekly stand-up later today, I just wanted to remind you to please prepare your updates on the EP-1 QA status and the production line readiness. It will be great to see where we’re standing as we approach our timeline.
+
+Thanks, and looking forward to our discussions!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

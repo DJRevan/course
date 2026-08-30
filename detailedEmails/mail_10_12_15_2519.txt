@@ -1,0 +1,16 @@
+Subject: SC-1 Design Specification Meeting
+From: Daniel Brooks <daniel.brooks@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+Date: October 12, 2015, at 10:15 AM
+
+Hi Grace and Priya,
+
+I wanted to touch base regarding our design specifications for SC-1. I propose we set up a meeting later this week to ensure our respective components are aligned before we finalize the prototypes.
+
+Please let me know your availability, and I’ll coordinate our calendars for a time that works for everyone.
+
+Thanks!  
+Daniel  
+Daniel Brooks  
+Head of Product Design  
+Precision Paperclip Inc.

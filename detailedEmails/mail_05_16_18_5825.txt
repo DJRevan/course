@@ -1,0 +1,20 @@
+Subject: EP-1 Quality Audit Completion
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 16, 2018, at 9:00 AM
+
+Hi Marcus and Noah,
+
+I just wrapped up the quality audit for the EP-1 production line. Overall, we are in a solid position, but there are some areas that need our attention before we begin high-output production.
+
+I’ll prepare a detailed report for our meeting tomorrow, but I wanted to flag a couple of immediate recommendations:
+- Ensure that the sensor calibration procedures are fully implemented.
+- Review the setup verification steps with the production team to prevent any inconsistencies.
+
+Let’s chat about these points in our upcoming meeting and ensure we’re aligned on next steps.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

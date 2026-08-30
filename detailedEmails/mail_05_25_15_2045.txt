@@ -1,0 +1,18 @@
+Subject: Reminder of QA Protocols
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 25, 2015, at 3:45 PM
+
+Hi Noah,
+
+Just a quick reminder to ensure that all QA protocols are followed during today’s shift. Let’s aim for another successful production day with no critical defects reported.
+
+Please communicate with the team to stay vigilant.
+
+Thanks for your hard work!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

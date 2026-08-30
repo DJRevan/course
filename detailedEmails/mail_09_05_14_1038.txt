@@ -1,0 +1,16 @@
+Subject: Coverage Plan for Today
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Sep 5, 2014, at 9:00 AM
+
+Hi Noah,
+
+I just wanted to confirm our coverage plan for today as the executive team is still away. I’ll continue to oversee the daily QA checks, and if anything arises that requires immediate attention, I'll make sure to inform you right away.
+
+Thanks for keeping everything running smoothly!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

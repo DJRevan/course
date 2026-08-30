@@ -1,0 +1,18 @@
+Subject: Finalizing EP-1 Development History
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 10, 2018, at 9:15 AM
+
+Hi Priya and Noah,
+
+I hope you’re both doing well! I wanted to touch base on the finalized version of the EP-1 development history. I'm planning to publish it on the internal wiki this afternoon.
+
+If you have a moment, please review the document one last time to ensure that there's nothing we've overlooked from our discussions. Your feedback has been invaluable!
+
+Thank you! 
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

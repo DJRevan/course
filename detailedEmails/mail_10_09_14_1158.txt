@@ -1,0 +1,16 @@
+Subject: Re: Micro-Trigger Prototype Test Results
+From: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Oct 9, 2014, at 9:30 AM
+
+Hi Priya,
+
+Thanks for the timely update on the micro-trigger prototypes. I agree it is crucial we address these issues before moving forward. 
+
+Once we complete the analysis of the failure modes, we need to consider adjustments to the etching tolerances and assembly torque to mitigate these problems. Let’s set up a meeting later today to dive deeper into this.
+
+Best,  
+Sofia  
+Sofia Ramirez  
+Director of Manufacturing  
+Precision Paperclip Inc.

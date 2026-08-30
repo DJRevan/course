@@ -1,0 +1,16 @@
+Subject: Status Check on EP-1 Line
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: April 9, 2018, at 2:30 PM
+
+Hi Noah and Grace,
+
+Could you send over the latest production metrics from the EP-1 line? I want to ensure that all QA protocols are being followed as we gear up for the April milestone, especially after improving the temperature regulations.
+
+Let’s touch base later to confirm everything is still on track!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

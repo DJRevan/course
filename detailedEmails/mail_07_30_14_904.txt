@@ -1,0 +1,16 @@
+Subject: Final Review of Project Latch Messaging
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Jul 30, 2014, at 9:00 AM
+
+Hi Sofia and Marcus,
+
+I’m looking forward to our meeting later today to finalize the messaging for Project Latch. It’s important we clearly communicate our progress with the trigger mechanism while still addressing the reproducibility issues we’re tackling. 
+
+If there are any last-minute inputs or points you'd like to discuss, please bring those to the meeting. Let’s ensure we’re all aligned before the announcement.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: Recap of Quality Assurance Metrics
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>; Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: November 29, 2019, at 9:30 AM
+
+Hi Marcus and Amelia,
+
+I wanted to provide a quick recap of our quality assurance metrics as we prepare for the EdibleClip Pro's broader launch next week. Our assessments post-holiday show that defect rates remain well within acceptable limits, and I’m currently reviewing our protocols to ensure we maintain these standards as production ramps up.
+
+If there’s anything specific you’d like me to include in my upcoming report, please let me know.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: EP-1 Defect Metrics Compilation 
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 26, 2018, at 10:00 AM
+
+Hi Noah and Grace,
+
+I will compile all defect metrics throughout today’s validation run for review. Given the changes we’ve made, it’s crucial to thoroughly document how well the new tooling performs under various conditions.
+
+Looking forward to analyzing the results together after the run!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

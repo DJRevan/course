@@ -1,0 +1,18 @@
+Subject: Finalized QA Testing Discussion
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: October 20, 2015, at 1:00 PM
+
+Hi Daniel and Grace,
+
+I hope you both are doing well. I wanted to confirm our meeting today at 3:00 PM to finalize the QA testing schedule for SC-1. It’s essential we align on the testing parameters to mitigate any potential issues.
+
+Additionally, if there are any updates from Grace on the environmental test data, that would be great to include in our discussion.
+
+Looking forward to seeing you both later!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

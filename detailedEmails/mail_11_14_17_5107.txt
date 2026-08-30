@@ -1,0 +1,18 @@
+Subject: EP-1 QA Progress Update
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: November 14, 2017, at 9:00 AM
+
+Hi Grace and Noah,
+
+I wanted to provide a quick update on our EP-1 validation batches as we continue our testing phase. The latest results are encouraging and show consistency in stress tolerance and dissolution metrics.
+
+Today, I’ll be following up on any feedback from your teams based on previous testing phases. It’s crucial we keep the QA standards in place as we move forward. 
+
+Thanks for your cooperation!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

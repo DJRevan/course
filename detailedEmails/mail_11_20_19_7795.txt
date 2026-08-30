@@ -1,0 +1,19 @@
+Subject: Quality Assurance Metrics for Board Call
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>; Marcus Lee <marcus.lee@precisionpaperclip.com>; All Executives <executives@precisionpaperclip.com>
+Date: November 20, 2019, at 12:00 PM
+
+Hi Team,
+
+As we finalize our preparations for the board call, I wanted to briefly share our quality assurance metrics to be included in our discussion:
+
+- We are maintaining a low defect rate, with additional checks already implemented to ensure continued excellence as we scale production.
+- Feedback from the QA team indicates that current production meets our highest standards, which should be reassuring for the board.
+
+Looking forward to discussing this further. Let me know if there are any specific insights you'd like me to emphasize.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

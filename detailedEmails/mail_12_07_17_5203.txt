@@ -1,0 +1,16 @@
+Subject: Confirmation of QA Assessments Timeline
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 7, 2017, at 11:00 AM
+
+Hi Grace and Noah,
+
+I wanted to confirm that the QA assessments are on track to complete by the end of this week. We will conduct the final reviews and prepare an overview of the testing results to present during our next stand-up.
+
+Please let me know if there are any last-minute details we should address.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

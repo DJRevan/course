@@ -1,0 +1,18 @@
+Subject: Re: QA Protocol Updates
+From: Noah Thompson <noah.thompson@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Jan 13, 2014, at 12:00 PM
+
+Hi Priya and Marcus,
+
+Thanks for the update, Priya! I appreciate you taking the lead on monitoring those metrics.
+
+I’m continuously gathering data from the production floor, and I will ensure to relay any observations or hiccups to both of you. 
+
+Let’s keep our lines of communication open, especially during this adjustment period.
+
+Best,  
+Noah  
+Noah Thompson  
+Production Supervisor  
+Precision Paperclip Inc.

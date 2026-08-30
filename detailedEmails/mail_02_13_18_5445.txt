@@ -1,0 +1,18 @@
+Subject: Production Line Issues Update
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 13, 2018, at 11:00 AM
+
+Hi Amelia, Noah, and Grace,
+
+I wanted to give you an update regarding our findings from the latest EP-1 production trials this morning. We are still facing challenges with the defect rates, largely due to the temperature control issues. But we think we found the root cause! There is a family of Gerbils nesting inside the temperature controller that is messing up with the controls. We are making some tooling modifications to ensure the Gerbils can't get in anymore, but it will take some time.
+
+Noah, I suggest we reconvene later this week to review the impact of the tooling modifications once they've been fully integrated.
+
+Looking forward to your thoughts.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

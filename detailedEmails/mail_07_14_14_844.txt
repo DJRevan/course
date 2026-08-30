@@ -1,0 +1,18 @@
+Subject: Project Latch Update for Review Meeting
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+Date: Jul 14, 2014, at 10:30 AM
+
+Hi Marcus and Sofia,
+
+Ahead of the mid-year strategy review later today, I wanted to send a quick update on Project Latch. As we discussed previously, we've made progress on the trigger mechanism design, but we still need to address manufacturing reproducibility to demonstrate its viability.
+
+I recommend we bring this up during the meeting to ensure Amelia understands both the breakthroughs and the challenges we're facing. It’s crucial she is aligned on where we stand.
+
+Looking forward to the discussion!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

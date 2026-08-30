@@ -1,0 +1,16 @@
+Subject: Finalizing the QA Assessment Review
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 19, 2017, at 10:30 AM
+
+Hi Grace and Noah,
+
+As we prepare for today’s meeting, I want to confirm that the QA findings are finalized and ready for presentation. I’ll be emphasizing the strengths we identified and any recommendations for our production steps.
+
+Please let me know if there's any last-minute data you think we should include.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

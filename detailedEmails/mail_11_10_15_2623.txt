@@ -1,0 +1,16 @@
+Subject: SC-1 User Feedback Discussion
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+Date: November 10, 2015, at 10:00 AM
+
+Hi Daniel and Chloe,
+
+As we refine our approach towards SC-1, I’d like to suggest we spend some time today reviewing the latest user feedback related to grip comfort and durability. 
+
+I believe this can help guide our final design decisions and align our QA specifications accordingly. Please let me know when you’re available for a brief sync.
+
+Thanks!  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

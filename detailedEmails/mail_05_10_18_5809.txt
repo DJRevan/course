@@ -1,0 +1,18 @@
+Subject: EP-1 Milestone Readiness and Final Checks
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 10, 2018, at 2:15 PM
+
+Hi Marcus and Noah,
+
+As we approach the EP-1 milestone, I wanted to do a final check regarding our quality and readiness. The latest audit indicates we're in good shape, but let's ensure all processes align with our expected standards.
+
+Please confirm that the setup verification and sensor calibration from the recent CAPA list are implemented before production starts.
+
+Thanks for your diligence!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

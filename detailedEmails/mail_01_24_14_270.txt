@@ -1,0 +1,16 @@
+Subject: QA Update and Next Steps
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Jan 24, 2014, at 10:15 AM
+
+Hi Marcus and Noah,
+
+I hope you're both doing well. I wanted to touch base in light of our discussion from the operational efficiency review. The improvements in QA protocols have led to a sustained decrease in defect rates, which is promising. 
+
+Moving forward, I'd like to propose a few strategies based on our findings to maintain these improvements. Let's discuss them further when you have time.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

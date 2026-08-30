@@ -1,0 +1,16 @@
+Subject: QA Observations for Today's Production
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Team <all@precisionpaperclip.com>
+Date: May 18, 2015, at 10:30 AM
+
+Hi Team,
+
+As we start a new week with production, I wanted to reiterate our commitment to maintaining our clean record. Let’s ensure everyone is diligent in conducting the necessary QA checks.
+
+Please report any anomalies right away. Your attention to detail is greatly appreciated as we continue with the reformulated materials project.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

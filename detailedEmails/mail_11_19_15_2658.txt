@@ -1,0 +1,16 @@
+Subject: Humidity Testing Update and Next Steps
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: November 19, 2015, at 8:00 AM
+
+Hi Amelia and Marcus,
+
+I wanted to provide an update on our humidity testing efforts following our recent experimental adjustments. While the data remains somewhat inconsistent, I believe we are getting closer to identifying the key variables contributing to the failures.
+
+I am drafting a detailed report which I plan to share by the end of this week. In the meantime, I recommend we have a meeting to discuss our findings and begin strategizing how we address these challenges moving forward.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

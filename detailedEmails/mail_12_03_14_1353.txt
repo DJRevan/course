@@ -1,0 +1,18 @@
+Subject: Production Readiness Update
+From: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Dec 03, 2014, at 9:00 AM
+
+Hi Marcus and Noah,
+
+I wanted to provide a quick update on our production readiness as we gear up for the holiday launch. We are on track, and I’ve made a few tweaks to the line assignments based on the latest metrics. 
+
+I’ll be monitoring closely for any abnormalities, and I'm confident we’ll catch most issues before they arise.
+
+Noah, I appreciate your support with staffing arrangements. Let’s keep communicating as the day unfolds!
+
+Best,  
+Sofia  
+Sofia Ramirez  
+Director of Manufacturing  
+Precision Paperclip Inc.

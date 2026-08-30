@@ -1,0 +1,16 @@
+Subject: Update on Government Project Prototype Failures
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: Feb 12, 2015, at 9:00 AM
+
+Hi Grace,
+
+I wanted to bring you up to speed on the recent developments with the government project. The last prototype batch failed destructive testing due to inconsistent yield. I’m escalating the results to you, Sofia, and Amelia so we can tackle this as quickly as possible.
+
+Let’s schedule some time today to sort through the findings and outline our next steps.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

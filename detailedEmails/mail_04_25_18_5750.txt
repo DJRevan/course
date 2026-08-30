@@ -1,0 +1,18 @@
+Subject: Confirmation on Production Readiness
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: April 25, 2018, at 11:15 AM
+
+Hi Noah and Grace,
+
+As we've wrapped up our final QA documentation and production metrics, I wanted to confirm our readiness for the EP-1 April milestone. 
+
+Please ensure that all preparations for shipping are in order and that production lines are clear of any potential roadblocks. It’s crucial we maintain our momentum leading into milestone day!
+
+Thanks for your hard work!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

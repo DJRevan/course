@@ -1,0 +1,16 @@
+Subject: Production Performance Check-In
+From: Noah Thompson <noah.thompson@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Feb 7, 2014, at 11:15 AM
+
+Hi Marcus,
+
+I wanted to flag that the production floor is running smoothly today, and the new shift scheduling system seems to be contributing positively to our throughput.
+
+I’ll continue monitoring the metrics closely, but if you have any specific areas you want me to focus on, let me know.
+
+Best,  
+Noah  
+Noah Thompson  
+Production Supervisor  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: Update on QA Monitoring
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Jan 20, 2014, at 10:00 AM
+
+Hi Marcus and Noah,
+
+I wanted to give you a quick update on the QA monitoring status before our meeting today. The adjustments we implemented last week have led to a continued decline in defect rates, which is great news.
+
+I’ll present these findings in more detail during the meeting, along with suggestions for maintaining these improvements moving forward.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

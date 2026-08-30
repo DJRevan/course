@@ -1,0 +1,16 @@
+Subject: Re: Update on Tooling Modifications
+From: Noah Thompson <noah.thompson@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+Date: February 15, 2018, at 8:15 AM
+
+Hi Grace and Priya,
+
+Thanks for the update! I’ll lead the trial runs today and ensure that we're capturing accurate defect metrics for analysis. 
+
+We’ll keep a close eye on the results, and I’ll send over a summary later in the afternoon.
+
+Best,  
+Noah  
+Noah Thompson  
+Production Supervisor  
+Precision Paperclip Inc.

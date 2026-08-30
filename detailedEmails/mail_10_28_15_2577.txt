@@ -1,0 +1,16 @@
+Subject: SC-1 Design Sprint Reminder
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+Date: October 28, 2015, at 10:00 AM
+
+Hi Daniel and Chloe,
+
+Just a quick reminder about our design sprint at 2:00 PM today. I’ll be bringing along the latest environmental test results, as well as any relevant feedback from user testing.
+
+If there are any additional points you want me to focus on or queries regarding QA specifications, please send those over beforehand.
+
+Thanks!  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

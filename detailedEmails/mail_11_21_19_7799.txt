@@ -1,0 +1,16 @@
+Subject: Quick Quality Assurance Updates
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>; Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: November 21, 2019, at 10:30 AM
+
+Hi Marcus and Amelia,
+
+I wanted to provide a brief update on our quality assurance metrics since my last report. We’re still maintaining a low defect rate, and the new checks we’ve implemented are performing well, particularly as we approach the expanded rollout.
+
+Please let me know if there are any specific areas you'd like me to prepare for today's strategic meeting.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

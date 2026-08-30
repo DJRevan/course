@@ -1,0 +1,16 @@
+Subject: Reviewing QA Assessments
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 12, 2017, at 3:00 PM
+
+Hi Grace and Noah,
+
+I have compiled the QA assessments and will be sending the final report shortly. All indicators point to a go for production, but I’ll highlight any specifics that may be relevant in our follow-up discussions.
+
+Let’s catch up later to ensure we’re all aligned before we kick things off.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

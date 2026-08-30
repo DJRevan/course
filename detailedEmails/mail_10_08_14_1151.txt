@@ -1,0 +1,18 @@
+Subject: Production and QA Updates
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Oct 8, 2014, at 9:00 AM
+
+Hi Sofia and Noah,
+
+I wanted to give you a quick update on the latest from Quality Assurance. We’ve finalized the testing matrix for this month, and I have scheduled a review session for next week to discuss our QA target metrics for the holiday production rush.
+
+Additionally, it might be beneficial to review our previous defect trends to identify any potential areas for improvement before we ramp up production.
+
+Let me know if there’s anything specific you’d like me to bring to the discussion!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

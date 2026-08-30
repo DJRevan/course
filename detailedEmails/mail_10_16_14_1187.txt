@@ -1,0 +1,16 @@
+Subject: Re: Follow-Up on Micro-Trigger Issues
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Oct 16, 2014, at 1:00 PM
+
+Hi Sofia and Team,
+
+Thank you for bringing this up. I agree that we need a dedicated session to address the quality concerns with the micro-trigger prototypes. We can review the failure modes as well as discuss necessary adjustments to our QA benchmarks.
+
+How does later today sound? I can prepare a detailed analysis and proposed actions.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

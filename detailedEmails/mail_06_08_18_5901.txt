@@ -1,0 +1,16 @@
+Subject: Re: Quick Check-In on Production Readiness
+From: Noah Thompson <noah.thompson@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: June 08, 2018, at 10:30 AM
+
+Hi Marcus,
+
+Thanks for checking in! We're transitioning back to our regular production pace. The team is getting accustomed to the new workflows resulting from the EP-1 milestone, and I haven’t encountered any significant issues thus far.
+
+I’ll monitor the output closely over the next few days, especially with the new EP-1 batches. I’ll keep you updated if anything changes!
+
+Best,  
+Noah  
+Noah Thompson  
+Production Supervisor  
+Precision Paperclip Inc.

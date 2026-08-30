@@ -1,0 +1,18 @@
+Subject: Messaging Strategy for Project Latch
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Jul 23, 2014, at 10:15 AM
+
+Hi Sofia and Marcus,
+
+I wanted to touch base regarding our messaging for Project Latch ahead of next month’s announcement. Thank you both for your ongoing efforts; it’s important that we clearly highlight the progress we made with the trigger mechanism while transparently addressing ongoing challenges with reproducibility. 
+
+Could we aim to finalize our approach by the end of the week? I believe it’s key that we present a strong, cohesive story that reflects our development journey.
+
+Looking forward to your feedback!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

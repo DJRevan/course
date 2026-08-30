@@ -1,0 +1,18 @@
+Subject: Micro-Trigger Prototype Test Results
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Oct 9, 2014, at 9:00 AM
+
+Hi Sofia, Noah, and Marcus,
+
+I wanted to update you on the test results for the updated micro-trigger prototypes from the recent run. Unfortunately, the testing revealed some mixed results.
+
+Specifically, one in three of the prototypes performed as intended, while the others exhibited issues such as trigger drift and micro-spring fatigue. Grace and I are compiling detailed failure modes for further analysis.
+
+I believe it’s vital we address these quality concerns before proceeding to a larger scale production. Please let me know when we can discuss this further.
+
+Best,
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

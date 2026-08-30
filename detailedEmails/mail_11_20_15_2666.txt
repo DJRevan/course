@@ -1,0 +1,16 @@
+Subject: SC-1 QA Specifications Review
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+Date: November 20, 2015, at 10:00 AM
+
+Hi Team,
+
+As we prepare for our meeting later today, I just wanted to remind everyone to review the finalized SC-1 QA specifications. It's critical that all our feedback is adequately captured, and we are unified in our messaging as we approach launch.
+
+Looking forward to your insights during our discussion!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

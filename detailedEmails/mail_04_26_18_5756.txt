@@ -1,0 +1,16 @@
+Subject: Technical Finalization for EP-1
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: April 26, 2018, at 11:30 AM
+
+Hi Priya and Noah,
+
+Just confirming that I've reviewed the final documentation and everything looks complete from the R&D side. We have met all specifications and are ready for the April milestone.
+
+If anything changes as we move closer to shipping, I’ll make sure to update you.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

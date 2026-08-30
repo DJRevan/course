@@ -1,0 +1,16 @@
+Subject: QA Memo: Near-Zero Defect Rates
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Team <team@precisionpaperclip.com>
+Date: Jun 03, 2014, at 10:15 AM
+
+Hi Team,
+
+I wanted to take a moment to commend Noah Thompson and his production team. Over the past two weeks, we’ve maintained a 0.08% internal reject rate on the main clip line, attributed to tight adherence to our shift scheduling and inspection checkpoints.
+
+This level of quality is reflective of everyone’s hard work, so thank you for your diligence!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

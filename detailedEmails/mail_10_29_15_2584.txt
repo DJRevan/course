@@ -1,0 +1,16 @@
+Subject: Reminder: SC-1 Design Sprint at 2 PM
+From: Marcus Lee <marcus.lee@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Chloe Bennett <chloe.bennett@precisionpaperclip.com>, Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+Date: October 29, 2015, at 12:30 PM
+
+Hi all,
+
+Just a quick reminder about the SC-1 design sprint scheduled for 2 PM today. I believe this session will be crucial for locking down the specifications before we move to the prototype phase.
+
+Please come prepared with any insights and updates from user testing and QA.
+
+See you soon,  
+Marcus  
+Marcus Lee  
+Chief Operations Officer  
+Precision Paperclip Inc.

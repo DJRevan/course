@@ -1,0 +1,16 @@
+Subject: Update on QA Metrics
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Sep 16, 2014, at 2:30 PM
+
+Hi Marcus,
+
+I wanted to provide a quick update on our current QA metrics as we settle back into our routines. All production lines are performing above-spec with negligible defect rates, which is a positive start for Q4 planning. 
+
+I’ll continue to monitor for any deviations and ensure all relevant data is available for our upcoming discussions.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

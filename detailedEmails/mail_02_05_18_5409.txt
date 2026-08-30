@@ -1,0 +1,16 @@
+Subject: Quality Audit on EP-1 Trials
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 5, 2018, at 9:00 AM
+
+Hi Noah and Grace,
+
+As the EP-1 production trials begin today, I wanted to touch base regarding our approach to quality monitoring. I recommend implementing a daily defect review to closely track any issues that arise during the initial runs. Given our prior challenges, this will help ensure we stay ahead of any potential problems.
+
+Let me know if you agree, and we can formalize a plan.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: EP-1 QA Progress & Next Steps
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: November 13, 2017, at 9:30 AM
+
+Hi Grace and Noah,
+
+I hope you both had a restful weekend! I wanted to check in regarding the next steps for our EP-1 validation batches. Given the positive outcomes from our recent testing, I suggest we align on the protocol for the upcoming phase, focusing on shelf-life testing and final adjustments.
+
+I will compile a detailed agenda for our next meeting to ensure we cover all critical aspects. Looking forward to your thoughts!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

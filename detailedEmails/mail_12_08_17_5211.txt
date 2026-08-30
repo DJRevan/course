@@ -1,0 +1,16 @@
+Subject: Follow-up on Final QA Review
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 8, 2017, at 3:00 PM
+
+Hi Priya and Noah,
+
+Thanks for your hard work on the QA assessments. As we approach the conclusion of our evaluations, let’s make sure to review the results in detail so we can deliver a comprehensive update to the team.
+
+If you could send over the preliminary findings once they’re available, that would be helpful.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

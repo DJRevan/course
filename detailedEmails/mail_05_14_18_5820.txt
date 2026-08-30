@@ -1,0 +1,16 @@
+Subject: Notes on Quality Audit
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 14, 2018, at 4:00 PM
+
+Hi Marcus and Noah,
+
+I wanted to share a quick note regarding my observations from the quality audit today. The EP-1 line is performing well overall, but there are a few areas that need attention to catch up with the legacy paperclip line’s consistency.
+
+I have compiled a short list of specific recommendations that I'll share during our next meeting. It’s essential we address these before ramping up production.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

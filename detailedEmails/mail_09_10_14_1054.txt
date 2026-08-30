@@ -1,0 +1,16 @@
+Subject: Quick QA Update
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Sep 10, 2014, at 3:30 PM
+
+Hi Marcus,
+
+Just a quick update on the QA status as we continue into September. All lines are operating at above-spec performance, and the defect rates remain low. The team is monitoring for any anomalies, and I'll ensure we have all necessary metrics ready for the discussions on the budget allocations when you return from the meeting.
+
+Let me know if there's anything specific you need me to focus on in the meantime.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

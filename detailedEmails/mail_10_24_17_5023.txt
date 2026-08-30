@@ -1,0 +1,16 @@
+Subject: QA Protocol Feedback Compilation
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: October 24, 2017, at 11:00 AM
+
+Hi Amelia, Noah, Grace, and Marcus,
+
+I’ve received initial feedback on the QA protocols now that they have been distributed, and I’m compiling the insights. The response has been positive overall, with a few minor adjustments suggested to enhance clarity. I’ll make those updates and send a revised version shortly.
+
+Let’s ensure we are aligned before the pilot testing begins!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

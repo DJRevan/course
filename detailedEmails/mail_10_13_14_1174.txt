@@ -1,0 +1,16 @@
+Subject: Check-in on Production Adjustments
+From: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Oct 13, 2014, at 11:00 AM
+
+Hi Noah and Marcus,
+
+Thanks for your diligent preparation on production. I believe our focus should be on the adjustments we discussed regarding the micro-trigger issues. 
+
+If necessary, let’s detail our updated QA benchmarks so we can illustrate our commitments and ensure the production goes smoothly as we ramp up.
+
+Best,  
+Sofia  
+Sofia Ramirez  
+Director of Manufacturing  
+Precision Paperclip Inc.

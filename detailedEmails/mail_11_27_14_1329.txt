@@ -1,0 +1,16 @@
+Subject: Production Metrics Review
+From: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+Date: Nov 27, 2014, at 9:00 AM
+
+Hi Marcus and Priya,
+
+With the holiday launch coming up this weekend, I wanted to share a quick review of our production metrics from the last run. We continue to see slight improvements, but I’m still monitoring for reproducibility challenges.
+
+I believe we’re on the right track, but some variances may require our attention as we head into the launch period. Let’s touch base briefly later to discuss the findings and ensure we’re aligned.
+
+Best,  
+Sofia  
+Sofia Ramirez  
+Director of Manufacturing  
+Precision Paperclip Inc.

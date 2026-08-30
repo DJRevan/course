@@ -1,0 +1,18 @@
+Subject: SC-1 Design Sprint and QA Specification Confirmation
+From: Daniel Brooks <daniel.brooks@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Ethan Collins <ethan.collins@precisionpaperclip.com>
+Date: October 27, 2015, at 9:00 AM
+
+Hi Team,
+
+I wanted to gather everyone for a focused design sprint regarding SC-1. Given our recent discussions, it's essential that we lock in the functional specs for the first EVT build and also finalize the QA specifications with Priya’s input.
+
+Could we meet today at 2:00 PM to discuss this? I believe aligning on these details will help us keep everything on track for the prototype dates penciled in for November.
+
+Looking forward to your confirmations!
+
+Best,  
+Daniel  
+Daniel Brooks  
+Head of Product Design  
+Precision Paperclip Inc.

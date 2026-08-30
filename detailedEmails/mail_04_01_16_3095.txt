@@ -1,0 +1,18 @@
+Subject: Cybersecurity Audit Closure
+From: Caleb Nguyen <caleb.nguyen@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: April 1, 2016, at 10:15 AM
+
+Hi Amelia and Marcus,
+
+I wanted to confirm that the cybersecurity audit has officially been closed. All vulnerabilities have been patched, including outdated firewall firmware and stale user accounts. 
+
+There were no anomalies detected in our financial systems, but I recommend we perpetually conduct human reviews of vendor invoices to ensure compliance, especially since inflated charges can slip through automated checks.
+
+Let me know if you have any questions.
+
+Best,  
+Caleb  
+Caleb Nguyen  
+IT Systems Administrator  
+Precision Paperclip Inc.

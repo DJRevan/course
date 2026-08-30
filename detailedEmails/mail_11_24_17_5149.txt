@@ -1,0 +1,16 @@
+Subject: EP-1 QA Updates After Thanksgiving Break
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: November 24, 2017, at 11:00 AM
+
+Hi Grace and Noah,
+
+I hope you both enjoyed your Thanksgiving! As we get back into the swing of things, I wanted to touch base regarding the EP-1 QA assessments. Let’s ensure we’re prioritizing any remaining tests today so we can maintain our timeline.
+
+If there are any issues on your end, please let me know.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

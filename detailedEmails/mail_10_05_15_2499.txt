@@ -1,0 +1,18 @@
+Subject: Confirming QA Preparations for SC-1
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>
+Date: October 5, 2015, at 4:15 PM
+
+Hi Daniel,
+
+As we gear up for the SC-1 kickoff tomorrow, I wanted to confirm that I’m prepared to discuss our QA framework and how it will be implemented throughout the project.
+
+It’s crucial we start on a strong note with proactive measures in place. I’ll be ready to go over the testing parameters and feedback loops.
+
+See you all tomorrow!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

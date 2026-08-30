@@ -1,0 +1,20 @@
+Subject: EP-1 Weekly Stand-up Agenda
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 4, 2017, at 9:00 AM
+
+Hi Priya and Noah,
+
+As we prepare for our weekly stand-up today, here are the key points I’d like us to cover regarding the EP-1 project:
+
+1. Status update on the final QA assessments.
+2. Confirmation of tooling adjustments needed for production.
+3. Any potential challenges or updates we should address before moving forward.
+
+I appreciate everyone’s hard work as we gear up for the launch!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

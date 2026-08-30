@@ -1,0 +1,16 @@
+Subject: EdibleClip Pro QA Data Review
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>; Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: July 17, 2019, at 1:30 PM
+
+Hi Grace and Marcus,
+
+As we head into our meeting later, I wanted to make sure we are aligned on the QA findings for the EdibleClip Pro. Everything appears positive, and I'm excited to report that the quality metrics are well within our targets.
+
+Looking forward to discussing how we can leverage this in our communications and strategy moving forward.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

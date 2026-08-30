@@ -1,0 +1,18 @@
+Subject: Meeting Confirmation for Government Project Discussion
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+Date: Nov 18, 2014, at 11:30 AM
+
+Hi Marcus and Sofia,
+
+I wanted to confirm our meeting for Thursday morning to discuss the government project and our recent QA test results. I think it will be a productive session to outline some strategies for meeting our reproducibility targets.
+
+Please let me know if you’d like to adjust the agenda or include any specific topics beforehand.
+
+Looking forward to our discussion!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

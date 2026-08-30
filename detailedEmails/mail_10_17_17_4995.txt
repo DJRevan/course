@@ -1,0 +1,18 @@
+Subject: EP-1 Project Check-in
+From: Amelia Grant <amelia.grant@precisionpaperclip.com> 
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: October 17, 2017, at 9:00 AM
+
+Hi Grace, Noah, and Marcus,
+
+I wanted to have a quick check-in regarding our progress on the EP-1 project. Given the tight timeline for the pilot tests, I’d like to know the latest updates on both the QA protocols and the manufacturing line adjustments.
+
+Grace, please confirm that the QA procedures are fully aligned with any final design decisions Daniel is implementing. Noah, I'd appreciate any insight into the progress of the conversion for the manufacturing line.
+
+Let’s keep focused and ensure everything is in place for the upcoming milestones!
+
+Best,  
+Amelia  
+Amelia Grant  
+Chief Executive Officer  
+Precision Paperclip Inc.

@@ -1,0 +1,18 @@
+Subject: Final Design Review for SC-1
+From: Daniel Brooks <daniel.brooks@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+Date: November 12, 2015, at 9:00 AM
+
+Hi Priya and Chloe,
+
+As we approach finalization of the SC-1 design, I'd like to ensure that we're clear on the latest revisions based on our user feedback. Please take a moment to review the last set of changes, as it will be essential for moving to the production phase.
+
+Let’s plan to have a quick sync later in the day to confirm everything is in order. This will help us avoid any last-minute surprises.
+
+Looking forward to your insights!
+
+Best,  
+Daniel  
+Daniel Brooks  
+Head of Product Design  
+Precision Paperclip Inc.

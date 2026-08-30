@@ -1,0 +1,18 @@
+Subject: Reminder: Today’s Report on Production Trials
+From: Marcus Lee <marcus.lee@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+Date: February 15, 2018, at 10:00 AM
+
+Hi Team,
+
+Just a quick note to remind everyone about the report on the EP-1 production trials that we’re expecting later today. 
+
+I’d like to see detailed metrics, particularly in terms of any improvements with defect rates based on the new tooling. This will be essential for our upcoming discussions on adjustments and next steps.
+
+Let me know if you need any additional support compiling this information.
+
+Best,  
+Marcus  
+Marcus Lee  
+Chief Operations Officer  
+Precision Paperclip Inc.

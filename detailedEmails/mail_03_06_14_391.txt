@@ -1,0 +1,16 @@
+Subject: Production Update
+From: Noah Thompson <noah.thompson@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Mar 6, 2014, at 11:15 AM
+
+Hi Marcus,
+
+Just a quick note ahead of today's meeting: I've continued to monitor the production metrics, particularly around our experimental hours for Project Latch. I've noticed some patterns that coincide with our feasibility work, and I believe they will be worth discussing.
+
+Let me know if you would like me to focus on any specific areas when we present later.
+
+Best,  
+Noah  
+Noah Thompson  
+Production Supervisor  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: Update on Project Latch Challenges
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+Date: Jun 04, 2014, at 10:30 AM
+
+Hi Team,
+
+Ahead of our check-in today, I wanted to provide a brief update on our challenges with the miniaturized detonation mechanism. We are continuing to see issues with ignition timing and heat dissipation. I believe it will be crucial to address these in our discussion to formulate a path forward.
+
+Let’s prepare to dive into possible solutions during the meeting.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

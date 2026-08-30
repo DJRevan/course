@@ -1,0 +1,16 @@
+Subject: EP-1 Performance Metrics Review
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 21, 2018, at 9:00 AM
+
+Hi Noah and Grace,
+
+Thanks for your update! I’ll continue documenting the metrics today, paying close attention to variations during the production runs. It might also help if we outline a framework for comparing our ongoing trial data with the target specifications we've set.
+
+Let’s ensure we capture all relevant information to authentically reflect any changes as we prepare for discussions later.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,18 @@
+Subject: Final QA Protocols Distribution
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: October 20, 2017, at 10:00 AM
+
+Hi Amelia, Noah, and Marcus,
+
+I’ve finalized the QA protocols for the EP-1 pilot testing and attached them for your review. I believe these guidelines will ensure we uphold our quality standards throughout this crucial phase.
+
+Please take a look and let me know if there are any adjustments or additional measures you think we should incorporate.
+
+Looking forward to your thoughts!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

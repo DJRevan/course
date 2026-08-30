@@ -1,0 +1,22 @@
+Subject: Thoughts on SC-1 Quality Assurance Framework
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: October 1, 2015, at 2:30 PM
+
+Hi Marcus,
+
+In preparation for Project SC-1, I would like to outline our initial QA framework.
+
+1. Define testing parameters for environment edge cases.
+2. Establish feedback loops for the production team.
+3. Coordinate with Daniel on prototype timelines.
+
+I believe laying this groundwork now will help ensure our success in delivering a high-quality product that meets expectations.
+
+Let me know if you’d like to discuss or have any suggestions.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

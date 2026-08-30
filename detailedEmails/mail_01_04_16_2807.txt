@@ -1,0 +1,16 @@
+Subject: Update on Quality Assurance for SandwichClip™
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>, Daniel Brooks <daniel.brooks@precisionpaperclip.com>
+Date: January 4, 2016, at 11:15 AM
+
+Hi Amelia, Marcus, and Daniel,
+
+I wanted to update you on the latest quality assurance for the SandwichClip™. The pre-launch quality validation is set for January 12, and I’ve ensured that our control plan is in place.
+
+We anticipate starting production on schedule, and I’ll keep everyone informed of any findings during our validation tests. If you have any other QA-related queries or suggestions, feel free to reach out.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

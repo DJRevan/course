@@ -1,0 +1,16 @@
+Subject: QA Readiness Check
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>; Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: June 24, 2019, at 10:15 AM
+
+Hi Grace and Marcus,
+
+As we move closer to the anticipated launch of EdibleClip Pro, I wanted to check in regarding the QA processes related to the certification. Everything is currently on schedule, but I’d like to ensure we have everything in place for marketing and final product readiness.
+
+If there are any specific checkpoints you’d like me to focus on, please let me know. Otherwise, I’ll proceed as planned!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,18 @@
+Subject: EP-1 Pilot Testing Readiness Check
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: October 16, 2017, at 11:00 AM
+
+Hi Amelia,
+
+I wanted to provide an update on our QA protocols for the EP-1 pilot testing. My team is in the final stages of confirming that all procedures are thoroughly outlined and ready for implementation.
+
+Once we finalize the designs, I will circulate the documentation for review. It's critical that everything reflects our high standards as we move toward production.
+
+Let me know if you’d like any additional information in the meantime.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

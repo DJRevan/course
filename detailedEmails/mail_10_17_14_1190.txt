@@ -1,0 +1,18 @@
+Subject: Meeting Confirmations and Micro-Trigger Adjustments
+From: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Oct 17, 2014, at 9:15 AM
+
+Hi Team,
+
+I wanted to confirm our meeting for later today to go over the adjustments needed for the micro-trigger prototypes. It’s vital we tackle the QA metrics and ensure we are aligned before ramping up production.
+
+Please prepare your thoughts on the recent testing results so we can leverage that in our discussions.
+
+Looking forward to seeing you all later.
+
+Best,  
+Sofia  
+Sofia Ramirez  
+Director of Manufacturing  
+Precision Paperclip Inc.

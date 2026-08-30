@@ -1,0 +1,18 @@
+Subject: Updates from Controlled Rework Trials
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+Date: Jun 18, 2014, at 9:00 AM
+
+Hi Marcus and Sofia,
+
+I wanted to follow up on our testing from yesterday's controlled rework trials. As we expected, we encountered some issues with the ignition timing during the first set of trials. The heat dissipation still poses a significant challenge, which we need to address immediately.
+
+I propose we hold a debrief session after each trial today to analyze our findings more thoroughly and adjust our approach based on the data. 
+
+Looking forward to getting insights and findings from today!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

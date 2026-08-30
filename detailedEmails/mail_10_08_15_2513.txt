@@ -1,0 +1,16 @@
+Subject: Reminder: QA Testing Schedule
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: October 8, 2015, at 3:00 PM
+
+Hi Daniel and Grace,
+
+Just a reminder to finalize the schedule for our QA testing plans for SC-1. It’s critical that we align our efforts to catch any potential issues early on.
+
+Can we aim to meet later this week to nail down these details? Let’s coordinate to ensure everything is set for the initial prototype rollout.
+
+Thanks,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

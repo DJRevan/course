@@ -1,0 +1,16 @@
+Subject: R&D Status Update for Project Latch
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Apr 9, 2014, at 9:00 AM
+
+Hi Team,
+
+I wanted to provide an update regarding the prototype adjustments for Project Latch. I’ve worked through the modifications we discussed, and I’m pleased to report that we are on track with the tolerances we need to meet the specifications.
+
+I will be ready to present the prototype for feedback during our upcoming meeting. If there are any particular areas you want me to focus on or specific results you wish to see, please let me know.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

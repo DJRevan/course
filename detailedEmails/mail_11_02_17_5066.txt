@@ -1,0 +1,18 @@
+Subject: EP-1 QA Framework Kickoff Meeting
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: November 2, 2017, at 9:00 AM
+
+Hi Grace and Noah,
+
+Thank you for joining me yesterday to outline the QA framework. I believe we have a solid plan in place for ensuring the highest standards during our EP-1 pilot testing.
+
+As we move forward, let's keep communication open. Please share any observations or results from the testing as they come in, so we can address them immediately.
+
+Looking forward to a successful testing phase!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

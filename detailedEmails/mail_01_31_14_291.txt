@@ -1,0 +1,16 @@
+Subject: Reminder: Weekly Team Sync
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Jan 31, 2014, at 10:00 AM
+
+Hi Marcus and Noah,
+
+As a reminder, let's plan on meeting tomorrow to discuss our QA initiatives and review the trends we've been observing. I believe it's essential that we stay proactive about maintaining our low defect rates.
+
+Please confirm your availability!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,18 @@
+Subject: Update on Project Latch Mechanism Stability
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Jun 06, 2014, at 9:00 AM
+
+Hi Team,
+
+I wanted to provide an update on the stability issues with the miniaturized detonation mechanism for Project Latch. After further investigation, we’ve identified some potential root causes, including alignment drift during the assembly process. 
+
+I will be working with Noah to coordinate some controlled rework trials to confirm these findings. I believe with more focused testing we can find viable solutions quickly.
+
+Thanks for your continued efforts!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

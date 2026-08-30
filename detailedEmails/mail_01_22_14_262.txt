@@ -1,0 +1,18 @@
+Subject: Update on QA Monitoring for Leadership Meeting
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Jan 22, 2014, at 9:30 AM
+
+Hi Amelia, Marcus, and Noah,
+
+I just wanted to send a quick update regarding the QA monitoring status ahead of our leadership meeting. We are continuing to see a downward trend in defect rates due to the implemented protocol changes, which is encouraging. 
+
+I’ll present more detailed metrics and strategies for maintaining these low defect rates during our discussion later today.
+
+Looking forward to our conversation!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

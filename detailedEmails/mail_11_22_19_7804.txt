@@ -1,0 +1,16 @@
+Subject: QA Metrics Following Production Updates
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>; Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: November 22, 2019, at 10:30 AM
+
+Hi Marcus and Amelia,
+
+Following our recent production updates, I wanted to provide a quick check-in on our quality assurance metrics. I'm pleased to report that we are still maintaining a low defect rate while scaling up production for the EdibleClip Pro.
+
+Let me know if there are any specific areas you’d like me to focus on as we prepare for the upcoming rollout. 
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

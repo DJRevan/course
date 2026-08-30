@@ -1,0 +1,16 @@
+Subject: Ready for Presentation of QA Findings
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: December 20, 2017, at 10:00 AM
+
+Hi Grace,
+
+I just wanted to confirm that I am fully prepared to present the finalized QA findings in our meeting later today. I believe they align well with our production goals for EP-1, and I’m ready to answer any queries that may arise.
+
+Let’s ensure we cover all critical points during the presentation.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

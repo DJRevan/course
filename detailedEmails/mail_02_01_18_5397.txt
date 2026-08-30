@@ -1,0 +1,19 @@
+Subject: Re: Temperature Issue on EP-1 Production Line
+From: Noah Thompson <noah.thompson@precisionpaperclip.com>
+To: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 1, 2018, at 8:45 AM
+
+Hi Priya,
+
+Thank you for flagging this. I will meet with the production team and initiate a review of the temperature settings and equipment. It could be a factor contributing to the defect rate.
+
+
+I also want to make sure the problem is not related to the problem that caused the sudden passing of Evan Lörtscher; we really have to keep an eye on the ELMO machine. 
+
+We'll work together with the QA team to get this resolved swiftly.
+
+Best,  
+Noah  
+Noah Thompson  
+Production Supervisor  
+Precision Paperclip Inc.

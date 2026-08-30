@@ -1,0 +1,16 @@
+Subject: Temperature Issue on EP-1 Production Line
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 1, 2018, at 8:30 AM
+
+Hi Noah and Grace,
+
+I wanted to bring to your attention that we have been experiencing a higher-than-expected defect rate on the initial EP-1 production runs. The clips are showing warping and brittleness at the bend, which I suspect may be related to fluctuations in the temperature during the molding process.
+
+I believe we need to address this issue immediately to prevent further losses.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

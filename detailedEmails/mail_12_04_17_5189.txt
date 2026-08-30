@@ -1,0 +1,20 @@
+Subject: Recap of Stand-up Discussion Points
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 4, 2017, at 3:00 PM
+
+Hi Priya and Noah,
+
+Thank you both for your input during today’s stand-up. Here are the key points we discussed:
+
+1. QA assessments are confirmed to be on track, and we anticipate completing them by the end of this week.
+2. Noah confirmed that the tooling adjustments are complete and ready for our production line.
+3. We need to remain vigilant and address any final details that arise as we approach the EP-1 launch.
+
+Let’s keep up the momentum!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

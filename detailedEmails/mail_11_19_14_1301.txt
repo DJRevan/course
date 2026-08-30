@@ -1,0 +1,16 @@
+Subject: Incremental Progress on Government Project
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+Date: Nov 19, 2014, at 9:00 AM
+
+Hi Marcus and Sofia,
+
+I wanted to share some incremental progress regarding the government project. After the recent QA tests on the small-batch run, we have seen a slight improvement in pass rates, moving from one-in-three to just under one-in-two with the latest iteration. While this is encouraging, we still need to work on achieving consistent reproducibility.
+
+Let’s discuss how we can turn this momentum into a more substantial breakthrough in our upcoming meeting. 
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

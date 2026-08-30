@@ -1,0 +1,18 @@
+Subject: Production Challenges and Next Steps
+From: Noah Thompson <noah.thompson@precisionpaperclip.com>
+To: Ethan Collins <ethan.collins@precisionpaperclip.com>; Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>; Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>; Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: February 27, 2019, at 9:00 AM
+
+Hi Team,
+
+As we dive into another day of production, I wanted to touch base regarding our ongoing challenges with the moisture content and dissolution times of the EdibleClip. The data indicates that while we’re maintaining our output, the quality metrics are still not consistently meeting our required specifications.
+
+I propose we hold a quick huddle today to review our strategies and responsibilities to tackle these issues effectively. We need to ensure that we’re following all quality control protocols and reinforcing best practices with our teams.
+
+Please let me know your availability for a brief meeting later this morning.
+
+Thanks,  
+Noah  
+Noah Thompson  
+Production Supervisor  
+Precision Paperclip Inc.

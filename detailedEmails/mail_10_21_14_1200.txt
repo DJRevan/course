@@ -1,0 +1,16 @@
+Subject: Adjustments for Micro-Trigger Production
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Oct 21, 2014, at 9:15 AM
+
+Hi Sofia and Noah,
+
+I’ve completed my detailed analysis on the micro-trigger prototype results and would like to propose a meeting later today to discuss how we can implement the necessary adjustments to our QA benchmarks.
+
+Let’s ensure we’re all aligned on our responsibilities moving forward, especially with the ramp-up in production approaching. Please let me know your availability.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

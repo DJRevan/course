@@ -1,0 +1,16 @@
+Subject: Confirmed QA Readiness for Today's Shift
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 22, 2015, at 11:15 AM
+
+Hi Noah,
+
+I hope you’re having a good day! I wanted to follow up and confirm that all QA checks are in place for today’s shift. Please ensure that the team remains vigilant, especially as we continue working with the reformulated materials.
+
+Let's keep up the good work and aim for another day with zero critical defects.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

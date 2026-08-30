@@ -1,0 +1,16 @@
+Subject: Quick Reminder on QA Documentation
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com> 
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com> 
+Date: April 24, 2018, at 10:00 AM 
+
+Hi Noah and Grace,
+
+Just touching base as we wrap up the QA documentation ahead of the April milestone. It’s crucial we ensure everything is in order for a seamless milestone.
+
+If there are any last-minute updates or hurdles you've encountered, please let me know as soon as possible.
+
+Thanks!  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

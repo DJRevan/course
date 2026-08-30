@@ -1,0 +1,16 @@
+Subject: Quick Check-In on Production Metrics
+From: Marcus Lee <marcus.lee@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+Date: June 13, 2018, at 11:30 AM
+
+Hi Noah and Priya,
+
+I wanted to check in on our production metrics since the EP-1 launch. Are we seeing the expected output levels with the new workflow, and have there been any quality issues we should be aware of?
+
+Let’s stay on top of this to ensure everything is running smoothly.
+
+Thanks,  
+Marcus  
+Marcus Lee  
+Chief Operations Officer  
+Precision Paperclip Inc.

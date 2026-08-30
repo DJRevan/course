@@ -1,0 +1,16 @@
+Subject: QA Metrics Report Submission
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+Date: Sep 26, 2014, at 10:00 AM
+
+Hi Marcus and Sofia,
+
+I’m sending you the final QA metrics report. I’m pleased to confirm that our defect rates remain exceptionally low across all production lines. This is an encouraging sign as we prepare for Q4.
+
+Please let me know if you have any questions or require further clarification on any specific points in the report.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

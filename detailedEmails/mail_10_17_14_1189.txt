@@ -1,0 +1,16 @@
+Subject: Update on Server Outage
+From: Caleb Nguyen <caleb.nguyen@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: Oct 17, 2014, at 8:45 AM
+
+Hi Marcus and Amelia,
+
+Following up on the recent server outage, I’ve completed a full review of the systems affected and implemented further preventative measures. I believe we are now in a better position to handle any future disruptions effectively.
+
+If there are any other particular areas you think I should focus on, please let me know.
+
+Best,  
+Caleb  
+Caleb Nguyen  
+IT Systems Administrator  
+Precision Paperclip Inc.

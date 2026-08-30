@@ -1,0 +1,18 @@
+Subject: Project Latch Material Update
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 8, 2014, at 9:00 AM
+
+Hi Team,
+
+As we dive deeper into May, I wanted to share an update regarding our material selection for Project Latch. The recent tests have shown that two candidate alloys are clearing initial heat and stress thresholds in our simulations. 
+
+Though we are still at an early stage, it’s promising to see some theoretical approaches materializing successfully. I will continue to monitor progress closely and appreciate everyone’s contributions to this project.
+
+Let’s keep the momentum going!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

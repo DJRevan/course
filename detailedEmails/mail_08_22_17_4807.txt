@@ -1,0 +1,16 @@
+Subject: Edible Paperclip Development Timeline Check-in
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: August 22, 2017, at 12:30 PM
+
+Hi Daniel and Amelia,
+
+I wanted to check in on our development timeline for the edible paperclip. We’re getting closer to production, and I’d like to ensure we’re all on the same page regarding milestones and any last-minute adjustments.
+
+Let’s plan to meet later this week to finalize everything before heading into production.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

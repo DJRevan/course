@@ -1,0 +1,18 @@
+Subject: Lab Testing Meeting Follow-Up
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: Apr 22, 2015, at 9:00 AM
+
+Hi Sofia and Grace,
+
+Just following up on our meeting yesterday regarding the lab testing outcomes. I think we made significant progress in identifying the necessary adjustments, and I appreciate your insights.
+
+For our next steps, I suggest we begin with implementing the calibration changes on the production lines discussed. Additionally, it would be prudent to monitor the first few batches closely to ensure we meet our quality standards.
+
+If there are any further findings or questions you both have, please let me know!
+
+Thanks,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

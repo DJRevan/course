@@ -1,0 +1,16 @@
+Subject: Review of QA Protocol Adjustments
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Jan 07, 2014, at 9:30 AM
+
+Hi Marcus,
+
+As we aim to refine our operational procedures, I wanted to touch base about the adjustments I'm implementing to the QA protocols after December’s defect spike. I’ve reinstated first-article checks per shift and included stricter incoming wire gauge verification along with updated inspection checklists.
+
+I believe these changes will help maintain our production standards and reduce any potential defects. If you have any additional input or foresee impacts on operational workflow, please share your thoughts.
+
+Thanks!  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

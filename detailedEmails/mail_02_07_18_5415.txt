@@ -1,0 +1,18 @@
+Subject: Follow-Up on Production Challenges
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: February 7, 2018, at 8:00 AM
+
+Hi Priya and Noah,
+
+I hope you both are doing well. After analyzing the defects from yesterday's runs, I think we should convene a meeting to formally address the temperature sensitivity issues affecting production. 
+
+It’s clear that we need well-defined solutions to avoid further disruptions as we progress with our trials. I’ll coordinate with Ethan Collins today to ensure we have the right tooling options ready for discussion.
+
+Please let me know your availability for later this morning.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

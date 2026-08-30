@@ -1,0 +1,16 @@
+Subject: Reproducibility Failure in Government Project
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: October 14, 2015, at 9:15 AM
+
+Hi Marcus,
+
+I wanted to provide an update on the government project we discussed last week. I’ve encountered some reproducibility failures during the high-humidity chamber runs that I documented. The yields are collapsing in conditions above 70% RH, which directly impact our progress on the project.
+
+I will be filing a comprehensive status report later today, but I wanted to make sure you were aware of the situation as we may need to discuss this with the agency sooner rather than later.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

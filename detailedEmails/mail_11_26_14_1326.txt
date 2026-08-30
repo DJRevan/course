@@ -1,0 +1,16 @@
+Subject: Production Status Update
+From: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Nov 26, 2014, at 10:00 AM
+
+Hi Marcus and Noah,
+
+I wanted to provide a quick update on our production status. The metrics from yesterday are in, and while we saw an improvement in pass rates, there are still a few variances that we may need to monitor closely as we move into the launch.
+
+I'll be supervising the production line closely today to address anything that may arise. I'll keep you both posted on any critical changes that we encounter.
+
+Thanks!  
+Sofia  
+Sofia Ramirez  
+Director of Manufacturing  
+Precision Paperclip Inc.

@@ -1,0 +1,18 @@
+Subject: Project Latch Status Update
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Mar 19, 2014, at 11:15 AM
+
+Hi Team,
+
+I wanted to provide an update on the feasibility aspects we’ve been working on for Project Latch. I have identified a few critical dimensions that we need to ensure are closely monitored during the prototype phase.
+
+I believe it would be productive to also address this in our upcoming meeting, integrating any manufacturing strategies that Sofia and Noah have in mind as well.
+
+Let’s keep the momentum going!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

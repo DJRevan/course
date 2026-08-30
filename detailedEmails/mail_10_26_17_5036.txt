@@ -1,0 +1,16 @@
+Subject: EP-1 Pilot Testing Preparation Update
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: October 26, 2017, at 11:00 AM
+
+Hi Amelia, Noah, and Marcus,
+
+As we approach the pilot testing next week, I wanted to update you on the final feedback I’ve incorporated into the QA protocols. We’re fully prepared and set to ensure the highest quality during the testing phase. 
+
+If you have any last-minute questions or considerations, please feel free to reach out.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

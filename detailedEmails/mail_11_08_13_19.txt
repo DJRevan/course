@@ -1,0 +1,18 @@
+Subject: IT Infrastructure Upgrade Reminder
+From: Caleb Nguyen <caleb.nguyen@precisionpaperclip.com>
+To: All Employees <all@precisionpaperclip.com>
+Date: Nov 8, 2013, at 9:00 AM
+
+Hi Team,
+
+As a reminder, we’ll be rolling out the IT infrastructure upgrades after hours tonight. Please remember to save your work and log off by 5:00 PM. After the upgrade, you may need to reset your passwords when logging in on Monday.
+
+Help-desk will be available for any questions or issues you may encounter.
+
+Thank you for your cooperation! 
+
+Best,  
+Caleb  
+Caleb Nguyen  
+IT Systems Administrator  
+Precision Paperclip Inc.

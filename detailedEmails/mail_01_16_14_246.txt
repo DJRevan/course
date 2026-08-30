@@ -1,0 +1,16 @@
+Subject: Feedback on Updated QA Protocols
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Jan 16, 2014, at 12:30 PM
+
+Hi Marcus and Noah,
+
+I wanted to share some initial feedback on the recently implemented QA protocols. We’ve seen a noticeable reduction in defects over the past few days since implementing the first-article checks and wire gauge verifications.
+
+However, I’ll continue monitoring these metrics closely and will report back with a more comprehensive update by the end of the week.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: Status Update on Government Project
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: November 2, 2015, at 9:00 AM
+
+Hi Amelia and Marcus,
+
+As we head into our review with the agency later this week, I wanted to provide a brief status update on the government project. As you know, the reproducibility issues in high humidity have continued to challenge our progress, and I’m concerned about our ability to demonstrate a viable path forward.
+
+To that end, I will be running some final tests over the coming days to see if we can address the inconsistencies observed. I will keep you posted on any significant findings. Who would have thought that building an exploding paperclip would be such a challenge.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

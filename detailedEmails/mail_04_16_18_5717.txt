@@ -1,0 +1,16 @@
+Subject: Status Update: April Production Metrics
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: April 16, 2018, at 10:30 AM
+
+Hi Noah and Grace,
+
+As we move closer to the April milestone, I’d like to receive the production metrics from last week. This will help ensure we’re fully compliant with our QA standards as we finalize everything.
+
+Please make sure to send the metrics by EOD so I can compile our quality assurance documentation.
+
+Thanks!  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

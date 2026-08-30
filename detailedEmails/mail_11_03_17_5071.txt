@@ -1,0 +1,23 @@
+Subject: EP-1 QA Framework Meeting Notes
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: November 3, 2017, at 9:00 AM
+
+Hi Grace and Noah,
+
+I wanted to share the notes from our QA framework meeting yesterday regarding the EP-1 pilot testing. Here are the key points we discussed:
+
+* Accelerated aging tests will be conducted at 40°C/75% RH.
+* Shelf-life checks will happen at 3-, 6-, and 12-month intervals.
+* Stress tolerance metrics include clamp force, bend tests, and repeated use cycles.
+* We confirmed the dissolution timing must remain under 30 seconds in room-temperature water.
+
+Please ensure your teams are aligned with these protocols as we move forward in the testing phase. 
+
+Let's keep communication open and share any observations as they come through.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

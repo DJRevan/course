@@ -1,0 +1,16 @@
+Subject: EP-1 QA Protocols Review
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: October 12, 2017, at 2:30 PM
+
+Hi Amelia,
+
+I wanted to confirm that my team is finalizing the QA protocols to ensure everything is in line with our expectations for the EP-1 pilot testing. 
+
+I believe strong protocols this early will help us iron out any inconsistencies before launch. I’ll provide the final documentation for your review shortly.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

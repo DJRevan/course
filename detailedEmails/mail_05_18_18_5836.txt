@@ -1,0 +1,18 @@
+Subject: Update on Quality Audit Recommendations
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 18, 2018, at 1:00 PM
+
+Hi Marcus and Noah,
+
+As we finalize preparations for the EP-1 milestone, I wanted to provide you both with an update on the quality audit findings. My recommendations stand, with a focus on ensuring that sensor calibration procedures are thoroughly implemented and that production setup verification is reinforced. 
+
+These actions are essential for maintaining our high-quality standards as we transition into full production mode. Please confirm the steps your teams are taking to address these points by the end of the day.
+
+Thank you for your attention to this matter!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

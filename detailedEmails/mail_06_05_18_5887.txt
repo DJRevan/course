@@ -1,0 +1,16 @@
+Subject: EP-1 Microsite Staging Review
+From: Caleb Nguyen <caleb.nguyen@precisionpaperclip.com>
+To: Chloe Bennett <chloe.bennett@precisionpaperclip.com>, Daniel Brooks <daniel.brooks@precisionpaperclip.com>
+Date: June 05, 2018, at 10:00 AM
+
+Hi Chloe and Daniel,
+
+I’ve successfully brought the password-protected staging environment for the EP-1 microsite online. We can start reviewing the page templates to ensure that all packaging visuals and messaging align as planned.
+
+Could both of you take a look when you have a moment? It’s essential that we verify everything before going live to ensure consistency with our marketing materials.
+
+Thanks,  
+Caleb  
+Caleb Nguyen  
+IT Systems Administrator  
+Precision Paperclip Inc.

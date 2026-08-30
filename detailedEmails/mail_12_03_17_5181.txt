@@ -1,0 +1,20 @@
+Subject: EP-1 Weekly Stand-up Recap
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 3, 2017, at 10:00 AM
+
+Hi Priya and Noah,
+
+Thank you for your updates during Friday's stand-up. I wanted to recap our key takeaways for EP-1 as we move closer to our launch. 
+
+1. QA assessments are on track to finish this week, which should give us confidence in our testing results.
+2. Noah is finalizing some tooling adjustments; let’s ensure we address those before the production starts.
+3. Remember to keep open lines of communication as we’ll need to be agile if anything emerges as we approach the launch.
+
+Let’s push forward with the enthusiasm we've built!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

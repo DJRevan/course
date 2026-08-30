@@ -1,0 +1,16 @@
+Subject: Launch Infrastructure Updates
+From: Caleb Nguyen <caleb.nguyen@precisionpaperclip.com>
+To: Chloe Bennett <chloe.bennett@precisionpaperclip.com>, Isabella Rossi <isabella.rossi@precisionpaperclip.com>
+Date: June 28, 2018, at 2:30 PM
+
+Hi Chloe and Isabella,
+
+I wanted to confirm that all systems are operational for the EdibleClip June milestone. Our microsite is functioning as expected, and payment processing has been validated.
+
+Is there anything else that you think might need attention before the milestone?
+
+Best,  
+Caleb  
+Caleb Nguyen  
+IT Systems Administrator  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: Preliminary QA Check-in for EP-1
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: October 18, 2017, at 10:00 AM
+
+Hi Amelia,
+
+I’m following up on the QA protocols for the upcoming pilot testing. I believe we are set to go with the checks and balances we established. I’ll have the final documentation ready for circulation by the end of the week.
+
+If there’s anything specific you would like me to include, please let me know. I want to ensure we are fully aligned as we approach this critical phase.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

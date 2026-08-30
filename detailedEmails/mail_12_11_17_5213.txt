@@ -1,0 +1,16 @@
+Subject: EP-1 QA Assessment Update
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 11, 2017, at 11:15 AM
+
+Hi Grace and Noah,
+
+I wanted to provide a quick update on the QA assessments. I am finalizing the report, and everything indicates we are ready to move forward as planned. I’ll send over the findings by close of business.
+
+Noah, once we get the green light, we can coordinate the production launch timing.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

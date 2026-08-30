@@ -1,0 +1,18 @@
+Subject: R&D Team Coordination for Edible Paperclip
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: June 1, 2017, at 10:00 AM
+
+Hi Daniel and Amelia,
+
+I wanted to touch base regarding the coordination within the R&D team for the edible paperclip project. I believe it’s essential to define our objectives and timelines clearly from the get-go.
+
+Once we have Daniel's proposed agenda for the kickoff meeting, I’d love to collaborate on setting up initial experiments and feedback loops with QA to ensure that we're aligned with product specifications.
+
+Thanks, and I’m looking forward to working closely on this!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

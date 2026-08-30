@@ -1,0 +1,18 @@
+Subject: Update on Tooling Modifications
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: February 15, 2018, at 8:00 AM
+
+Hi Priya and Noah,
+
+As a follow-up to our recent discussions, I wanted to confirm that the specialized tooling modifications have been installed successfully on the EP-1 production line. 
+
+This should help us in stabilizing the temperature fluctuations we were encountering, as the gerbils can't get into the machine anymore. I would suggest we run a few trial batches today and closely monitor the defect rates to assess any immediate impact.
+
+Let’s plan to regroup later in the day to review the results.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: SC-1 Prototype Development Timeline
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: October 15, 2015, at 2:00 PM
+
+Hi Daniel and Grace,
+
+I would like to review the timeline for SC-1's upcoming prototypes when we meet on Friday. It’s crucial that we finalize not only the design specifications but also the QA testing schedule to stay on track.
+
+Let’s ensure we address any potential risks during development.
+
+Thanks!  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

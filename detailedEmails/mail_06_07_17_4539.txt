@@ -1,0 +1,18 @@
+Subject: Initial Notes for Kickoff Meeting
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Amelia Grant <amelia.grant@precisionpaperclip.com>
+Date: June 7, 2017, at 10:00 AM
+
+Hi Daniel and Amelia,
+
+I wanted to send over my initial notes for the kickoff meeting and confirm that my preliminary experiment outline is in place. 
+
+I believe that establishing baseline testing parameters will be critical to validating our prototypes, and I’m eager to discuss these further in our meeting.
+
+Let’s make this a constructive session!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

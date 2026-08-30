@@ -1,0 +1,21 @@
+Subject: Agenda for Today’s Review Meeting
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 14, 2017, at 10:00 AM
+
+Hi Priya and Noah,
+
+With our review meeting scheduled for later today, I wanted to outline my expectations:
+
+1. Presentation of the finalized QA results.
+2. Identification of any concerns and discussion of possible solutions.
+3. Final confirmation of production line readiness to commence.
+4. Coordination of the launch strategy with Marketing.
+
+Let’s make sure we’re all aligned for a productive discussion.
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

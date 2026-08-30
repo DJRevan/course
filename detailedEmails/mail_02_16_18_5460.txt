@@ -1,0 +1,18 @@
+Subject: EP-1 Production Testing Update
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: February 16, 2018, at 10:00 AM
+
+Hi Priya and Noah,
+
+Just a quick note to say that I've been observing the initial results from the first test runs. It appears that the new tooling is doing its job; the defect rates are showing a significant reduction.
+
+We need to ensure that we continue monitoring throughout the day, and I suggest scheduling a follow-up meeting later to evaluate the full trial results.
+
+Looking forward to discussing this further!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

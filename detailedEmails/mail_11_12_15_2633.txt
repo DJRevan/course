@@ -1,0 +1,18 @@
+Subject: SC-1 QA Specifications Draft
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+Date: November 12, 2015, at 10:30 AM
+
+Hi Team,
+
+I've drafted the initial QA specifications for SC-1, reflecting our latest revisions and user feedback. I believe it’s crucial we review these thoroughly before final approval.
+
+Let’s discuss how to incorporate these specifications into our QA messaging during our launch campaign — it’s important that our commitment to quality is showcased effectively.
+
+Looking forward to collaborating with you both!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,16 @@
+Subject: EdibleClip QA Update
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+Date: December 5, 2018, at 11:30 AM
+
+Hi Chloe,
+
+I wanted to touch base regarding the QA for EdibleClip. All quality checks have passed, including texture and flavor assessments. I believe we are in excellent shape heading toward the launch.
+
+If there are any additional tests or documentation you need to support the upcoming communications, please let me know!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

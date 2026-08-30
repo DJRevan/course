@@ -1,0 +1,18 @@
+Subject: Re: SC-1 Design Sprint Follow-Up
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Daniel Brooks <daniel.brooks@precisionpaperclip.com>, Chloe Bennett <chloe.bennett@precisionpaperclip.com>
+Date: November 4, 2015, at 9:00 AM
+
+Hi Daniel and Chloe,
+
+I appreciate the momentum we're building as we refine SC-1. I have been reviewing the latest user test results and think there’s a clear path for integrating the suggested improvements on grip comfort and durability.
+
+Can we ensure that our discussion today includes how we can present these changes in our QA messaging? I believe emphasizing our responsiveness to user feedback will enhance our credibility as we approach launch.
+
+Looking forward to finalizing our strategies!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

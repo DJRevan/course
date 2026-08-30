@@ -1,0 +1,16 @@
+Subject: Status Update on Humidity Testing
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Amelia Grant <amelia.grant@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: November 11, 2015, at 8:00 AM
+
+Hi Amelia and Marcus,
+
+I wanted to share a quick update on our continued testing efforts with the humidity chambers. While I've made some adjustments to our testing protocols, the reproducibility issues remain a challenge. That said, I’m hopeful we’re narrowing down the influencing factors.
+
+I have scheduled additional tests to further explore the parameters affecting stability. I will keep you informed of any significant progress. 
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

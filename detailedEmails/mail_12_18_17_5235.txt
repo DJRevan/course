@@ -1,0 +1,16 @@
+Subject: Finalizing QA Reports for Year-End Review
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 18, 2017, at 9:30 AM
+
+Hi Grace and Noah,
+
+As we wrap up the QA reports this week, I wanted to ensure that any findings are clearly documented and ready for our year-end review. I believe this data will be essential as we transition into 2018 with EP-1 on the horizon.
+
+Let me know if either of you has additional insights or particular angles we should focus on in our reporting.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

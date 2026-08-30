@@ -1,0 +1,16 @@
+Subject: QA Assessments - Final Push
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: December 8, 2017, at 1:00 PM
+
+Hi Grace and Noah,
+
+I wanted to confirm that we are in the final stretch of the QA assessments and I am on track to have everything completed by the end of the day. I will compile my findings into a report for our next meeting.
+
+Let's ensure we’re prepared to discuss any critical points that may need addressing.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

@@ -1,0 +1,18 @@
+Subject: Quick Note on Production Metrics
+From: Priya Nandakumar <priaya.nandakumar@precisionpaperclip.com>
+To: Noah Thompson <noah.thompson@precisionpaperclip.com>, Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: February 23, 2018, at 1:30 PM
+
+Hi Noah and Grace,
+
+As we prepare for today's meeting, I wanted to share a quick note that I’ll be compiling all relevant production metrics we’ve collected over the past several days.
+
+Let’s make sure we include any notable observations or trends as we discuss our path forward in the meeting.
+
+Looking forward to it!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

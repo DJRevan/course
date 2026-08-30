@@ -1,0 +1,18 @@
+Subject: EP-1 QA Framework Validation Batches Update
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: November 6, 2017, at 9:00 AM
+
+Hi Grace and Noah,
+
+I wanted to provide an update regarding the validation batches we initiated last week. I’m pleased to report that the initial results are promising, particularly in terms of stress tolerance and dissolution timing.
+
+This afternoon, I plan to check the samples in the humidity chambers and tensile rigs. I'm eager to discuss these findings with you both and will prepare the necessary documentation to go over during our next check-in.
+
+Thanks for your continued support!
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

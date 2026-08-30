@@ -1,0 +1,18 @@
+Subject: Operations Update Before Holiday Launch
+From: Marcus Lee <marcus.lee@precisionpaperclip.com>
+To: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: Dec 05, 2014, at 8:30 AM
+
+Hi Sofia and Noah,
+
+As we dive into the holiday launch weekend, I want to check in on our readiness once more. Sofia, please ensure we’re fully monitoring production metrics throughout the day. It’s critical we stay ahead of any potential issues as demand ramps up.
+
+Noah, can you confirm that our staffing levels are fully set for the weekend? Let’s make sure we’re prepared for any unexpected surges.
+
+I appreciate your attention to detail as we approach this busy period!
+
+Best,  
+Marcus  
+Marcus Lee  
+Chief Operations Officer  
+Precision Paperclip Inc.

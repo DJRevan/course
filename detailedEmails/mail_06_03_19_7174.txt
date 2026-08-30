@@ -1,0 +1,16 @@
+Subject: QA Update: EdibleClip Pro
+From: Priya Nandakumar <priya.nandakumar@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>; Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: June 3, 2019, at 3:30 PM
+
+Hi Grace and Marcus,
+
+Just a quick update regarding the certification process for the EdibleClip Pro. We're on track with our testing protocols for stability, shelf-life, and safety, and have booked third-party lab time to align with the target launch window.
+
+As we get closer to the launch, if there are any additional features or concerns we should consider, please let me know.
+
+Best,  
+Priya  
+Priya Nandakumar  
+Quality Assurance Manager  
+Precision Paperclip Inc.

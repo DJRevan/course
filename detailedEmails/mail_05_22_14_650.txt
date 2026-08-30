@@ -1,0 +1,18 @@
+Subject: Weekly Progress Check-In Reminder for Project Latch
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Marcus Lee <marcus.lee@precisionpaperclip.com>, Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Noah Thompson <noah.thompson@precisionpaperclip.com>
+Date: May 22, 2014, at 9:00 AM
+
+Hi Team,
+
+Just a reminder that we have our weekly progress check-in for Project Latch today at 3 PM. I’m looking forward to discussing our findings and planning our next steps based on the latest developments.
+
+Please ensure you have all relevant data compiled, especially any updates regarding the prototype testing.
+
+See you later!
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

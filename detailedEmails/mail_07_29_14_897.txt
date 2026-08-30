@@ -1,0 +1,16 @@
+Subject: Finalizing Messaging for Upcoming Announcement
+From: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+To: Sofia Ramirez <sofia.ramirez@precisionpaperclip.com>, Marcus Lee <marcus.lee@precisionpaperclip.com>
+Date: Jul 29, 2014, at 9:00 AM
+
+Hi Sofia and Marcus,
+
+As we finalize our preparations for the August financial announcement, I want to ensure we’re completely solid on our messaging for Project Latch. We’ve made notable progress on the trigger mechanism, but we also need to be transparent about the persistent reproducibility issues. 
+
+Shall we schedule a brief meeting today to wrap this up and ensure we all agree on the key points we want to convey?
+
+Best,  
+Grace  
+Grace Mitchell  
+R&D Engineer  
+Precision Paperclip Inc.

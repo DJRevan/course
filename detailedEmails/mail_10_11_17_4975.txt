@@ -1,0 +1,18 @@
+Subject: EP-1 Project Management Setup
+From: Caleb Nguyen <caleb.nguyen@precisionpaperclip.com>
+To: Grace Mitchell <grace.mitchell@precisionpaperclip.com>
+Date: October 11, 2017, at 9:00 AM
+
+Hi Grace,
+
+I wanted to update you on the secure project management system setup for the EP-1 project. I’ve implemented the two-factor authentication and segregated access as planned. 
+
+Each team member should have restricted access only to the materials relevant to their roles. Please remind everyone to adhere to the encryption guidelines to maintain confidentiality regarding our proprietary information.
+
+Let me know if you encounter any issues or if further adjustments are needed.
+
+Best,  
+Caleb  
+Caleb Nguyen  
+IT Systems Administrator  
+Precision Paperclip Inc.
