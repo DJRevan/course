@@ -62,21 +62,31 @@ warnings.filterwarnings("ignore")
 import os
 import re
 from datetime import datetime
+from html.parser import HTMLParser
 from pathlib import Path
 
 from dotenv import load_dotenv
+from langchain_chroma import Chroma
+from langchain_core.documents import Document
 from langchain_core.messages import HumanMessage, SystemMessage
-from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
-# %%
+try:
+    from rank_bm25 import BM25Okapi
+except ImportError:  # pragma: no cover
+    BM25Okapi = None
+
+# %this part is the same as before, reaching the LLM model
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 LLM_MODEL = "openai/gpt-5.4-mini"  # latest small OpenAI model, fast; covered by course credits
 TEMPERATURE = 0.2
 TOP_K = 3
 LOG_PATH = Path.cwd() / "checkpoint_2_1_retrieval.log"
+CORPUS_DIR = Path(__file__).resolve().parent / "Wikipedia"
+CHROMA_DIR = Path(__file__).resolve().parent / "chroma_baseline"
 
 # === SET THIS to the scenario you chose in Checkpoint 1.1 ===
-SCENARIO = "wikipedia"   # "research_papers" or "wikipedia"
+SCENARIO = "Wikipedia"   # "research_papers" or "wikipedia"
 
 ANSWER_SYSTEM = (
     "You are a helpful assistant. Answer the question using ONLY the provided "
@@ -84,8 +94,7 @@ ANSWER_SYSTEM = (
     "the answer, say so rather than guessing."
 )
 
-
-# %%
+# this segments checks whether I have the API or not, and if not, it exits with a message telling me to get one.
 def check_api_key() -> str:
     load_dotenv()
     key = os.getenv("OPENROUTER_API_KEY")
@@ -97,7 +106,6 @@ def check_api_key() -> str:
         )
     return key
 
-
 def make_llm() -> ChatOpenAI:
     return ChatOpenAI(
         model=LLM_MODEL,
@@ -105,7 +113,6 @@ def make_llm() -> ChatOpenAI:
         api_key=check_api_key(),
         base_url=OPENROUTER_BASE_URL,
     )
-
 
 def log(label: str, text: str) -> None:
     ts = datetime.now().isoformat(timespec="seconds")
@@ -123,15 +130,63 @@ def log(label: str, text: str) -> None:
 
 
 # %%
-SAMPLE_DOCS = [
-    {"id": "doc1", "text": "Program synthesis: generating programs automatically from a specification, such as input-output examples or a logical formula."},
-    {"id": "doc2", "text": "The sketching approach lets a programmer write a partial program with holes, and a synthesizer fills the holes to satisfy a specification."},
-    {"id": "doc3", "text": "Retrieval-augmented generation grounds a language model's answers in documents retrieved from a corpus, reducing hallucination."},
-    {"id": "doc4", "text": "BM25 is a keyword ranking function that scores documents by term frequency and inverse document frequency."},
-    {"id": "doc5", "text": "Vector search embeds text into dense vectors and ranks documents by cosine similarity to the query embedding."},
-    {"id": "doc6", "text": "Evaluation of retrieval systems measures whether the retrieved documents actually contain the information needed to answer the query."},
-]
-DOC_BY_ID = {d["id"]: d for d in SAMPLE_DOCS}
+class _HTMLTextExtractor(HTMLParser):
+    """Extract readable text from a raw Wikipedia HTML file."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self._parts: list[str] = []
+        self._skip_depth = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() in {"script", "style", "noscript"}:
+            self._skip_depth += 1
+
+    def handle_endtag(self, tag):
+        if tag.lower() in {"script", "style", "noscript"} and self._skip_depth > 0:
+            self._skip_depth -= 1
+
+    def handle_data(self, data):
+        if self._skip_depth > 0:
+            return
+        cleaned = re.sub(r"\s+", " ", data).strip()
+        if cleaned:
+            self._parts.append(cleaned)
+
+    def get_text(self) -> str:
+        return " ".join(self._parts)
+
+
+def extract_html_text(file_path: Path) -> str:
+    with file_path.open("r", encoding="utf-8", errors="replace") as fh:
+        raw_html = fh.read()
+    parser = _HTMLTextExtractor()
+    parser.feed(raw_html)
+    parser.close()
+    return parser.get_text()
+
+
+def load_wikipedia_docs(corpus_dir: Path = CORPUS_DIR) -> list[dict[str, str]]:
+    if not corpus_dir.exists() or not corpus_dir.is_dir():
+        raise FileNotFoundError(f"Wikipedia corpus folder not found: {corpus_dir}")
+
+    docs: list[dict[str, str]] = []
+    for html_file in sorted(corpus_dir.glob("*.html")):
+        text = extract_html_text(html_file)
+        if text.strip():
+            docs.append({
+                "id": html_file.stem,
+                "text": text,
+                "source": html_file.name,
+            })
+
+    if not docs:
+        raise ValueError(f"No HTML documents were found in {corpus_dir}")
+    return docs
+
+
+DOCS = load_wikipedia_docs()
+DOC_BY_ID = {d["id"]: d for d in DOCS}
 
 
 # %% [markdown]
@@ -143,16 +198,64 @@ DOC_BY_ID = {d["id"]: d for d in SAMPLE_DOCS}
 # `answer` function then asks the LLM using only the retrieved documents.
 
 # %%
-def _tokens(text: str) -> set[str]:
-    return set(re.findall(r"[a-z0-9]+", text.lower()))
+def _tokens(text: str) -> list[str]:
+    return re.findall(r"[a-z0-9]+", text.lower())
 
 
-def retrieve(query: str, k: int = TOP_K) -> list[tuple[str, float]]:
-    """Baseline keyword retrieval: Score each doc by shared-word count, return top-k."""
-    q = _tokens(query)
-    scored = [(d["id"], float(len(q & _tokens(d["text"])))) for d in SAMPLE_DOCS]
-    scored.sort(key=lambda x: x[1], reverse=True)
-    return [(doc_id, score) for doc_id, score in scored[:k] if score > 0]
+def bm25_retrieve(query: str, docs: list[dict[str, str]], k: int = TOP_K) -> list[tuple[str, float]]:
+    """Keyword retrieval using BM25 over the Wikipedia HTML corpus."""
+    if BM25Okapi is None:
+        raise RuntimeError("Install rank-bm25 to use the BM25 retriever: pip install rank-bm25")
+
+    corpus = [_tokens(d["text"]) for d in docs]
+    bm25 = BM25Okapi(corpus)
+    scores = bm25.get_scores(_tokens(query))
+    ranked = sorted(enumerate(scores), key=lambda x: x[1], reverse=True)
+    results = []
+    for idx, score in ranked:
+        if score > 0:
+            results.append((docs[idx]["id"], float(score)))
+        if len(results) >= k:
+            break
+    return results
+
+
+def build_vector_db(docs: list[dict[str, str]]) -> Chroma:
+    embeddings = OpenAIEmbeddings(
+        model="openai/text-embedding-3-small",
+        api_key=check_api_key(),
+        base_url=OPENROUTER_BASE_URL,
+    )
+    # Persist the index next to the script so repeated runs reuse it.
+    CHROMA_DIR.mkdir(parents=True, exist_ok=True)
+    return Chroma.from_documents(
+        [Document(page_content=d["text"], metadata={"source": d["source"], "id": d["id"]}) for d in docs],
+        embeddings,
+        persist_directory=str(CHROMA_DIR),
+    )
+
+
+def vector_retrieve(query: str, db: Chroma, k: int = TOP_K) -> list[tuple[str, float]]:
+    """Semantic retrieval using embeddings and cosine similarity."""
+    results = db.similarity_search_with_score(query, k=k)
+    ranked = []
+    for doc, score in results:
+        doc_id = doc.metadata.get("id") or doc.metadata.get("source") or "unknown"
+        ranked.append((doc_id, float(score)))
+    return ranked
+
+
+def retrieve(query: str, docs: list[dict[str, str]] | None = None, db: Chroma | None = None,
+             strategy: str = "bm25", k: int = TOP_K) -> list[tuple[str, float]]:
+    """Dispatch to the BM25 or vector retriever."""
+    docs = docs or DOCS
+    if strategy == "bm25":
+        return bm25_retrieve(query, docs, k=k)
+    if strategy == "vector":
+        if db is None:
+            db = build_vector_db(docs)
+        return vector_retrieve(query, db, k=k)
+    raise ValueError(f"Unknown retrieval strategy: {strategy}")
 
 
 def answer(llm: ChatOpenAI, query: str, doc_ids: list[str]) -> str:
@@ -179,15 +282,23 @@ def answer(llm: ChatOpenAI, query: str, doc_ids: list[str]) -> str:
 
 # %%
 def my_representative_queries() -> list[str]:
-    """Return 3-5 representative queries for YOUR chosen scenario.
+    
+     return [
+        "Which film is described as the turning point that brought Ana de Armas major international recognition?",
 
-    TODO — your turn. See the guidance above. Each item is a query string. Pick
-    queries that a real user of your system would ask and that require different
-    retrieval behaviors (single-doc, multi-doc, paraphrased).
+        "What creature is portrayed as a defining symbol of Tasmania’s natural environment?",
 
-    Delete the raise NotImplementedError line once your code works.
-    """
-    raise NotImplementedError("my_representative_queries() — see the TODO above.")
+        "How does the Uranium article characterize the element’s industrial importance, and what does the Tasmania article "
+        "mention about the region’s mineral deposits?",
+
+        "What thematic parallels or contrasts can be drawn between Clive Barker’s creative style and the narrative motifs "
+        "described in Sailor Moon?",
+
+        "How does Sailor Moon contribute to the broader tradition of magical‑hero storytelling, based on its article?"
+        
+    ]
+
+  #  raise NotImplementedError("my_representative_queries() — see the TODO above.")
 
 
 # %% [markdown]
@@ -202,21 +313,28 @@ def my_representative_queries() -> list[str]:
 def run() -> None:
     llm = make_llm()
     queries = my_representative_queries()
+    vector_db = build_vector_db(DOCS)
     print(f"Checkpoint 2.1 — baseline retrieval  |  scenario: {SCENARIO}\n")
     for i, query in enumerate(queries, 1):
-        hits = retrieve(query, TOP_K)
         print("=" * 72)
         print(f"QUERY {i}: {query}")
-        print(f"  retrieved: {hits}")
-        if not hits:
+
+        bm25_hits = retrieve(query, docs=DOCS, strategy="bm25", k=TOP_K)
+        vector_hits = retrieve(query, docs=DOCS, db=vector_db, strategy="vector", k=TOP_K)
+
+        print(f"  BM25 retrieved: {bm25_hits}")
+        print(f"  Vector retrieved: {vector_hits}")
+
+        best_hits = bm25_hits if bm25_hits else vector_hits
+        if not best_hits:
             print("  (nothing matched — note this in your writeup)")
             continue
-        ans = answer(llm, query, [doc_id for doc_id, _ in hits])
+        ans = answer(llm, query, [doc_id for doc_id, _ in best_hits])
         print(f"  answer: {ans}\n")
-        log(f"QUERY {i}: {query}", f"retrieved={hits}\nanswer={ans}")
+        log(f"QUERY {i}: {query}", f"bm25={bm25_hits}\nvector={vector_hits}\nanswer={ans}")
     print("=" * 72)
     print("Done. Use the retrieved document results above as evidence in your writeup, and "
-          "describe your REAL baseline (over your full corpus) in the submission.")
+          "describe your REAL baseline and vector baseline (over your full corpus) in the submission.")
 
 
 run()
