@@ -76,7 +76,7 @@ TOP_K = 3
 LOG_PATH = Path.cwd() / "checkpoint_2_1_retrieval.log"
 
 # === SET THIS to the scenario you chose in Checkpoint 1.1 ===
-SCENARIO = "research_papers"   # "research_papers" or "wikipedia"
+SCENARIO = "wikipedia"   # "research_papers" or "wikipedia"
 
 ANSWER_SYSTEM = (
     "You are a helpful assistant. Answer the question using ONLY the provided "
