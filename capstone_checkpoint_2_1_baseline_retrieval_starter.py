@@ -236,7 +236,12 @@ def build_vector_db(docs: list[dict[str, str]]) -> Chroma:
 
 
 def vector_retrieve(query: str, db: Chroma, k: int = TOP_K) -> list[tuple[str, float]]:
-    """Semantic retrieval using embeddings and cosine similarity."""
+    """Semantic retrieval using embeddings and cosine similarity.
+
+    Chroma's similarity_search_with_score() returns a distance, where lower values
+    mean more similar. For hybrid weighting we convert that to a similarity score
+    in the same direction as BM25 by using 1.0 - distance.
+    """
     results = db.similarity_search_with_score(query, k=k)
     ranked = []
     for doc, score in results:
@@ -245,9 +250,68 @@ def vector_retrieve(query: str, db: Chroma, k: int = TOP_K) -> list[tuple[str, f
     return ranked
 
 
+def _normalize_scores(scores: dict[str, float]) -> dict[str, float]:
+    """Map raw scores to a 0..1 range so BM25 and vector scores can be combined."""
+    if not scores:
+        return {}
+    min_score = min(scores.values())
+    max_score = max(scores.values())
+    if max_score == min_score:
+        return {doc_id: 1.0 for doc_id in scores}
+    return {
+        doc_id: (value - min_score) / (max_score - min_score)
+        for doc_id, value in scores.items()
+    }
+
+def hybrid_retrieve(query: str, docs: list[dict[str, str]], db: Chroma, k: int = TOP_K,
+                   bm25_weight: float = 0.4, vector_weight: float | None = None) -> list[tuple[str, float]]:
+    """Combine BM25 and vector retrieval scores with explicit weights.
+
+    The two weights should sum to 1.0. If vector_weight is omitted, it is derived as
+    1.0 - bm25_weight so the default behavior stays the same as before.
+
+    Examples:
+    - bm25_weight=0.7, vector_weight=0.3 -> favor keyword matching
+    - bm25_weight=0.4, vector_weight=0.6 -> favor semantic matching
+    """
+    if vector_weight is None:
+        vector_weight = 1.0 - bm25_weight
+
+    if not 0.0 <= bm25_weight <= 1.0:
+        raise ValueError("bm25_weight must be between 0.0 and 1.0")
+    if not 0.0 <= vector_weight <= 1.0:
+        raise ValueError("vector_weight must be between 0.0 and 1.0")
+    if abs((bm25_weight + vector_weight) - 1.0) > 1e-9:
+        raise ValueError("bm25_weight and vector_weight must sum to 1.0")
+
+    bm25_hits = bm25_retrieve(query, docs, k=max(k * 3, 10))
+    vector_hits = vector_retrieve(query, db, k=max(k * 3, 10))
+
+    bm25_map = {doc_id: score for doc_id, score in bm25_hits}
+    vector_map = {doc_id: max(0.0, 1.0 - score) for doc_id, score in vector_hits}
+
+    all_ids = set(bm25_map) | set(vector_map)
+    if not all_ids:
+        return []
+
+    bm25_norm = _normalize_scores(bm25_map)
+    vector_norm = _normalize_scores(vector_map)
+
+    combined = []
+    for doc_id in all_ids:
+        score = (
+            bm25_weight * bm25_norm.get(doc_id, 0.0)
+            + vector_weight * vector_norm.get(doc_id, 0.0)
+        )
+        combined.append((doc_id, float(score)))
+
+    return sorted(combined, key=lambda item: item[1], reverse=True)[:k]
+
+
 def retrieve(query: str, docs: list[dict[str, str]] | None = None, db: Chroma | None = None,
-             strategy: str = "bm25", k: int = TOP_K) -> list[tuple[str, float]]:
-    """Dispatch to the BM25 or vector retriever."""
+             strategy: str = "bm25", k: int = TOP_K,
+             bm25_weight: float = 0.4, vector_weight: float | None = None) -> list[tuple[str, float]]:
+    """Dispatch to the BM25, vector, or hybrid retriever."""
     docs = docs or DOCS
     if strategy == "bm25":
         return bm25_retrieve(query, docs, k=k)
@@ -255,6 +319,11 @@ def retrieve(query: str, docs: list[dict[str, str]] | None = None, db: Chroma | 
         if db is None:
             db = build_vector_db(docs)
         return vector_retrieve(query, db, k=k)
+    if strategy == "hybrid":
+        if db is None:
+            db = build_vector_db(docs)
+        return hybrid_retrieve(query, docs, db=db, k=k,
+                               bm25_weight=bm25_weight, vector_weight=vector_weight)
     raise ValueError(f"Unknown retrieval strategy: {strategy}")
 
 
@@ -285,17 +354,13 @@ def my_representative_queries() -> list[str]:
     
      return [
         "Which film is described as the turning point that brought Ana de Armas major international recognition?",
-
         "What creature is portrayed as a defining symbol of Tasmania’s natural environment?",
-
         "How does the Uranium article characterize the element’s industrial importance, and what does the Tasmania article "
         "mention about the region’s mineral deposits?",
-
         "What thematic parallels or contrasts can be drawn between Clive Barker’s creative style and the narrative motifs "
         "described in Sailor Moon?",
-
         "How does Sailor Moon contribute to the broader tradition of magical‑hero storytelling, based on its article?"
-        
+       
     ]
 
   #  raise NotImplementedError("my_representative_queries() — see the TODO above.")
@@ -321,17 +386,21 @@ def run() -> None:
 
         bm25_hits = retrieve(query, docs=DOCS, strategy="bm25", k=TOP_K)
         vector_hits = retrieve(query, docs=DOCS, db=vector_db, strategy="vector", k=TOP_K)
+        hybrid_hits = retrieve(query, docs=DOCS, db=vector_db, strategy="hybrid", k=TOP_K,
+                              bm25_weight=0.4)
 
         print(f"  BM25 retrieved: {bm25_hits}")
         print(f"  Vector retrieved: {vector_hits}")
+        print(f"  Hybrid retrieved: {hybrid_hits}")
 
-        best_hits = bm25_hits if bm25_hits else vector_hits
+        best_hits = hybrid_hits if hybrid_hits else (bm25_hits if bm25_hits else vector_hits)
         if not best_hits:
             print("  (nothing matched — note this in your writeup)")
             continue
         ans = answer(llm, query, [doc_id for doc_id, _ in best_hits])
         print(f"  answer: {ans}\n")
-        log(f"QUERY {i}: {query}", f"bm25={bm25_hits}\nvector={vector_hits}\nanswer={ans}")
+        log(f"QUERY {i}: {query}",
+            f"bm25={bm25_hits}\nvector={vector_hits}\nhybrid={hybrid_hits}\nanswer={ans}")
     print("=" * 72)
     print("Done. Use the retrieved document results above as evidence in your writeup, and "
           "describe your REAL baseline and vector baseline (over your full corpus) in the submission.")
