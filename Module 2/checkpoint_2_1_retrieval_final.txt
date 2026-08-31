@@ -1,0 +1,40 @@
+[2026-08-31T20:37:23] QUERY 1: Which film is described as the turning point that brought Ana de Armas major international recognition?
+bm25=[('Ana_de_Armas', 50.285353623531435), ('Bella_La_Rosa', 42.45710447893554), ('Tenerife', 41.85512832654643)]
+vector=[('Ana_de_Armas', 0.8099197149276733), ('Ana_de_Armas', 0.8100346922874451), ('Michelle_Williams_(actress)', 1.0505599975585938)]
+hybrid=[('Ana_de_Armas', 1.0), ('Bella_La_Rosa', 0.2633348708618931), ('Tenerife', 0.23744601942925217)]
+answer=The film described as her breakthrough and “the turning point” for major recognition was **_Knives Out_ (2019)**.
+
+The document says her role in it “**was widely praised and marked a breakthrough for the actress**.”
+------------------------------------------------------------------------
+[2026-08-31T20:38:18] QUERY 2: What creature is portrayed as a defining symbol of Tasmania’s natural environment?
+bm25=[('Tasmania', 41.007766366756805), ('Leviathan_(Hobbes_book)', 36.821469015546526), ('Victoria_(state)', 35.679252977604975)]
+vector=[('Tasmania', 0.831256091594696), ('Tasmania', 0.8313022255897522), ('Procellariiformes', 1.2820968627929688)]
+hybrid=[('Tasmania', 1.0), ('Leviathan_(Hobbes_book)', 0.24028610786666615), ('Victoria_(state)', 0.14213947799425958)]
+answer=The creature portrayed as a defining symbol of Tasmania’s natural environment is the **Tasmanian devil**. The Tasmania document lists it as the state’s mammal symbol: **“Mammal Tasmanian devil (Sarcophilus harrisii)”**.
+------------------------------------------------------------------------
+[2026-08-31T20:39:16] QUERY 3: How does the Uranium article characterize the element’s industrial importance, and what does the Tasmania article mention about the region’s mineral deposits?
+bm25=[('Uranium', 72.77417172041791), ('Silver', 71.95650912890099), ('Gold', 71.44056253575883)]
+vector=[('Uranium', 0.8800597786903381), ('Uranium', 0.8800668120384216), ('Tasmania', 1.0580644607543945)]
+hybrid=[('Uranium', 1.0), ('Silver', 0.5319231840817281), ('Gold', 0.48896658852580754)]
+answer=The Uranium article says uranium has major industrial importance because “many contemporary uses of uranium exploit its unique nuclear properties,” and that “the main use of uranium in the civilian sector is to fuel nuclear power plants.” It also notes military uses such as “high-density penetrators.”
+
+I can’t answer the part about the Tasmania article, because no Tasmania document was provided.
+------------------------------------------------------------------------
+[2026-08-31T20:40:14] QUERY 4: What thematic parallels or contrasts can be drawn between Clive Barker’s creative style and the narrative motifs described in Sailor Moon?
+bm25=[('Harry_Potter', 58.23288345031521), ('2012_Summer_Olympics_opening_ceremony', 53.64953980280484), ('Sailor_Moon', 52.161384340282964)]
+vector=[('Sailor_Moon', 1.1166859865188599), ('Sailor_Moon', 1.1168514490127563), ('Clive_Barker', 1.1786762475967407)]
+hybrid=[('Harry_Potter', 0.6), ('Sailor_Moon', 0.5773333487292004), ('Naoko_Takeuchi', 0.5605341893494189)]
+answer=The documents do not provide enough information to make a supported comparison between Clive Barker’s creative style and the narrative motifs in *Sailor Moon*.
+
+What the *Sailor Moon* document does say is that the series includes motifs such as “astronomy, astrology, gemology, Greco-Roman mythology, Japanese elemental themes, teenage fashion trends, and schoolgirl antics,” and that it blends “the popular magical girl genre and the Super Sentai series.” It also emphasizes themes of “friendship,” “liberation,” and “transformation.”
+
+However, the documents do not describe Clive Barker’s creative style in any detail, so I can’t responsibly draw thematic parallels or contrasts from the provided material.
+------------------------------------------------------------------------
+[2026-08-31T20:41:12] QUERY 5: How does Sailor Moon contribute to the broader tradition of magical‑hero storytelling, based on its article?
+bm25=[('Sailor_Moon', 53.37374025963986), ('Naoko_Takeuchi', 50.424382076077706), ('The_Dragonfly_Sea', 47.81776968115201)]
+vector=[('Sailor_Moon', 0.8522536754608154), ('Sailor_Moon', 0.8523125052452087), ('A_Wizard_of_Earthsea', 1.2079472541809082)]
+hybrid=[('Sailor_Moon', 1.0), ('Naoko_Takeuchi', 0.430741999057444), ('The_Dragonfly_Sea', 0.2811535205687597)]
+answer=According to the article, *Sailor Moon* helped reshape and strengthen magical-hero storytelling by blending familiar heroic-team and transformation elements into the magical girl genre. It says the series is “a fusion of the popular magical girl genre and the Super Sentai series,” and that it uses a team of heroines who “transform into” heroes to battle evil.
+
+The article also says it was “widely credited with reinvigorating the magical girl genre,” and that after its success “many similar magical girl series” appeared. So, based on the article, *Sailor Moon* contributes by popularizing a team-based, transformation-driven model of magical-hero storytelling and by helping inspire later works in the genre.
+------------------------------------------------------------------------

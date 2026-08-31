@@ -1,0 +1,29 @@
+[2026-08-30T22:17:02] QUERY 1: Which film is described as the turning point that brought Ana de Armas major international recognition?
+retrieved=[('doc4', 2.0), ('doc1', 1.0), ('doc2', 1.0)]
+ answer=The documents do not contain any information about Ana de Armas or a film that was a turning point for her international recognition, so I can’t determine the answer from the provided documents.
+------------------------------------------------------------------------
+[2026-08-30T22:17:03] QUERY 2: What creature is portrayed as a defining symbol of Tasmania’s natural environment?
+retrieved=[('doc1', 2.0), ('doc3', 2.0), ('doc4', 2.0)]
+ answer=The documents do not contain the answer.
+------------------------------------------------------------------------
+[2026-08-30T22:17:04] QUERY 3: How does the Uranium article characterize the element’s industrial importance, and what does the Tasmania article mention about the region’s mineral deposits?
+retrieved=[('doc2', 2.0), ('doc5', 2.0), ('doc3', 1.0)]
+ answer=I can’t answer that from the provided documents.
+
+The documents only discuss:
+- sketching and synthesis ([doc2]),
+- vector search and cosine similarity ([doc5]),
+- retrieval-augmented generation ([doc3]).
+
+They do not contain anything about an “Uranium” article or a “Tasmania” article, so I’d be guessing if I tried to answer.
+------------------------------------------------------------------------
+[2026-08-30T22:17:06] QUERY 4: What thematic parallels or contrasts can be drawn between Clive Barker’s creative style and the narrative motifs described in Sailor Moon?
+retrieved=[('doc2', 2.0), ('doc3', 2.0), ('doc5', 2.0)]
+ answer=The provided documents do not contain information about Clive Barker’s creative style or the narrative motifs in Sailor Moon, so I can’t draw a grounded comparison from them.
+
+What the documents do say is unrelated: for example, “retrieval-augmented generation grounds a language model's answers in documents retrieved from a corpus,” and “vector search embeds text into dense vectors,” but they do not mention either Clive Barker or Sailor Moon.
+------------------------------------------------------------------------
+[2026-08-30T22:17:07] QUERY 5: How does Sailor Moon contribute to the broader tradition of magical‑hero storytelling, based on its article?
+retrieved=[('doc6', 3.0), ('doc2', 2.0), ('doc5', 2.0)]
+ answer=I’m sorry, but the provided documents do not contain any information about Sailor Moon or its article, so I can’t answer that from the documents alone.
+------------------------------------------------------------------------
