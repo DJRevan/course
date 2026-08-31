@@ -174,7 +174,7 @@ EXAMPLE_PROMPTS = {
 #
 # Return a list of prompt strings. Look at a few real documents in `Labs/CapstoneDatasets/` first so you can check the answers against ground truth.
 
-# %%
+# Questions
 def my_probe_prompts() -> list[str]:
     return [
         "Using only retrieved Wikipedia content, identify the specific year in which Akira Toriyama first "
