@@ -1,6 +1,6 @@
-r"""Capstone Checkpoint 2.1 — Retrieval Strategy Design and Baseline Implementation (starter).
-Jupytext-style cell markers (# %% / # %% [markdown]) — runnable as a
-plain script AND openable as cells in VS Code / PyCharm / Jupytext.
+r"""This file is the continuation of "Capstone Checkpoint 2.1 — Retrieval Strategy Design and Baseline Implementation (starter)".
+
+
 """
 
 # %% [markdown]
@@ -81,8 +81,8 @@ OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 LLM_MODEL = "openai/gpt-5.4-mini"  # latest small OpenAI model, fast; covered by course credits
 TEMPERATURE = 0.2
 TOP_K = 3
-LOG_PATH = Path.cwd() / "checkpoint_2_1_retrieval.log"
-CORPUS_DIR = Path(__file__).resolve().parent / "Wikipedia"
+LOG_PATH = Path.cwd() / "checkpoint_3_1_retrieval.log"
+CORPUS_DIR = Path(__file__).resolve().parent / "Wikipedia_test"
 CHROMA_DIR = Path(__file__).resolve().parent / "chroma_baseline"
 
 # === SET THIS to the scenario you chose in Checkpoint 1.1 ===
@@ -93,6 +93,129 @@ ANSWER_SYSTEM = (
     "documents, and quote from them where you can. If the documents do not contain "
     "the answer, say so rather than guessing."
 )
+# judge system addition: it will check if the answer satisfies the grading notes, and return pass or fail.
+
+JUDGE_SYSTEM = (
+    "You are a strict evaluator. You are given an ANSWER and GRADING NOTES. "
+    "Reply with exactly one word: pass if the answer satisfies the grading notes, "
+    "otherwise reply fail."
+)
+
+# the function itself
+def judge(llm: ChatOpenAI, answer_text: str, grading_notes: str) -> str:
+    messages = [
+        SystemMessage(content=JUDGE_SYSTEM),
+        HumanMessage(
+            content=(
+                f"ANSWER:\n{answer_text}\n\n"
+                f"GRADING NOTES:\n{grading_notes}\n\n"
+                "Verdict:"
+            )
+        ),
+    ]
+
+    verdict = llm.invoke(messages).content.strip().lower()
+    return "pass" if verdict == "pass" else "fail"
+
+# the questions are related to the ones defined in checkpoint 2.1, and the grading notes are the criteria for passing or failing the answer.
+def my_eval_set() -> list[dict[str, str]]:
+    return [
+        {
+            "question": (
+                "Which film brought Ana de Armas major international recognition?"
+            ),
+            "grading_notes": (
+                "The answer must identify the film described as the turning point "
+                "for Ana de Armas's international recognition."
+            ),
+        },
+        {
+            "question": (
+                "What creature is described as a defining symbol of Tasmania's "
+                "natural environment?"
+            ),
+            "grading_notes": (
+                "The answer must identify the creature associated with Tasmania's "
+                "natural environment."
+            ),
+        },
+        {
+            "question": (
+                "How does the Uranium article describe the element's industrial "
+                "importance?"
+            ),
+            "grading_notes": (
+                "The answer must explain that uranium has important industrial or "
+                "energy-related uses."
+            ),
+        },
+        {
+            "question": (
+                "How does Sailor Moon contribute to magical-hero storytelling?"
+            ),
+            "grading_notes": (
+                "The answer must describe Sailor Moon's contribution to the "
+                "magical-hero or magical-girl tradition."
+            ),
+        },
+        {
+            "question": "What is the connection between two unrelated articles?",
+            "grading_notes": (
+                "The answer should state that the provided documents do not contain "
+                "enough information to establish the connection."
+            ),
+        },
+    ]
+
+def run_evaluation() -> None:
+    llm = make_llm()
+    eval_set = my_eval_set()
+    vector_db = build_vector_db(DOCS)
+    passes = 0
+
+    print(f"Checkpoint 3.1 evaluation | scenario: {SCENARIO}\n")
+
+    for i, item in enumerate(eval_set, 1):
+        hits = retrieve(
+            item["question"],
+            docs=DOCS,
+            db=vector_db,
+            strategy="hybrid",
+            k=TOP_K,
+            bm25_weight=0.4,
+        )
+
+        if hits:
+            doc_ids = [doc_id for doc_id, _ in hits]
+            generated_answer = answer(llm, item["question"], doc_ids)
+        else:
+            generated_answer = "(no documents retrieved)"
+
+        verdict = judge(
+            llm,
+            generated_answer,
+            item["grading_notes"],
+        )
+
+        passes += verdict == "pass"
+
+        print("=" * 72)
+        print(f"Q{i}: {item['question']}")
+        print(f"Retrieved: {hits}")
+        print(f"Verdict: {verdict.upper()}")
+        print(f"Answer: {generated_answer}")
+
+        log(
+            f"Q{i}: {item['question']}",
+            f"retrieved={hits}\n"
+            f"verdict={verdict}\n"
+            f"answer={generated_answer}",
+        )
+
+    print("=" * 72)
+    print(f"Baseline pass rate: {passes}/{len(eval_set)}")
+
+
 
 # this segments checks whether I have the API or not, and if not, it exits with a message telling me to get one.
 def check_api_key() -> str:
@@ -379,7 +502,7 @@ def run() -> None:
     llm = make_llm()
     queries = my_representative_queries()
     vector_db = build_vector_db(DOCS)
-    print(f"Checkpoint 2.1 — baseline retrieval  |  scenario: {SCENARIO}\n")
+    print(f"Checkpoint 3.1 — baseline retrieval  |  scenario: {SCENARIO}\n")
     for i, query in enumerate(queries, 1):
         print("=" * 72)
         print(f"QUERY {i}: {query}")
@@ -406,15 +529,26 @@ def run() -> None:
           "describe your REAL baseline and vector baseline (over your full corpus) in the submission.")
 
 
-run()
+#run()
+
+if __name__ == "__main__":
+    run_evaluation()
 
 # %% [markdown]
-# ## Step 5 — Your written submission (the graded deliverable)
+# ## Step 6 — Your written responses in the Capstone Checkpoint 3.1 worksheet
 #
-# Use your completed retrieval implementation and test results to complete the Capstone Checkpoint 2.1
-# worksheet. In the worksheet, you will document your retrieval approach, provide evidence that your 
-# system is functioning, include 3–5 representative queries and retrieved results, and reflect on where
-# your approach performs well and where it struggles.  
- 
-# Save your completed Python file in the appropriate checkpoint folder in your GitHub repository. 
-# Upload the completed worksheet only to the learning platform as your graded submission.
+# Complete the Capstone Checkpoint 3.1 worksheet using evidence from your capstone evaluation.
+# Address the seven sections: system overview, evaluation design, testing approach, baseline results, 
+# performance analysis, evaluation framework validation, and reflection and next steps.
+#
+# 1. **System overview** — your scenario and your 2.1 baseline retriever.
+# 2. **Evaluation design** — your criteria and metric (what "correct" means; how the
+#    judge decides pass/fail; any thresholds).
+# 3. **Testing approach** — how you built your evaluation set and ran it.
+# 4. **Baseline results** — the pass/fail outcomes and where the system falls short.
+# 5. **Performance analysis** — what the results reveal about strengths, weaknesses,
+#    and failure modes.
+# 6. **Evaluation framework validation** — show your framework detects a degraded or
+#    manipulated output (use the Step 5 result, or your own).
+# 7. **Reflection and next steps** — limitations of your evaluation and what you'll
+#    improve (this motivates the advanced retrieval in Checkpoint 4.1).
