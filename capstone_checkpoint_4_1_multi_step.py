@@ -1,57 +1,7 @@
-r"""This file is the continuation of "Capstone Checkpoint 2.1 — Retrieval Strategy Design and Baseline Implementation (starter)".
+r"""This file is the continuation of "Capstone Checkpoint 3.1".
 
 
 """
-
-# %% [markdown]
-# # Capstone Checkpoint 2.1 — Retrieval Strategy Design and Baseline Implementation
-# **MO-LLM Module 2 / Required Capstone Checkpoint (120 minutes)**
-#
-# ## What this checkpoint is
-#
-# In Checkpoint 1.1, you showed that a plain LLM can't reliably answer questions about
-# your corpus. Now, you will **add retrieval**: Design a retrieval strategy for your scenario
-# and build a **baseline retrieval system** that finds the most relevant documents for
-# a query, so the model can ground its answers in them.
-#
-# This mirrors the Module 2 labs — keyword (BM25), vector (semantic), and hybrid
-# retrieval — applied to your own capstone corpus. The graded deliverable is the completed 
-# Capstone Checkpoint 2.1 worksheet, which includes your written responses and evidence of your 
-# retrieval system implementation and testing. This script provides a small working example of 
-# baseline retrieval. Use it to understand the retrieval workflow, then adapt the code to implement 
-# and test a baseline retriever using your selected capstone dataset.
-#
-# **Learning outcomes (Module 2):**
-# 1. Design a retrieval strategy appropriate for a given dataset and query type.
-# 2. Implement and test a baseline retrieval system using structured and/or semantic
-#    approaches.
-
-# %% [markdown]
-# ## Step 1 — Keep your capstone scenario
-#
-# Use the **same scenario** you chose in Checkpoint 1.1.
-#
-# | Scenario | Corpus | Retrieval considerations |
-# |---|---|---|
-# | **Research Paper Navigator** | ~150 research-paper PDFs (`Labs/CapstoneDatasets/ResearchPapers/`) | long documents; you'll likely chunk them; questions often name a specific paper or compare papers. |
-# | **Wikipedia Retrieval Engine** | ~2,400 Wikipedia HTML articles (`Labs/CapstoneDatasets/Wikipedia/`) | many short-to-medium articles; questions name a figure/place or span several articles. |
-#
-# A good baseline is keyword (BM25), semantic (embeddings + vector search), or a
-# hybrid of both — exactly what you built in Labs 1.2–2.2.
-
-# %% [markdown]
-# ## Setup (~5 min)
-#
-# 1. **Python 3.11 or 3.12**
-# 2. `pip install langchain-openai langchain-core python-dotenv`
-# 3. Use the OpenRouter API key provided for this program. This checkpoint uses
-#  the `openai/gpt-5.4-mini` model, with usage covered by the course credits. (this uses the paid gpt-5.4-mini chat model — covered by your course credits — and a keyword retriever, no embeddings).
-# 4. Create a `.env` file next to this script: `OPENROUTER_API_KEY=sk-or-v1-...`
-#
-# This runs on a tiny built-in sample corpus, so you do not need to prepare your own
-# dataset. It still requires an OpenRouter API key to run the LLM (it is not offline or
-# free of API calls). Your real baseline (over your full corpus) is what you describe in
-# the writeup.
 
 # %%
 from __future__ import annotations
@@ -80,7 +30,8 @@ except ImportError:  # pragma: no cover
 
 # %this part is the same as before, reaching the LLM model
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-LLM_MODEL = "openai/gpt-5.4-mini"  # latest small OpenAI model, fast; covered by course credits
+LLM_MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-4o-mini")
+JUDGE_MODEL = os.getenv("OPENROUTER_JUDGE_MODEL", LLM_MODEL)
 TEMPERATURE = 0.2
 TOP_K = 3
 LOG_PATH = Path.cwd() / "checkpoint_4_1_retrieval.log"
@@ -106,7 +57,7 @@ JUDGE_SYSTEM = (
 # the function itself
 def make_ragas_judge():
     return llm_factory(
-        LLM_MODEL,
+        JUDGE_MODEL,
         client=OpenAI(api_key=check_api_key(), base_url=OPENROUTER_BASE_URL),
     )
 
@@ -184,7 +135,7 @@ def run_evaluation() -> None:
     vector_db = build_vector_db(DOCS)
     passes = 0
 
-    print(f"Checkpoint 3.1 evaluation | scenario: {SCENARIO}\n")
+    print(f"Checkpoint 4.1 evaluation | scenario: {SCENARIO}\n")
 
     for i, item in enumerate(eval_set, 1):
         hits = retrieve(
@@ -293,9 +244,21 @@ DOC_BY_ID = {d["id"]: d for d in DOCS}
 
 
 # %%
-def _tokens(text: str) -> list[str]:
-    return re.findall(r"[a-z0-9]+", text.lower())
+_STOPWORDS = {
+    "a", "an", "and", "are", "as", "at", "be", "been", "but", "by",
+    "for", "from", "how", "in", "into", "is", "it", "its", "of", "on",
+    "or", "that", "the", "their", "these", "this", "those", "to", "was",
+    "were", "what", "when", "where", "which", "who", "with", "between",
+    "does", "do", "not", "about", "two",
+}
 
+
+def _tokens(text: str) -> list[str]:
+    return [
+        token
+        for token in re.findall(r"[a-z0-9]+", text.lower())
+        if token not in _STOPWORDS
+    ]
 
 def bm25_retrieve(query: str, docs: list[dict[str, str]], k: int = TOP_K) -> list[tuple[str, float]]:
     """Keyword retrieval using BM25 over the Wikipedia text corpus."""
@@ -321,8 +284,14 @@ def build_vector_db(docs: list[dict[str, str]]) -> Chroma:
         api_key=check_api_key(),
         base_url=OPENROUTER_BASE_URL,
     )
-    # Persist the index next to the script so repeated runs reuse it.
+    # Reuse the persisted index so repeated evaluations do not re-embed the corpus.
     CHROMA_DIR.mkdir(parents=True, exist_ok=True)
+    if (CHROMA_DIR / "chroma.sqlite3").exists():
+        return Chroma(
+            persist_directory=str(CHROMA_DIR),
+            embedding_function=embeddings,
+        )
+
     return Chroma.from_documents(
         [Document(page_content=d["text"], metadata={"source": d["source"], "id": d["id"]}) for d in docs],
         embeddings,
@@ -430,61 +399,35 @@ def answer(llm: ChatOpenAI, query: str, doc_ids: list[str]) -> str:
     ]
     return llm.invoke(messages).content
 
+# .\.venv\Scripts\python.exe .\capstone_checkpoint_4_1_multi_step.py --offline
+
+def run_offline_check() -> None:
+    """Check local corpus loading and BM25 retrieval without API calls."""
+    eval_set = my_eval_set()
+    print(f"Offline check | loaded {len(DOCS)} documents from {CORPUS_DIR}")
+
+    for i, item in enumerate(eval_set, 1):
+        hits = retrieve(
+            item["question"],
+            docs=DOCS,
+            strategy="bm25",
+            k=TOP_K,
+        )
+        print(f"Q{i}: {item['question']}")
+        print(f"  BM25 hits: {hits}")
+
+    print("Offline check passed: corpus loading and BM25 retrieval work.")
 
 
+def main() -> None:
+    if "--offline" in os.sys.argv:
+        run_offline_check()
+    else:
+        run_evaluation()
 
-# %%
-def my_representative_queries() -> list[str]:
-    
-     return [
-        "Which film is described as the turning point that brought Ana de Armas major international recognition?",
-        "What creature is portrayed as a defining symbol of Tasmania’s natural environment?",
-        "How does the Uranium article characterize the element’s industrial importance, and what does the Tasmania article "
-        "mention about the region’s mineral deposits?",
-        "What thematic parallels or contrasts can be drawn between Clive Barker’s creative style and the narrative motifs "
-        "described in Sailor Moon?",
-        "How does Sailor Moon contribute to the broader tradition of magical‑hero storytelling, based on its article?"
-       
-    ]
-
-  #  raise NotImplementedError("my_representative_queries() — see the TODO above.")
-
-# %%
-def run() -> None:
-    llm = make_llm()
-    queries = my_representative_queries()
-    vector_db = build_vector_db(DOCS)
-    print(f"Checkpoint 3.1 — baseline retrieval  |  scenario: {SCENARIO}\n")
-    for i, query in enumerate(queries, 1):
-        print("=" * 72)
-        print(f"QUERY {i}: {query}")
-
-        bm25_hits = retrieve(query, docs=DOCS, strategy="bm25", k=TOP_K)
-        vector_hits = retrieve(query, docs=DOCS, db=vector_db, strategy="vector", k=TOP_K)
-        hybrid_hits = retrieve(query, docs=DOCS, db=vector_db, strategy="hybrid", k=TOP_K,
-                              bm25_weight=0.4)
-
-        print(f"  BM25 retrieved: {bm25_hits}")
-        print(f"  Vector retrieved: {vector_hits}")
-        print(f"  Hybrid retrieved: {hybrid_hits}")
-
-        best_hits = hybrid_hits if hybrid_hits else (bm25_hits if bm25_hits else vector_hits)
-        if not best_hits:
-            print("  (nothing matched — note this in your writeup)")
-            continue
-        ans = answer(llm, query, [doc_id for doc_id, _ in best_hits])
-        print(f"  answer: {ans}\n")
-        log(f"QUERY {i}: {query}",
-            f"bm25={bm25_hits}\nvector={vector_hits}\nhybrid={hybrid_hits}\nanswer={ans}")
-    print("=" * 72)
-    print("Done. Use the retrieved document results above as evidence in your writeup, and "
-          "describe your REAL baseline and vector baseline (over your full corpus) in the submission.")
-
-
-#run()
 
 if __name__ == "__main__":
-    run_evaluation()
+    main()
 
 
 
