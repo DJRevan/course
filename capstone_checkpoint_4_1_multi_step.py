@@ -34,6 +34,7 @@ LLM_MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-4o-mini")
 JUDGE_MODEL = os.getenv("OPENROUTER_JUDGE_MODEL", LLM_MODEL)
 TEMPERATURE = 0.2
 TOP_K = 3
+HOP_CANDIDATES = 5
 LOG_PATH = Path.cwd() / "checkpoint_4_1_retrieval.log"
 CORPUS_DIR = Path(__file__).resolve().parent / "Wikipedia_text_test"
 CHROMA_DIR = Path(__file__).resolve().parent / "chroma_baseline"
@@ -142,7 +143,7 @@ def run_evaluation() -> None:
             item["question"],
             docs=DOCS,
             db=vector_db,
-            strategy="hybrid",
+            strategy="multi_hop",
             k=TOP_K,
             bm25_weight=0.4,
         )
@@ -372,6 +373,60 @@ def hybrid_retrieve(query: str, docs: list[dict[str, str]], db: Chroma, k: int =
     return sorted(combined, key=lambda item: item[1], reverse=True)[:k]
 
 
+def _expand_query(query: str, seed_ids: list[str], docs_by_id: dict[str, dict[str, str]]) -> str:
+    """Build a second-hop query from salient terms in first-hop documents."""
+    query_terms = set(_tokens(query))
+    term_counts: dict[str, int] = {}
+    for doc_id in seed_ids:
+        text = docs_by_id[doc_id]["text"]
+        for token in _tokens(text):
+            if token not in query_terms and len(token) > 3:
+                term_counts[token] = term_counts.get(token, 0) + 1
+
+    salient_terms = sorted(
+        term_counts,
+        key=lambda token: (-term_counts[token], token),
+    )[:8]
+    return f"{query} {' '.join(salient_terms)}".strip()
+
+
+def multi_hop_retrieve(
+    query: str,
+    docs: list[dict[str, str]],
+    db: Chroma | None = None,
+    k: int = TOP_K,
+    bm25_weight: float = 0.4,
+) -> list[tuple[str, float]]:
+    """Retrieve seed documents, expand the query, then retrieve a second hop."""
+    docs_by_id = {doc["id"]: doc for doc in docs}
+    first_hop = (
+        hybrid_retrieve(query, docs, db, k=HOP_CANDIDATES, bm25_weight=bm25_weight)
+        if db is not None
+        else bm25_retrieve(query, docs, k=HOP_CANDIDATES)
+    )
+    if not first_hop:
+        return []
+
+    expanded_query = _expand_query(
+        query,
+        [doc_id for doc_id, _ in first_hop],
+        docs_by_id,
+    )
+    second_hop = (
+        hybrid_retrieve(expanded_query, docs, db, k=HOP_CANDIDATES, bm25_weight=bm25_weight)
+        if db is not None
+        else bm25_retrieve(expanded_query, docs, k=HOP_CANDIDATES)
+    )
+
+    scores: dict[str, float] = {}
+    for rank, (doc_id, score) in enumerate(first_hop):
+        scores[doc_id] = scores.get(doc_id, 0.0) + 1.0 / (rank + 1)
+    for rank, (doc_id, score) in enumerate(second_hop):
+        scores[doc_id] = scores.get(doc_id, 0.0) + 0.5 / (rank + 1)
+
+    return sorted(scores.items(), key=lambda item: item[1], reverse=True)[:k]
+
+
 def retrieve(query: str, docs: list[dict[str, str]] | None = None, db: Chroma | None = None,
              strategy: str = "bm25", k: int = TOP_K,
              bm25_weight: float = 0.4, vector_weight: float | None = None) -> list[tuple[str, float]]:
@@ -388,6 +443,14 @@ def retrieve(query: str, docs: list[dict[str, str]] | None = None, db: Chroma | 
             db = build_vector_db(docs)
         return hybrid_retrieve(query, docs, db=db, k=k,
                                bm25_weight=bm25_weight, vector_weight=vector_weight)
+    if strategy == "multi_hop":
+        return multi_hop_retrieve(
+            query,
+            docs,
+            db=db,
+            k=k,
+            bm25_weight=bm25_weight,
+        )
     raise ValueError(f"Unknown retrieval strategy: {strategy}")
 
 
@@ -410,11 +473,11 @@ def run_offline_check() -> None:
         hits = retrieve(
             item["question"],
             docs=DOCS,
-            strategy="bm25",
+            strategy="multi_hop",
             k=TOP_K,
         )
         print(f"Q{i}: {item['question']}")
-        print(f"  BM25 hits: {hits}")
+        print(f"  Multi-hop hits: {hits}")
 
     print("Offline check passed: corpus loading and BM25 retrieval work.")
 
