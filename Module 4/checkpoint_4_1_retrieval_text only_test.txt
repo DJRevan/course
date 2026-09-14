@@ -1,0 +1,10 @@
+[2026-09-13T19:00:29] Q1: Which film brought Ana de Armas major international recognition?
+retrieved=[('Ana_de_Armas', 1.0), ('Ryan_Gosling', 0.18733113050132655), ('Tenerife', 0.18461163737610867)]
+verdict=pass
+answer=Ana de Armas “rose to prominence” with her role in **_Blade Runner 2049_** and later **_Knives Out_**. The document says:
+
+- “**De Armas rose to prominence** for her roles as the holographic AI Joi in the science fiction film _**Blade Runner 2049**_ (2017) and nurse Marta Cabrera in the mystery film _**Knives Out**_ (2019)”
+- and also that her role in _Knives Out_ “**was widely praised and marked a breakthrough for the actress**.”
+
+So, if you mean the film that brought her major international recognition, the best answer from the document is **_Blade Runner 2049_**, with **_Knives Out_** also described as a breakthrough.
+------------------------------------------------------------------------
