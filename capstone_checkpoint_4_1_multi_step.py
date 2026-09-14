@@ -35,6 +35,7 @@ JUDGE_MODEL = os.getenv("OPENROUTER_JUDGE_MODEL", LLM_MODEL)
 TEMPERATURE = 0.2
 TOP_K = 3
 HOP_CANDIDATES = 5
+MAX_CONTEXT_CHARS_PER_DOC = 12000
 LOG_PATH = Path.cwd() / "checkpoint_4_1_retrieval.log"
 CORPUS_DIR = Path(__file__).resolve().parent / "Wikipedia_text_test"
 CHROMA_DIR = Path(__file__).resolve().parent / "chroma_baseline"
@@ -82,16 +83,18 @@ correctness_metric = DiscreteMetric(
 # the questions are related to the ones defined in checkpoint 2.1, and the grading notes are the criteria for passing or failing the answer.
 def my_eval_set() -> list[dict[str, str]]:
     return [
-        {
-            "question": (
-                "Which film brought Ana de Armas major international recognition?"
+        { # this one puts the system to the extreme as it requires a multi-step reasoning to get the answer, and the grading notes are very specific about how to get the answer.
+            
+        "question": (
+            "The actress whose international breakthrough came from Blade Runner 2049 "
+               "shares what nationality with individuals born in the same country?"
             ),
             "grading_notes": (
-                "The answer must identify the film described as the turning point "
-                "for Ana de Armas's international recognition."
-            ),
+                "The answer must identify Ana de Armas and correctly determine her nationality "
+                "through a retrieval chain rather than a direct lookup."
+            )
         },
-        {
+        { #this is a basic question, needed for straightforward retrieval, and the grading notes are very specific about how to get the answer.
             "question": (
                 "What creature is described as a defining symbol of Tasmania's "
                 "natural environment?"
@@ -101,31 +104,101 @@ def my_eval_set() -> list[dict[str, str]]:
                 "natural environment."
             ),
         },
-        {
+        { # tests semantic retrieval, as the question is not directly related to the documents, and the grading notes are very specific about how to get the answer.
             "question": (
-                "How does the Uranium article describe the element's industrial "
-                "importance?"
+                "Which radioactive element serves as a major fuel source for power generation?"
             ),
             "grading_notes": (
-                "The answer must explain that uranium has important industrial or "
-                "energy-related uses."
+                "The answer must identify uranium and its use in nuclear power."
+            )
+        },
+        {#requires info combined from 2 documents
+            "question": (
+                "What common theme links Sailor Moon and Dragon Ball Z?"
             ),
+            "grading_notes": (
+                "The answer should synthesize information from both documents and identify "
+                "a relevant shared theme such as influential storytelling or notable female characters."
+            ),
+        },
+        {#comparison question
+            "question": (
+                "How do Sailor Moon and Tasmania differ in subject matter?"
+            ),
+            "grading_notes": (
+                "The answer must identify Sailor Moon as a media franchise and "
+                "Tasmania as a geographic region or island state."
+            )
+        },
+        {# impossible question, triggering a possible hallucination
+            "question": (
+                "What personal relationship exists between Ana de Armas and 'The Mother'?"
+            ),
+            "grading_notes": (
+                "The answer must state that no information in the provided documents "
+                "supports such a relationship."
+            )
         },
         {
             "question": (
-                "How does Sailor Moon contribute to magical-hero storytelling?"
+                "Which filmmaker directed the film Videodrome, and what later film of theirs "
+                "won a Special Jury Prize at the Cannes Film Festival?"
             ),
             "grading_notes": (
-                "The answer must describe Sailor Moon's contribution to the "
-                "magical-hero or magical-girl tradition."
-            ),
+                "The answer must identify David Cronenberg as the director of Videodrome "
+                "and correctly name a later film that won the Special Jury Prize "
+                "at Cannes."
+            )
         },
         {
-            "question": "What is the connection between two unrelated articles?",
-            "grading_notes": (
-                "The answer should state that the provided documents do not contain "
-                "enough information to establish the connection."
+            "question": (
+                "The musician known for the parody 'Eat It' based the song on a hit by which artist?"
             ),
+            "grading_notes": (
+                "The answer must identify Weird Al Yankovic and state that the original "
+                "artist was Michael Jackson."
+            )
+        },
+        {
+            "question": (
+                "Which major literary award was won by the novel that introduced the "
+                "archipelago setting later expanded throughout Ursula K. Le Guin's Earthsea series?"
+            ),
+            "grading_notes": (
+                "The answer must identify the relevant Earthsea novel and correctly "
+                "state the literary award associated with it."
+            )
+        },
+        {
+            "question": (
+                "What profession is practiced by the woman who eventually becomes the "
+                "mother in How I Met Your Mother?"
+            ),
+            "grading_notes": (
+                "The answer must identify Tracy McConnell and correctly state "
+                "her profession."
+            )
+        },
+        {
+            "question": (
+                "Which came first: the debut of the Earthsea series by Ursula K. Le Guin "
+                "or the first publication of the manga that inspired Dragon Ball Z?"
+            ),
+            "grading_notes": (
+                "The answer must retrieve publication dates from both article sets "
+                "and correctly compare them."
+            )
+        }, 
+
+            
+        { # multi-hop question, as it requires reasoning across multiple documents to get the answer, and the grading notes are very specific about how to get the answer.
+            "question": (
+                "The animal regarded as a symbol of Tasmania belongs to which broader "
+                "group of mammals?"
+            ),
+            "grading_notes": (
+                "The answer must identify the Tasmanian devil and state that it is a marsupial."
+            )
         },
     ]
 
@@ -151,11 +224,7 @@ def run_evaluation() -> None:
         if hits:
             doc_ids = [doc_id for doc_id, _ in hits]
             generated_answer = answer(llm, item["question"], doc_ids)
-            retrieved_context = "\n\n".join(
-                f"[{doc_id}] {DOC_BY_ID[doc_id]['text']}"
-                for doc_id in doc_ids
-                if doc_id in DOC_BY_ID
-            )
+            retrieved_context = build_context(doc_ids)
         else:
             generated_answer = "(no documents retrieved)"
             retrieved_context = "(no documents retrieved)"
@@ -353,7 +422,12 @@ def hybrid_retrieve(query: str, docs: list[dict[str, str]], db: Chroma, k: int =
     vector_hits = vector_retrieve(query, db, k=max(k * 3, 10))
 
     bm25_map = {doc_id: score for doc_id, score in bm25_hits}
-    vector_map = {doc_id: max(0.0, 1.0 - score) for doc_id, score in vector_hits}
+    valid_ids = {doc["id"] for doc in docs}
+    vector_map = {
+        doc_id: max(0.0, 1.0 - score)
+        for doc_id, score in vector_hits
+        if doc_id in valid_ids
+    }
 
     all_ids = set(bm25_map) | set(vector_map)
     if not all_ids:
@@ -455,12 +529,20 @@ def retrieve(query: str, docs: list[dict[str, str]] | None = None, db: Chroma | 
 
 
 def answer(llm: ChatOpenAI, query: str, doc_ids: list[str]) -> str:
-    context = "\n\n".join(f"[{i}] {DOC_BY_ID[i]['text']}" for i in doc_ids if i in DOC_BY_ID)
+    context = build_context(doc_ids)
     messages = [
         SystemMessage(content=ANSWER_SYSTEM),
         HumanMessage(content=f"Documents:\n{context}\n\nQuestion: {query}"),
     ]
     return llm.invoke(messages).content
+
+
+def build_context(doc_ids: list[str]) -> str:
+    return "\n\n".join(
+        f"[{doc_id}] {DOC_BY_ID[doc_id]['text'][:MAX_CONTEXT_CHARS_PER_DOC]}"
+        for doc_id in doc_ids
+        if doc_id in DOC_BY_ID
+    )
 
 # .\.venv\Scripts\python.exe .\capstone_checkpoint_4_1_multi_step.py --offline
 
