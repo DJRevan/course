@@ -200,6 +200,16 @@ def my_eval_set() -> list[dict[str, str]]:
                 "The answer must identify the Tasmanian devil and state that it is a marsupial."
             )
         },
+
+        {
+            "question": (
+                "What is the connection between two unrelated articles?"
+            ),
+            "grading_notes": (
+                "The answer should state that the provided documents do not contain "
+                "enough information to establish the connection."
+            ),
+        },
     ]
 
 def run_evaluation() -> None:
