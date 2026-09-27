@@ -1,0 +1,827 @@
+r"""This file is the continuation of "Capstone Checkpoint 4.1".
+
+
+"""
+
+# %%
+from __future__ import annotations
+import json
+import warnings
+warnings.filterwarnings("ignore")
+
+import os
+import re
+from datetime import datetime
+from pathlib import Path
+
+from dotenv import load_dotenv
+from langchain_chroma import Chroma
+from langchain_core.documents import Document
+from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from openai import OpenAI
+from ragas.llms import llm_factory
+from ragas.metrics import DiscreteMetric
+
+try:
+    from rank_bm25 import BM25Okapi
+except ImportError:  # pragma: no cover
+    BM25Okapi = None
+
+# %this part is the same as before, reaching the LLM model
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+LLM_MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-4o-mini")
+JUDGE_MODEL = os.getenv("OPENROUTER_JUDGE_MODEL", LLM_MODEL)
+TEMPERATURE = 0.2
+TOP_K = 3
+HOP_CANDIDATES = 5
+MAX_CONTEXT_CHARS_PER_DOC = 12000
+LOG_PATH = Path.cwd() / "checkpoint_5_1_retrieval.log"
+CORPUS_DIR = Path(__file__).resolve().parent / "Wikipedia_text_test"
+CHROMA_DIR = Path(__file__).resolve().parent / "chroma_baseline"
+
+# === SET THIS to the scenario you chose in Checkpoint 1.1 ===
+SCENARIO = "Wikipedia"   # "research_papers" or "wikipedia"
+
+ANSWER_SYSTEM = (
+"""You are a grounded question-answering assistant.
+Answer the user's question using ONLY the supplied document passages.”
+Instructions:”
+
+1. Read all supplied passages before deciding that the answer is unavailable.
+2. If the question contains multiple parts, answer every part that is
+supported by the passages.
+3. You may combine facts from different documents when each fact is
+explicitly supported.
+4. For comparison questions, the documents do not need to contain an
+explicit comparison sentence. You may compare separately supported
+descriptions.
+5. For relationship or common-theme questions, distinguish between:
+a. an explicitly documented relationship,
+b. a reasonable comparison supported by both documents,
+c. no supported relationship.
+6. Prefer evidence from the document that directly matches the entity
+named in the question. Do not replace the named entity with an
+unrelated entity from a lower-ranked document.
+7. Cite supporting document labels in square brackets, for example:
+[Tasmania, passage 2].
+8. If a required fact is genuinely absent from all passages, clearly
+identify which fact is missing. Do not merely say that there is
+insufficient information.
+9. Do not use outside knowledge and do not invent connections.
+Provide a concise but complete answer.
+"""
+
+)
+# judge system addition: it will check if the answer satisfies the grading notes, and return pass or fail.
+
+JUDGE_SYSTEM = (
+    "You are a strict evaluator. You are given an ANSWER and GRADING NOTES. "
+    "Reply with exactly one word: pass if the answer satisfies the grading notes, "
+    "otherwise reply fail."
+)
+
+# the function itself
+def make_ragas_judge():
+    return llm_factory(
+        JUDGE_MODEL,
+        client=OpenAI(api_key=check_api_key(), base_url=OPENROUTER_BASE_URL),
+    )
+
+AGENT_RETRIEVAL_SYSTEM = """
+You are a retrieval agent working over a fixed Wikipedia corpus.
+
+Your job is to decide whether the retrieved evidence is sufficient to answer
+the user's original question.
+
+Return ONLY valid JSON with this structure:
+
+{
+    "enough": true or false,
+    "next_query": "search query"
+}
+
+Rules:
+- Set enough=true only when the evidence contains everything required to
+  answer the original question.
+- If information is missing, set enough=false and create a focused next_query
+  that searches specifically for the missing information.
+- Do not answer the original question.
+- Do not use outside knowledge.
+"""
+
+def plan_next_retrieval(
+    llm: ChatOpenAI,
+    original_query: str,
+    retrieved_ids: list[str],
+) -> tuple[bool, str]:
+
+    context = build_context(retrieved_ids, query=original_query)
+
+    messages = [
+        SystemMessage(content=AGENT_RETRIEVAL_SYSTEM),
+        HumanMessage(
+            content=(
+                f"Original question:\n{original_query}\n\n"
+                f"Evidence retrieved so far:\n{context}"
+            )
+        ),
+    ]
+
+    response = llm.invoke(messages).content
+
+    try:
+        decision = json.loads(response)
+        return (
+            bool(decision.get("enough", False)),
+            str(decision.get("next_query", original_query)),
+        )
+    except (json.JSONDecodeError, TypeError):
+        # Safe fallback
+        return False, original_query
+
+
+def agentic_retrieve(
+    query: str,
+    docs: list[dict[str, str]],
+    db: Chroma,
+    llm: ChatOpenAI,
+    k: int = TOP_K,
+    bm25_weight: float = 0.4,
+    max_steps: int = 3,
+) -> list[tuple[str, float]]:
+
+    current_query = query
+
+    # Keep evidence accumulated across retrieval steps.
+    evidence: dict[str, float] = {}
+
+    for step in range(max_steps):
+
+        hits = hybrid_retrieve(
+            current_query,
+            docs,
+            db,
+            k=HOP_CANDIDATES,
+            bm25_weight=bm25_weight,
+        )
+
+        if not hits:
+            break
+
+        # Reciprocal-rank style accumulation
+        for rank, (doc_id, _) in enumerate(hits):
+            evidence[doc_id] = (
+                evidence.get(doc_id, 0.0)
+                + 1.0 / (rank + 1)
+            )
+
+        # Give the agent the strongest documents accumulated so far.
+        current_ids = [
+            doc_id
+            for doc_id, _ in sorted(
+                evidence.items(),
+                key=lambda x: x[1],
+                reverse=True,
+            )[:HOP_CANDIDATES]
+        ]
+
+        enough, next_query = plan_next_retrieval(
+            llm,
+            original_query=query,
+            retrieved_ids=current_ids,
+        )
+
+        log(
+            f"Agent retrieval step {step + 1}",
+            (
+                f"query={current_query}\n"
+                f"hits={hits}\n"
+                f"enough={enough}\n"
+                f"next_query={next_query}"
+            ),
+        )
+
+        if enough:
+            break
+
+        # Prevent a useless infinite search loop.
+        if not next_query.strip() or next_query.strip() == current_query.strip():
+            break
+
+        current_query = next_query
+
+    return sorted(
+        evidence.items(),
+        key=lambda item: item[1],
+        reverse=True,
+    )[:k]
+
+
+
+
+correctness_metric = DiscreteMetric(
+    name="grounded_correctness",
+    prompt=(
+        "You are grading a retrieval-augmented answer. Return 'pass' only when "
+        "the response answers the question's central point, is consistent with "
+        "the grading notes, and is supported by the retrieved context. Return "
+        "'fail' if it is incorrect, unsupported, hallucinates, or misses the "
+        "central point. Minor wording differences are acceptable.\n"
+        "Question: {question}\n"
+        "Response: {response}\n"
+        "Grading Notes: {grading_notes}\n"
+        "Retrieved Context: {context}"
+    ),
+    allowed_values=["pass", "fail"],
+)
+
+# the questions are related to the ones defined in checkpoint 2.1, and the grading notes are the criteria for passing or failing the answer.
+def my_eval_set() -> list[dict[str, str]]:
+    return [
+        { # this one puts the system to the extreme as it requires a multi-step reasoning to get the answer, and the grading notes are very specific about how to get the answer.
+            
+        "question": (
+            "The actress whose international breakthrough came from Blade Runner 2049 "
+               "shares what nationality with individuals born in the same country?"
+            ),
+            "grading_notes": (
+                "The answer must identify Ana de Armas and correctly determine her nationality "
+                "through a retrieval chain rather than a direct lookup."
+            )
+        },
+        { #this is a basic question, needed for straightforward retrieval, and the grading notes are very specific about how to get the answer.
+            "question": (
+                "What creature is described as a defining symbol of Tasmania's "
+                "natural environment?"
+            ),
+            "grading_notes": (
+                "The answer must identify the creature associated with Tasmania's "
+                "natural environment."
+            ),
+        },
+        { # tests semantic retrieval, as the question is not directly related to the documents, and the grading notes are very specific about how to get the answer.
+            "question": (
+                "Which radioactive element serves as a major fuel source for power generation?"
+            ),
+            "grading_notes": (
+                "The answer must identify uranium and its use in nuclear power."
+            )
+        },
+        {#requires info combined from 2 documents
+            "question": (
+                "What common theme links Sailor Moon and Dragon Ball Z?"
+            ),
+            "grading_notes": (
+                "The answer should synthesize information from both documents and identify "
+                "a relevant shared theme such as influential storytelling or notable female characters."
+            ),
+        },
+        {#comparison question
+            "question": (
+                "How do Sailor Moon and Tasmania differ in subject matter?"
+            ),
+            "grading_notes": (
+                "The answer must identify Sailor Moon as a media franchise and "
+                "Tasmania as a geographic region or island state."
+            )
+        },
+        {# impossible question, triggering a possible hallucination
+            "question": (
+                "What personal relationship exists between Ana de Armas and 'The Mother'?"
+            ),
+            "grading_notes": (
+                "The corpus does not provide evidence establishing a personal "
+                "relationship between these two entities. The agent should stop "
+                "without inventing a connection."
+            )
+        },
+        {
+            "question": (
+                "Which filmmaker directed the film Videodrome, and what later film of theirs "
+                "won a Special Jury Prize at the Cannes Film Festival?"
+            ),
+            "grading_notes": (
+                "The answer must identify David Cronenberg as the director of Videodrome "
+                "and correctly name a later film that won the Special Jury Prize "
+                "at Cannes."
+            )
+        },
+        {
+            "question": (
+                "The musician known for the parody 'Eat It' based the song on a hit by which artist?"
+            ),
+            "grading_notes": (
+                "The answer must identify Weird Al Yankovic and state that the original "
+                "artist was Michael Jackson."
+            )
+        },
+        {
+            "question": (
+                "Which major literary award was won by the novel that introduced the "
+                "archipelago setting later expanded throughout Ursula K. Le Guin's Earthsea series?"
+            ),
+            "grading_notes": (
+                "The answer must identify the relevant Earthsea novel and correctly "
+                "state the literary award associated with it."
+            )
+        },
+        {
+            "question": (
+                "What profession is practiced by the woman who eventually becomes the "
+                "mother in How I Met Your Mother?"
+            ),
+            "grading_notes": (
+                "The answer must identify the character's name and correctly state "
+                "her profession."
+            )
+        },
+        {
+            "question": (
+                "Which came first: the debut of the Earthsea series by Ursula K. Le Guin "
+                "or the first publication of the manga that inspired Dragon Ball Z?"
+            ),
+            "grading_notes": (
+                "The answer must retrieve publication dates from both article sets "
+                "and correctly compare them."
+            )
+        }, 
+
+            
+        { # multi-hop question, as it requires reasoning across multiple documents to get the answer, and the grading notes are very specific about how to get the answer.
+            "question": (
+                "The animal regarded as a symbol of Tasmania belongs to which broader "
+                "group of mammals?"
+            ),
+            "grading_notes": (
+                "The answer must identify the Tasmanian devil and state that it is a marsupial."
+            )
+        },
+
+        {
+            "question": (
+                "The creature associated with Tasmania belongs to what broader biological group, and what characteristic of that group explains its classification?"
+            ),
+            "grading_notes": (
+                "The answer should identify the Tasmanian devil as a marsupial and explain that marsupials are characterized by giving birth to relatively undeveloped young that typically continue to develop in a pouch."
+               
+            ),
+        },
+    ]
+
+def run_evaluation() -> None:
+    llm = make_llm()
+    judge_llm = make_ragas_judge()
+    eval_set = my_eval_set()
+    vector_db = build_vector_db(DOCS)
+    passes = 0
+
+    print(f"Checkpoint 5.1 evaluation | scenario: {SCENARIO}\n")
+
+    for i, item in enumerate(eval_set, 1):
+        hits = retrieve(
+            item["question"],
+            docs=DOCS,
+            db=vector_db,
+            strategy="agentic",
+            k=TOP_K,
+            bm25_weight=0.4,
+            llm=llm,
+        )
+
+        if hits:
+            doc_ids = [doc_id for doc_id, _ in hits]
+            generated_answer = answer(llm, item["question"], doc_ids)
+            retrieved_context = build_context(doc_ids, query=item["question"])
+        else:
+            generated_answer = "(no documents retrieved)"
+            retrieved_context = "(no documents retrieved)"
+
+        verdict = correctness_metric.score(
+            llm=judge_llm,
+            question=item["question"],
+            response=generated_answer,
+            grading_notes=item["grading_notes"],
+            context=retrieved_context,
+        ).value
+
+        passes += verdict == "pass"
+
+        print("=" * 72)
+        print(f"Q{i}: {item['question']}")
+        print(f"Retrieved: {hits}")
+        print(f"Verdict: {verdict.upper()}")
+        print(f"Answer: {generated_answer}")
+
+        log(
+            f"Q{i}: {item['question']}",
+            f"retrieved={hits}\n"
+            f"verdict={verdict}\n"
+            f"answer={generated_answer}",
+        )
+
+    print("=" * 72)
+    print(f"Baseline pass rate: {passes}/{len(eval_set)}")
+
+
+
+# this segments checks whether I have the API or not, and if not, it exits with a message telling me to get one.
+def check_api_key() -> str:
+    load_dotenv()
+    key = os.getenv("OPENROUTER_API_KEY")
+    if not key:
+        raise RuntimeError(
+            "OPENROUTER_API_KEY is not set. Use the OpenRouter API key "
+            "provided for this course, put it in a .env file next to this "
+            "script, and rerun."
+        )
+    return key
+
+def make_llm() -> ChatOpenAI:
+    return ChatOpenAI(
+        model=LLM_MODEL,
+        temperature=TEMPERATURE,
+        api_key=check_api_key(),
+        base_url=OPENROUTER_BASE_URL,
+    )
+
+def log(label: str, text: str) -> None:
+    ts = datetime.now().isoformat(timespec="seconds")
+    with LOG_PATH.open("a", encoding="utf-8") as fh:
+        fh.write(f"[{ts}] {label}\n{text}\n{'-' * 72}\n")
+
+
+
+# %%
+def extract_text(file_path: Path) -> str:
+    with file_path.open("r", encoding="utf-8", errors="replace") as fh:
+        return fh.read()
+
+
+def load_wikipedia_docs(corpus_dir: Path = CORPUS_DIR) -> list[dict[str, str]]:
+    if not corpus_dir.exists() or not corpus_dir.is_dir():
+        raise FileNotFoundError(f"Wikipedia corpus folder not found: {corpus_dir}")
+
+    docs: list[dict[str, str]] = []
+    for text_file in sorted(corpus_dir.glob("*.txt")):
+        text = extract_text(text_file)
+        if text.strip():
+            docs.append({
+                "id": text_file.stem,
+                "text": text,
+                "source": text_file.name,
+            })
+
+    if not docs:
+        raise ValueError(f"No TXT documents were found in {corpus_dir}")
+    return docs
+
+
+DOCS = load_wikipedia_docs()
+DOC_BY_ID = {d["id"]: d for d in DOCS}
+
+
+# %%
+_STOPWORDS = {
+    "a", "an", "and", "are", "as", "at", "be", "been", "but", "by",
+    "for", "from", "how", "in", "into", "is", "it", "its", "of", "on",
+    "or", "that", "the", "their", "these", "this", "those", "to", "was",
+    "were", "what", "when", "where", "which", "who", "with", "between",
+    "does", "do", "not", "about", "two",
+}
+
+
+def _tokens(text: str) -> list[str]:
+    return [
+        token
+        for token in re.findall(r"[a-z0-9]+", text.lower())
+        if token not in _STOPWORDS
+    ]
+
+def bm25_retrieve(query: str, docs: list[dict[str, str]], k: int = TOP_K) -> list[tuple[str, float]]:
+    """Keyword retrieval using BM25 over the Wikipedia text corpus."""
+    if BM25Okapi is None:
+        raise RuntimeError("Install rank-bm25 to use the BM25 retriever: pip install rank-bm25")
+
+    corpus = [_tokens(d["text"]) for d in docs]
+    bm25 = BM25Okapi(corpus)
+    scores = bm25.get_scores(_tokens(query))
+    ranked = sorted(enumerate(scores), key=lambda x: x[1], reverse=True)
+    results = []
+    for idx, score in ranked:
+        if score > 0:
+            results.append((docs[idx]["id"], float(score)))
+        if len(results) >= k:
+            break
+    return results
+
+
+def build_vector_db(docs: list[dict[str, str]]) -> Chroma:
+    embeddings = OpenAIEmbeddings(
+        model="openai/text-embedding-3-small",
+        api_key=check_api_key(),
+        base_url=OPENROUTER_BASE_URL,
+    )
+    # Reuse the persisted index so repeated evaluations do not re-embed the corpus.
+    CHROMA_DIR.mkdir(parents=True, exist_ok=True)
+    if (CHROMA_DIR / "chroma.sqlite3").exists():
+        return Chroma(
+            persist_directory=str(CHROMA_DIR),
+            embedding_function=embeddings,
+        )
+
+    return Chroma.from_documents(
+        [Document(page_content=d["text"], metadata={"source": d["source"], "id": d["id"]}) for d in docs],
+        embeddings,
+        persist_directory=str(CHROMA_DIR),
+    )
+
+
+def vector_retrieve(query: str, db: Chroma, k: int = TOP_K) -> list[tuple[str, float]]:
+    """Semantic retrieval using embeddings and cosine similarity.
+
+    Chroma's similarity_search_with_score() returns a distance, where lower values
+    mean more similar. For hybrid weighting we convert that to a similarity score
+    in the same direction as BM25 by using 1.0 - distance.
+    """
+    results = db.similarity_search_with_score(query, k=k)
+    ranked = []
+    for doc, score in results:
+        doc_id = doc.metadata.get("id") or doc.metadata.get("source") or "unknown"
+        ranked.append((doc_id, float(score)))
+    return ranked
+
+
+def _normalize_scores(scores: dict[str, float]) -> dict[str, float]:
+    """Map raw scores to a 0..1 range so BM25 and vector scores can be combined."""
+    if not scores:
+        return {}
+    min_score = min(scores.values())
+    max_score = max(scores.values())
+    if max_score == min_score:
+        return {doc_id: 1.0 for doc_id in scores}
+    return {
+        doc_id: (value - min_score) / (max_score - min_score)
+        for doc_id, value in scores.items()
+    }
+
+def hybrid_retrieve(query: str, docs: list[dict[str, str]], db: Chroma, k: int = TOP_K,
+                   bm25_weight: float = 0.4, vector_weight: float | None = None) -> list[tuple[str, float]]:
+    """Combine BM25 and vector retrieval scores with explicit weights.
+
+    The two weights should sum to 1.0. If vector_weight is omitted, it is derived as
+    1.0 - bm25_weight so the default behavior stays the same as before.
+
+    Examples:
+    - bm25_weight=0.7, vector_weight=0.3 -> favor keyword matching
+    - bm25_weight=0.4, vector_weight=0.6 -> favor semantic matching
+    """
+    if vector_weight is None:
+        vector_weight = 1.0 - bm25_weight
+
+    if not 0.0 <= bm25_weight <= 1.0:
+        raise ValueError("bm25_weight must be between 0.0 and 1.0")
+    if not 0.0 <= vector_weight <= 1.0:
+        raise ValueError("vector_weight must be between 0.0 and 1.0")
+    if abs((bm25_weight + vector_weight) - 1.0) > 1e-9:
+        raise ValueError("bm25_weight and vector_weight must sum to 1.0")
+
+    bm25_hits = bm25_retrieve(query, docs, k=max(k * 3, 10))
+    vector_hits = vector_retrieve(query, db, k=max(k * 3, 10))
+
+    bm25_map = {doc_id: score for doc_id, score in bm25_hits}
+    valid_ids = {doc["id"] for doc in docs}
+    vector_map = {
+        doc_id: max(0.0, 1.0 - score)
+        for doc_id, score in vector_hits
+        if doc_id in valid_ids
+    }
+
+    all_ids = set(bm25_map) | set(vector_map)
+    if not all_ids:
+        return []
+
+    bm25_norm = _normalize_scores(bm25_map)
+    vector_norm = _normalize_scores(vector_map)
+
+    combined = []
+    for doc_id in all_ids:
+        score = (
+            bm25_weight * bm25_norm.get(doc_id, 0.0)
+            + vector_weight * vector_norm.get(doc_id, 0.0)
+        )
+        combined.append((doc_id, float(score)))
+
+    return sorted(combined, key=lambda item: item[1], reverse=True)[:k]
+
+
+def _expand_query(query: str, seed_ids: list[str], docs_by_id: dict[str, dict[str, str]]) -> str:
+    """Build a second-hop query from salient terms in first-hop documents."""
+    query_terms = set(_tokens(query))
+    term_counts: dict[str, int] = {}
+    for doc_id in seed_ids:
+        text = docs_by_id[doc_id]["text"]
+        for token in _tokens(text):
+            if token not in query_terms and len(token) > 3:
+                term_counts[token] = term_counts.get(token, 0) + 1
+
+    salient_terms = sorted(
+        term_counts,
+        key=lambda token: (-term_counts[token], token),
+    )[:8]
+    return f"{query} {' '.join(salient_terms)}".strip()
+
+
+def multi_hop_retrieve(
+    query: str,
+    docs: list[dict[str, str]],
+    db: Chroma | None = None,
+    k: int = TOP_K,
+    bm25_weight: float = 0.4,
+) -> list[tuple[str, float]]:
+    """Retrieve seed documents, expand the query, then retrieve a second hop."""
+    docs_by_id = {doc["id"]: doc for doc in docs}
+    first_hop = (
+        hybrid_retrieve(query, docs, db, k=HOP_CANDIDATES, bm25_weight=bm25_weight)
+        if db is not None
+        else bm25_retrieve(query, docs, k=HOP_CANDIDATES)
+    )
+    if not first_hop:
+        return []
+
+    expanded_query = _expand_query(
+        query,
+        [doc_id for doc_id, _ in first_hop],
+        docs_by_id,
+    )
+    second_hop = (
+        hybrid_retrieve(expanded_query, docs, db, k=HOP_CANDIDATES, bm25_weight=bm25_weight)
+        if db is not None
+        else bm25_retrieve(expanded_query, docs, k=HOP_CANDIDATES)
+    )
+
+    scores: dict[str, float] = {}
+    for rank, (doc_id, score) in enumerate(first_hop):
+        scores[doc_id] = scores.get(doc_id, 0.0) + 1.0 / (rank + 1)
+    for rank, (doc_id, score) in enumerate(second_hop):
+        scores[doc_id] = scores.get(doc_id, 0.0) + 0.5 / (rank + 1)
+
+    return sorted(scores.items(), key=lambda item: item[1], reverse=True)[:k]
+
+
+def retrieve(
+    query: str,
+    docs: list[dict[str, str]] | None = None,
+    db: Chroma | None = None,
+    strategy: str = "bm25",
+    k: int = TOP_K,
+    bm25_weight: float = 0.4,
+    vector_weight: float | None = None,
+    llm: ChatOpenAI | None = None,
+) -> list[tuple[str, float]]:
+
+    """Dispatch to the BM25, vector, or hybrid retriever."""
+    docs = docs or DOCS
+    if strategy == "bm25":
+        return bm25_retrieve(query, docs, k=k)
+    if strategy == "vector":
+        if db is None:
+            db = build_vector_db(docs)
+        return vector_retrieve(query, db, k=k)
+    if strategy == "hybrid":
+        if db is None:
+            db = build_vector_db(docs)
+        return hybrid_retrieve(query, docs, db=db, k=k,
+                               bm25_weight=bm25_weight, vector_weight=vector_weight)
+    if strategy == "multi_hop":
+        return multi_hop_retrieve(
+            query,
+            docs,
+            db=db,
+            k=k,
+            bm25_weight=bm25_weight,
+        )
+    if strategy == "agentic":
+        if db is None:
+            db = build_vector_db(docs)
+
+        if llm is None:
+            llm = make_llm()
+
+        return agentic_retrieve(
+            query,
+            docs,
+            db=db,
+            llm=llm,
+            k=k,
+            bm25_weight=bm25_weight,
+        )
+    raise ValueError(f"Unknown retrieval strategy: {strategy}")
+
+def answer(llm: ChatOpenAI, query: str, doc_ids: list[str]) -> str:
+    context = build_context(doc_ids, query=query)
+    messages = [
+        SystemMessage(content=ANSWER_SYSTEM),
+        HumanMessage(content=f"Documents:\n{context}\n\nQuestion: {query}"),
+    ]
+    return llm.invoke(messages).content
+
+
+def split_into_passages(
+    text: str,
+    passage_size: int = 1800,
+    overlap: int = 250,
+    ) -> list[str]:
+    """Split a document into overlapping passages."""
+    passages = []
+    start = 0
+
+    while start < len(text):
+        end = min(start + passage_size, len(text))
+        passage = text[start:end].strip()
+
+        if passage:
+            passages.append(passage)
+
+        if end == len(text):
+            break
+
+        start = end - overlap
+
+    return passages
+
+def passage_relevance_score(query: str, passage: str) -> float:
+    """Score passages using query-term coverage."""
+    query_tokens = set(_tokens(query))
+    passage_tokens = set(_tokens(passage))
+
+    if not query_tokens:
+        return 0.0
+
+    overlap = query_tokens.intersection(passage_tokens)
+    return len(overlap) / len(query_tokens)
+
+def build_context(
+    doc_ids: list[str],
+    query: str,
+    passages_per_doc: int = 3,
+    ) -> str:
+    context_parts = []
+
+    for doc_id in doc_ids:
+        if doc_id not in DOC_BY_ID:
+            continue
+
+        document_text = DOC_BY_ID[doc_id]["text"]
+        passages = split_into_passages(document_text)
+        ranked_passages = sorted(
+            passages,
+            key=lambda passage: passage_relevance_score(query, passage),
+            reverse=True,
+        )
+
+        for passage_number, passage in enumerate(ranked_passages[:passages_per_doc], 1):
+            context_parts.append(
+                f"[{doc_id}, passage {passage_number}] {passage}"
+            )
+
+    return "\n\n".join(context_parts)
+
+
+
+
+
+
+
+# .\.venv\Scripts\python.exe .\capstone_checkpoint_5_1_agentic.py --offline
+
+def run_offline_check() -> None:
+    """Check local corpus loading and BM25 retrieval without API calls."""
+    eval_set = my_eval_set()
+    print(f"Offline check | loaded {len(DOCS)} documents from {CORPUS_DIR}")
+
+    for i, item in enumerate(eval_set, 1):
+        hits = retrieve(
+            item["question"],
+            docs=DOCS,
+            strategy="multi_hop",
+            k=TOP_K,
+        )
+        print(f"Q{i}: {item['question']}")
+        print(f"  Multi-hop hits: {hits}")
+
+    print("Offline check passed: corpus loading and BM25 retrieval work.")
+
+
+def main() -> None:
+    if "--offline" in os.sys.argv:
+        run_offline_check()
+    else:
+        run_evaluation()
+
+
+if __name__ == "__main__":
+    main()
+
+
+
