@@ -11,6 +11,7 @@ warnings.filterwarnings("ignore")
 
 import os
 import re
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -36,9 +37,98 @@ TEMPERATURE = 0.2
 TOP_K = 3
 HOP_CANDIDATES = 5
 # MAX_CONTEXT_CHARS_PER_DOC = 12000
-LOG_PATH = Path.cwd() / "checkpoint_6_1_retrieval.log"
+LOG_PATH = Path(__file__).resolve().parent / "checkpoint_6_1_retrieval.log"
 CORPUS_DIR = Path(__file__).resolve().parent / "Wikipedia_text_test"
 CHROMA_DIR = Path(__file__).resolve().parent / "chroma_baseline"
+
+
+class RunMetrics:
+    def __init__(self) -> None:
+        self.reset()
+
+    def reset(self) -> None:
+        self.started_at = time.perf_counter()
+        self.calls: dict[str, int] = {}
+        self.latencies: list[float] = []
+        self.reported_input_tokens = 0
+        self.reported_output_tokens = 0
+        self.estimated_input_tokens = 0
+        self.estimated_output_tokens = 0
+        self.questions = 0
+
+    @staticmethod
+    def estimate_tokens(text: str) -> int:
+        return (len(text) + 3) // 4
+
+    def record_call(
+        self,
+        label: str,
+        elapsed: float,
+        input_text: str = "",
+        output_text: str = "",
+        usage: dict | None = None,
+    ) -> None:
+        self.calls[label] = self.calls.get(label, 0) + 1
+        self.latencies.append(elapsed)
+
+        usage = usage or {}
+        input_tokens = usage.get("input_tokens", usage.get("prompt_tokens"))
+        output_tokens = usage.get("output_tokens", usage.get("completion_tokens"))
+        if input_tokens is not None or output_tokens is not None:
+            self.reported_input_tokens += int(input_tokens or 0)
+            self.reported_output_tokens += int(output_tokens or 0)
+        else:
+            self.estimated_input_tokens += self.estimate_tokens(input_text)
+            self.estimated_output_tokens += self.estimate_tokens(output_text)
+
+    def format_report(self) -> str:
+        total_calls = sum(self.calls.values())
+        total_latency = sum(self.latencies)
+        average_latency = total_latency / len(self.latencies) if self.latencies else 0.0
+        total_tokens = (
+            self.reported_input_tokens + self.reported_output_tokens
+            + self.estimated_input_tokens + self.estimated_output_tokens
+        )
+        calls_per_question = total_calls / self.questions if self.questions else 0.0
+        breakdown = ", ".join(f"{name}={count}" for name, count in sorted(self.calls.items()))
+        return (
+            "Run metrics\n"
+            f"Questions: {self.questions}\n"
+            f"Model/API calls (approx): {total_calls} ({breakdown or 'none'})\n"
+            f"Approx. calls per question: {calls_per_question:.2f}\n"
+            f"Latency: total {total_latency:.2f}s, average {average_latency:.2f}s per call, "
+            f"run {time.perf_counter() - self.started_at:.2f}s\n"
+            f"Tokens: {total_tokens} total; provider-reported input/output "
+            f"{self.reported_input_tokens}/{self.reported_output_tokens}; estimated input/output "
+            f"{self.estimated_input_tokens}/{self.estimated_output_tokens}\n"
+            "Estimates use roughly 1 token per 4 characters when usage is unavailable. "
+            "Judge and embedding calls are approximate; first-time corpus indexing is excluded."
+        )
+
+
+RUN_METRICS = RunMetrics()
+
+
+def invoke_and_measure(llm: ChatOpenAI, messages: list, label: str):
+    input_text = "\n".join(str(getattr(message, "content", message)) for message in messages)
+    started = time.perf_counter()
+    try:
+        response = llm.invoke(messages)
+    except Exception:
+        RUN_METRICS.record_call(label, time.perf_counter() - started, input_text)
+        raise
+
+    usage = getattr(response, "usage_metadata", None)
+    if not usage:
+        usage = getattr(response, "response_metadata", {}).get("token_usage")
+    RUN_METRICS.record_call(
+        label,
+        time.perf_counter() - started,
+        input_text,
+        str(getattr(response, "content", "")),
+        usage,
+    )
+    return response
 
 # === SET THIS to the scenario you chose in Checkpoint 1.1 ===
 SCENARIO = "Wikipedia"   # "research_papers" or "wikipedia"
@@ -128,7 +218,7 @@ def plan_next_retrieval(
         ),
     ]
 
-    response = llm.invoke(messages).content
+    response = invoke_and_measure(llm, messages, "retrieval-planner").content
 
     try:
         decision = json.loads(response)
@@ -500,6 +590,7 @@ def my_eval_set() -> list[dict[str, str]]:
     ]
 
 def run_evaluation() -> None:
+    RUN_METRICS.reset()
     llm = make_llm()
     judge_llm = make_ragas_judge()
     eval_set = my_eval_set()
@@ -509,6 +600,7 @@ def run_evaluation() -> None:
     print(f"Checkpoint 6.1 evaluation | scenario: {SCENARIO}\n")
 
     for i, item in enumerate(eval_set, 1):
+        RUN_METRICS.questions += 1
         hits = retrieve(
             item["question"],
             docs=DOCS,
@@ -527,13 +619,29 @@ def run_evaluation() -> None:
             generated_answer = "(no documents retrieved)"
             retrieved_context = "(no documents retrieved)"
 
-        verdict = correctness_metric.score(
-            llm=judge_llm,
-            question=item["question"],
-            response=generated_answer,
-            grading_notes=item["grading_notes"],
-            context=retrieved_context,
-        ).value
+        judge_input = "\n".join((
+            item["question"], generated_answer, item["grading_notes"], retrieved_context,
+        ))
+        judge_started = time.perf_counter()
+        try:
+            verdict = correctness_metric.score(
+                llm=judge_llm,
+                question=item["question"],
+                response=generated_answer,
+                grading_notes=item["grading_notes"],
+                context=retrieved_context,
+            ).value
+        except Exception:
+            RUN_METRICS.record_call(
+                "judge (approx)", time.perf_counter() - judge_started, judge_input,
+            )
+            raise
+        RUN_METRICS.record_call(
+            "judge (approx)",
+            time.perf_counter() - judge_started,
+            judge_input,
+            str(verdict),
+        )
 
         passes += verdict == "pass"
 
@@ -552,6 +660,10 @@ def run_evaluation() -> None:
 
     print("=" * 72)
     print(f"Baseline pass rate: {passes}/{len(eval_set)}")
+    metrics_report = RUN_METRICS.format_report()
+    print(metrics_report)
+    log("Run metrics", metrics_report)
+    print(f"Metrics and evaluation log saved to: {LOG_PATH}")
 
 
 
@@ -674,7 +786,21 @@ def vector_retrieve(query: str, db: Chroma, k: int = TOP_K) -> list[tuple[str, f
     mean more similar. For hybrid weighting we convert that to a similarity score
     in the same direction as BM25 by using 1.0 - distance.
     """
-    results = db.similarity_search_with_score(query, k=k)
+    started = time.perf_counter()
+    try:
+        results = db.similarity_search_with_score(query, k=k)
+    except Exception:
+        RUN_METRICS.record_call(
+            "embedding/vector-query (approx)",
+            time.perf_counter() - started,
+            query,
+        )
+        raise
+    RUN_METRICS.record_call(
+        "embedding/vector-query (approx)",
+        time.perf_counter() - started,
+        query,
+    )
     ranked = []
     for doc, score in results:
         doc_id = doc.metadata.get("id") or doc.metadata.get("source") or "unknown"
@@ -854,7 +980,7 @@ def answer(llm: ChatOpenAI, query: str, doc_ids: list[str]) -> str:
         SystemMessage(content=ANSWER_SYSTEM),
         HumanMessage(content=f"Documents:\n{context}\n\nQuestion: {query}"),
     ]
-    return llm.invoke(messages).content
+    return invoke_and_measure(llm, messages, "answer").content
 
 
 def split_into_passages(
