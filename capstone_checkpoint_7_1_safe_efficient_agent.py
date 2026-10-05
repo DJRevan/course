@@ -616,7 +616,12 @@ def run_evaluation() -> None:
             generated_answer = answer(llm, item["question"], doc_ids)
             retrieved_context = build_context(doc_ids, query=item["question"])
         else:
-            generated_answer = "(no documents retrieved)"
+            classification = classify_query(item["question"])
+            generated_answer = (
+                query_rejection_message(classification)
+                if classification
+                else "(no documents retrieved)"
+            )
             retrieved_context = "(no documents retrieved)"
 
         judge_input = "\n".join((
@@ -739,6 +744,93 @@ def _tokens(text: str) -> list[str]:
         for token in re.findall(r"[a-z0-9]+", text.lower())
         if token not in _STOPWORDS
     ]
+
+
+_NULL_LIKE_INPUTS = {"null", "none", "nil", "undefined", "nan", "n/a"}
+_AMBIGUOUS_REFERENTS = {"it", "they", "he", "she", "this", "that", "these", "those", "one", "there", "more"}
+
+
+def _corpus_domain_terms(docs: list[dict[str, str]]) -> set[str]:
+    title_terms = {
+        token
+        for doc in docs
+        for token in _tokens(
+            re.sub(
+                r"\s*\([^)]*\)",
+                "",
+                Path(doc.get("source", doc["id"])).stem.replace("_", " "),
+            )
+        )
+        if len(token) > 1
+    }
+    document_frequency: dict[str, int] = {}
+    for doc in docs:
+        for token in set(_tokens(doc["text"])):
+            document_frequency[token] = document_frequency.get(token, 0) + 1
+
+    rare_term_limit = max(2, len(docs) // 20)
+    rare_terms = {
+        token for token, count in document_frequency.items()
+        if count <= rare_term_limit
+    }
+    return title_terms | rare_terms
+
+
+_CORPUS_DOMAIN_TERMS = _corpus_domain_terms(DOCS)
+
+
+def classify_query(
+    query: str | None,
+    docs: list[dict[str, str]] | None = None,
+) -> str | None:
+    """Classify unusable, ambiguous, and out-of-domain queries before retrieval."""
+    if query is None:
+        return "empty"
+
+    stripped = query.strip()
+    if not stripped or stripped.casefold() in _NULL_LIKE_INPUTS:
+        return "empty"
+    if not any(character.isalnum() for character in stripped):
+        return "punctuation_only"
+    if any(character.isdigit() for character in stripped) and not any(
+        character.isalpha() for character in stripped
+    ):
+        return "numeric_only"
+
+    words = re.findall(r"[a-z0-9]+", stripped.casefold())
+    if len(words) <= 2 or (
+        len(words) <= 7 and _AMBIGUOUS_REFERENTS.intersection(words)
+    ):
+        return "ambiguous_short"
+
+    source_docs = DOCS if docs is None else docs
+    quoted_phrases = re.findall(r"(?<!\w)['\"]([^'\"]{2,})['\"](?!\w)", stripped)
+    if any(
+        phrase.casefold() in doc["text"].casefold()
+        for phrase in quoted_phrases
+        for doc in source_docs
+    ):
+        return None
+
+    query_terms = set(_tokens(stripped))
+    if docs is None or docs is DOCS:
+        domain_terms = _CORPUS_DOMAIN_TERMS
+    else:
+        domain_terms = _corpus_domain_terms(docs)
+    if not query_terms.intersection(domain_terms):
+        return "out_of_domain"
+    return None
+
+
+def query_rejection_message(classification: str) -> str:
+    messages = {
+        "empty": "Please enter a question.",
+        "punctuation_only": "Please enter a question using words.",
+        "numeric_only": "Please enter a question using words, not only numbers.",
+        "ambiguous_short": "Could you clarify the question or specify what the reference is about?",
+        "out_of_domain": "This request appears outside the topics covered by the available documents.",
+    }
+    return messages[classification]
 
 def bm25_retrieve(query: str, docs: list[dict[str, str]], k: int = TOP_K) -> list[tuple[str, float]]:
     """Keyword retrieval using BM25 over the Wikipedia text corpus."""
@@ -926,7 +1018,7 @@ def multi_hop_retrieve(
 
 
 def retrieve(
-    query: str,
+    query: str | None,
     docs: list[dict[str, str]] | None = None,
     db: Chroma | None = None,
     strategy: str = "bm25",
@@ -938,6 +1030,8 @@ def retrieve(
 
     """Dispatch to the BM25, vector, or hybrid retriever."""
     docs = docs or DOCS
+    if query is None or classify_query(query, docs) is not None:
+        return []
     if strategy == "bm25":
         return bm25_retrieve(query, docs, k=k)
     if strategy == "vector":
