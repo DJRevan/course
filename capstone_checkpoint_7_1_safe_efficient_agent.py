@@ -36,6 +36,10 @@ JUDGE_MODEL = os.getenv("OPENROUTER_JUDGE_MODEL", LLM_MODEL)
 TEMPERATURE = 0.2
 TOP_K = 3
 HOP_CANDIDATES = 5
+MIN_RELEVANCE_CONFIDENCE = 0.2
+NO_RELEVANT_INFORMATION_RESPONSE = (
+    "The available corpus does not appear to contain information relevant to this question"
+)
 # MAX_CONTEXT_CHARS_PER_DOC = 12000
 LOG_PATH = Path(__file__).resolve().parent / "checkpoint_7_1_retrieval.log"
 CORPUS_DIR = Path(__file__).resolve().parent / "Wikipedia_text_test"
@@ -188,10 +192,15 @@ Return ONLY valid JSON with this structure:
 
 {
     "enough": true or false,
-    "next_query": "search query"
+        "next_query": "search query",
+        "relevance_confidence": number from 0.0 to 1.0
 }
 
 Rules:
+- Set relevance_confidence based on whether the evidence is about the same
+    topic or entities as the original question, not whether it fully answers it.
+- Return low relevance_confidence when the evidence appears unrelated. Relevant
+    but incomplete evidence should have higher relevance_confidence.
 - Set enough=true only when the evidence contains everything required to
   answer the original question.
 - If information is missing, set enough=false and create a focused next_query
@@ -204,7 +213,7 @@ def plan_next_retrieval(
     llm: ChatOpenAI,
     original_query: str,
     retrieved_ids: list[str],
-) -> tuple[bool, str]:
+) -> tuple[bool, str, float]:
 
     context = build_context(retrieved_ids, query=original_query)
 
@@ -222,13 +231,17 @@ def plan_next_retrieval(
 
     try:
         decision = json.loads(response)
+        relevance_confidence = float(decision.get("relevance_confidence", 1.0))
+        if not 0.0 <= relevance_confidence <= 1.0:
+            relevance_confidence = 1.0
         return (
             bool(decision.get("enough", False)),
             str(decision.get("next_query", original_query)),
+            relevance_confidence,
         )
-    except (json.JSONDecodeError, TypeError):
+    except (json.JSONDecodeError, TypeError, ValueError):
         # Safe fallback
-        return False, original_query
+        return False, original_query, 1.0
 
 
 def agentic_retrieve(
@@ -276,7 +289,7 @@ def agentic_retrieve(
             )[:HOP_CANDIDATES]
         ]
 
-        enough, next_query = plan_next_retrieval(
+        enough, next_query, relevance_confidence = plan_next_retrieval(
             llm,
             original_query=query,
             retrieved_ids=current_ids,
@@ -288,9 +301,18 @@ def agentic_retrieve(
                 f"query={current_query}\n"
                 f"hits={hits}\n"
                 f"enough={enough}\n"
+                f"relevance_confidence={relevance_confidence:.2f}\n"
                 f"next_query={next_query}"
             ),
         )
+
+        if relevance_confidence < MIN_RELEVANCE_CONFIDENCE:
+            log(
+                "Confidence-based early exit",
+                f"relevance_confidence={relevance_confidence:.2f} "
+                f"below threshold={MIN_RELEVANCE_CONFIDENCE:.2f}; returning no evidence",
+            )
+            return []
 
         if enough:
             break
@@ -619,10 +641,10 @@ def run_evaluation() -> None:
             classification = classify_query(item["question"])
             generated_answer = (
                 query_rejection_message(classification)
-                if classification
-                else "(no documents retrieved)"
+                if classification and classification != "out_of_domain"
+                else NO_RELEVANT_INFORMATION_RESPONSE
             )
-            retrieved_context = "(no documents retrieved)"
+            retrieved_context = NO_RELEVANT_INFORMATION_RESPONSE
 
         judge_input = "\n".join((
             item["question"], generated_answer, item["grading_notes"], retrieved_context,
