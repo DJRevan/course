@@ -1,0 +1,1241 @@
+Jump to content
+
+Main menu
+
+Main menu
+
+move to sidebar hide
+
+Navigation 
+
+  * [Main page](/wiki/Main_Page "Visit the main page \[z\]")
+  * [Contents](/wiki/Wikipedia:Contents "Guides to browsing Wikipedia")
+  * [Current events](/wiki/Portal:Current_events "Articles related to current events")
+  * [Random article](/wiki/Special:Random "Visit a randomly selected article \[x\]")
+  * [About Wikipedia](/wiki/Wikipedia:About "Learn about Wikipedia and how it works")
+  * [Contact us](//en.wikipedia.org/wiki/Wikipedia:Contact_us "How to contact Wikipedia")
+
+
+
+Contribute 
+
+  * [Help](/wiki/Help:Contents "Guidance on how to use and edit Wikipedia")
+  * [Learn to edit](/wiki/Help:Introduction "Learn how to edit Wikipedia")
+  * [Community portal](/wiki/Wikipedia:Community_portal "The hub for editors")
+  * [Recent changes](/wiki/Special:RecentChanges "A list of recent changes to Wikipedia \[r\]")
+  * [Upload file](/wiki/Wikipedia:File_upload_wizard "Add images or other media for use on Wikipedia")
+  * [Special pages](/wiki/Special:SpecialPages "A list of all special pages \[q\]")
+
+
+
+[ ](/wiki/Main_Page)
+
+[ Search ](/wiki/Special:Search "Search Wikipedia \[f\]")
+
+Search
+
+
+
+
+
+
+
+Appearance
+
+
+
+
+  * [ Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+  * [Create account](/w/index.php?title=Special:CreateAccount&returnto=Takeoff "You are encouraged to create an account and log in; however, it is not mandatory")
+  * [Log in](/w/index.php?title=Special:UserLogin&returnto=Takeoff "You're encouraged to log in; however, it's not mandatory. \[o\]")
+
+
+
+Personal tools
+
+  * [ Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+  * [ Create account](/w/index.php?title=Special:CreateAccount&returnto=Takeoff "You are encouraged to create an account and log in; however, it is not mandatory")
+  * [ Log in](/w/index.php?title=Special:UserLogin&returnto=Takeoff "You're encouraged to log in; however, it's not mandatory. \[o\]")
+
+
+
+## Contents
+
+move to sidebar hide
+
+  * (Top)
+  * 1 Horizontal Toggle Horizontal subsection
+    * 1.1 Power settings
+    * 1.2 Required speeds
+    * 1.3 Assistance
+  * 2 Vertical Toggle Vertical subsection
+    * 2.1 VTOL
+    * 2.2 Rocket launch
+  * 3 See also
+  * 4 References
+
+
+
+Toggle the table of contents
+
+# Takeoff
+
+35 languages
+
+  * [العربية](https://ar.wikipedia.org/wiki/%D8%A5%D9%82%D9%84%D8%A7%D8%B9_\(%D8%B7%D9%8A%D8%B1%D8%A7%D9%86\) "إقلاع \(طيران\) – Arabic")
+  * [Asturianu](https://ast.wikipedia.org/wiki/Despegue "Despegue – Asturian")
+  * [Azərbaycanca](https://az.wikipedia.org/wiki/Qalxma "Qalxma – Azerbaijani")
+  * [Башҡортса](https://ba.wikipedia.org/wiki/%D0%9E%D1%81%D0%BE%D0%BF_%D0%BA%D2%AF%D1%82%D3%99%D1%80%D0%B5%D0%BB%D0%B5%D2%AF "Осоп күтәрелеү – Bashkir")
+  * [বাংলা](https://bn.wikipedia.org/wiki/%E0%A6%86%E0%A6%95%E0%A6%BE%E0%A6%B6%E0%A6%BE%E0%A6%B0%E0%A7%8B%E0%A6%B9%E0%A6%A3 "আকাশারোহণ – Bangla")
+  * [Català](https://ca.wikipedia.org/wiki/Enlairament "Enlairament – Catalan")
+  * [کوردی](https://ckb.wikipedia.org/wiki/%DA%BE%DB%95%DA%B5%D8%B3%D8%A7%D9%86 "ھەڵسان – Central Kurdish")
+  * [Čeština](https://cs.wikipedia.org/wiki/Vzlet "Vzlet – Czech")
+  * [Deutsch](https://de.wikipedia.org/wiki/Start_\(Luftfahrt\) "Start \(Luftfahrt\) – German")
+  * [Español](https://es.wikipedia.org/wiki/Despegue "Despegue – Spanish")
+  * [فارسی](https://fa.wikipedia.org/wiki/%D8%A8%D8%B1%D8%AE%D8%A7%D8%B3%D8%AA "برخاست – Persian")
+  * [Français](https://fr.wikipedia.org/wiki/D%C3%A9collage "Décollage – French")
+  * [Galego](https://gl.wikipedia.org/wiki/Engalaxe "Engalaxe – Galician")
+  * [עברית](https://he.wikipedia.org/wiki/%D7%94%D7%9E%D7%A8%D7%90%D7%94_\(%D7%AA%D7%A2%D7%95%D7%A4%D7%94\) "המראה \(תעופה\) – Hebrew")
+  * [Kreyòl ayisyen](https://ht.wikipedia.org/wiki/Dekolaj "Dekolaj – Haitian Creole")
+  * [Bahasa Indonesia](https://id.wikipedia.org/wiki/Lepas_landas "Lepas landas – Indonesian")
+  * [Italiano](https://it.wikipedia.org/wiki/Decollo "Decollo – Italian")
+  * [日本語](https://ja.wikipedia.org/wiki/%E9%9B%A2%E9%99%B8 "離陸 – Japanese")
+  * [Қазақша](https://kk.wikipedia.org/wiki/%D2%B0%D1%88%D1%83 "Ұшу – Kazakh")
+  * [한국어](https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%A5%99 "이륙 – Korean")
+  * [Nederlands](https://nl.wikipedia.org/wiki/Opstijgen "Opstijgen – Dutch")
+  * [Norsk bokmål](https://no.wikipedia.org/wiki/Take-off "Take-off – Norwegian Bokmål")
+  * [Polski](https://pl.wikipedia.org/wiki/Start_\(lotnictwo\) "Start \(lotnictwo\) – Polish")
+  * [Português](https://pt.wikipedia.org/wiki/Decolagem "Decolagem – Portuguese")
+  * [Română](https://ro.wikipedia.org/wiki/Decolare "Decolare – Romanian")
+  * [Русский](https://ru.wikipedia.org/wiki/%D0%92%D0%B7%D0%BB%D1%91%D1%82 "Взлёт – Russian")
+  * [Simple English](https://simple.wikipedia.org/wiki/Takeoff "Takeoff – Simple English")
+  * [ไทย](https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%B4%E0%B8%99%E0%B8%82%E0%B8%B6%E0%B9%89%E0%B8%99 "การบินขึ้น – Thai")
+  * [Türkçe](https://tr.wikipedia.org/wiki/Kalk%C4%B1%C5%9F "Kalkış – Turkish")
+  * [Татарча / tatarça](https://tt.wikipedia.org/wiki/%D0%9E%D1%87%D1%8B%D0%BF_%D0%BC%D0%B5%D0%BD%D2%AF "Очып менү – Tatar")
+  * [Українська](https://uk.wikipedia.org/wiki/%D0%97%D0%BB%D1%96%D1%82 "Зліт – Ukrainian")
+  * [اردو](https://ur.wikipedia.org/wiki/%D8%A7%DA%91%D8%A7%D9%86_%D8%A8%DA%BE%D8%B1 "اڑان بھر – Urdu")
+  * [Tiếng Việt](https://vi.wikipedia.org/wiki/C%E1%BA%A5t_c%C3%A1nh "Cất cánh – Vietnamese")
+  * [粵語](https://zh-yue.wikipedia.org/wiki/%E8%B5%B7%E9%A3%9B "起飛 – Cantonese")
+  * [中文](https://zh.wikipedia.org/wiki/%E8%B5%B7%E9%A3%9B "起飛 – Chinese")
+
+
+
+[Edit links](https://www.wikidata.org/wiki/Special:EntityPage/Q854248#sitelinks-wikipedia "Edit interlanguage links")
+
+  * [Article](/wiki/Takeoff "View the content page \[c\]")
+  * [Talk](/wiki/Talk:Takeoff "Discuss improvements to the content page \[t\]")
+
+
+
+English
+
+
+
+
+  * [Read](/wiki/Takeoff)
+  * [Edit](/w/index.php?title=Takeoff&action=edit "Edit this page \[e\]")
+  * [View history](/w/index.php?title=Takeoff&action=history "Past revisions of this page \[h\]")
+
+
+
+Tools
+
+Tools
+
+move to sidebar hide
+
+Actions 
+
+  * [Read](/wiki/Takeoff)
+  * [Edit](/w/index.php?title=Takeoff&action=edit "Edit this page \[e\]")
+  * [View history](/w/index.php?title=Takeoff&action=history)
+
+
+
+General 
+
+  * [What links here](/wiki/Special:WhatLinksHere/Takeoff "List of all English Wikipedia pages containing links to this page \[j\]")
+  * [Related changes](/wiki/Special:RecentChangesLinked/Takeoff "Recent changes in pages linked from this page \[k\]")
+  * [Upload file](//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files \[u\]")
+  * [Permanent link](/w/index.php?title=Takeoff&oldid=1341832670 "Permanent link to this revision of this page")
+  * [Page information](/w/index.php?title=Takeoff&action=info "More information about this page")
+  * [Cite this page](/w/index.php?title=Special:CiteThisPage&page=Takeoff&id=1341832670&wpFormIdentifier=titleform "Information on how to cite this page")
+  * [Get shortened URL](/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTakeoff)
+
+
+
+Print/export 
+
+  * [Download as PDF](/w/index.php?title=Special:DownloadAsPdf&page=Takeoff&action=show-download-screen "Download this page as a PDF file")
+  * [Printable version](/w/index.php?title=Takeoff&printable=yes "Printable version of this page \[p\]")
+
+
+
+In other projects 
+
+  * [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Aircraft_take_offs)
+  * [Wikidata item](https://www.wikidata.org/wiki/Special:EntityPage/Q854248 "Structured data on this page hosted by Wikidata \[g\]")
+
+
+
+Appearance
+
+move to sidebar hide
+
+From Wikipedia, the free encyclopedia
+
+Phase of flight in which a vehicle leaves the land or water surface
+
+For other uses, see [Takeoff (disambiguation)](/wiki/Takeoff_\(disambiguation\) "Takeoff \(disambiguation\)").
+
+[](/wiki/File:Question_book-new.svg)| This article **needs additional citations for[verification](/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](/wiki/Special:EditPage/Takeoff "Special:EditPage/Takeoff") by [adding citations to reliable sources](/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and removed.  
+_Find sources:_ ["Takeoff"](https://www.google.com/search?as_eq=wikipedia&q=%22Takeoff%22) – [news](https://www.google.com/search?tbm=nws&q=%22Takeoff%22+-wikipedia&tbs=ar:1) **·** [newspapers](https://www.google.com/search?&q=%22Takeoff%22&tbs=bkt:s&tbm=bks) **·** [books](https://www.google.com/search?tbs=bks:1&q=%22Takeoff%22+-wikipedia) **·** [scholar](https://scholar.google.com/scholar?q=%22Takeoff%22) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch?Query=%22Takeoff%22&acc=on&wc=on) _( December 2025)__([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))_  
+---|---  
+[](/wiki/File:An_F-A-18C_Hornet_launches_from_the_flight_deck_of_the_conventionally_powered_aircraft_carrier.jpg)An [F/A-18](/wiki/McDonnell_Douglas_F/A-18_Hornet "McDonnell Douglas F/A-18 Hornet") taking off from an [aircraft carrier](/wiki/Aircraft_carrier "Aircraft carrier") [](/wiki/File:Embraer_175_\(Air_Canada\)_091.jpg)An [Embraer E175](/wiki/Embraer_E175 "Embraer E175") taking off
+
+**Takeoff** or **take-off** is the phase of [flight](/wiki/Flight "Flight") during which an [aerial vehicle](/wiki/Aerial_vehicle "Aerial vehicle") leaves the ground and becomes airborne. For [space vehicles](/wiki/Space_vehicle "Space vehicle") that [launch](/wiki/Space_launch "Space launch") vertically, this is known as **liftoff**. 
+
+For [fixed-wing aircraft](/wiki/Fixed-wing_aircraft "Fixed-wing aircraft") that take off horizontally ([conventional takeoff](/wiki/CTOL "CTOL")), this usually involves an [accelerating](/wiki/Accelerating "Accelerating") ground run (known as the _roll_) on a [runway](/wiki/Runway "Runway") to build up speed so the [wings](/wiki/Wing "Wing") can generate enough [lift](/wiki/Lift_\(force\) "Lift \(force\)"). For [aerostats](/wiki/Aerostat "Aerostat") ([balloons](/wiki/Balloon_\(aircraft\) "Balloon \(aircraft\)") and [airships](/wiki/Airship "Airship")), [helicopters](/wiki/Helicopter "Helicopter"), [tiltrotors](/wiki/Tiltrotor "Tiltrotor") (e.g. the [V-22 Osprey](/wiki/V-22_Osprey "V-22 Osprey")) and [thrust-vectoring](/wiki/Thrust-vectoring "Thrust-vectoring") [STOVL](/wiki/STOVL "STOVL") fixed-wing aircraft (e.g. the [Harrier jump jet](/wiki/Harrier_jump_jet "Harrier jump jet") and [F-35B](/wiki/F-35B "F-35B")), a [helipad](/wiki/Helipad "Helipad")/[STOLport](/wiki/STOLport "STOLport") is sufficient and no runway is needed. 
+
+## Horizontal
+
+[[edit](/w/index.php?title=Takeoff&action=edit&section=1 "Edit section: Horizontal")]
+
+[](/wiki/File:Question_book-new.svg)| This section **relies largely or entirely on a[single source](/wiki/Wikipedia:Identifying_reliable_sources "Wikipedia:Identifying reliable sources")**. Relevant discussion may be found on the [talk page](/wiki/Talk:Takeoff "Talk:Takeoff"). Please help [improve this article](https://en.wikipedia.org/w/index.php?title=Takeoff&action=edit) by introducing [citations](/wiki/Wikipedia:Citing_sources "Wikipedia:Citing sources") to additional sources at this section. Unsourced material may be challenged and removed.  
+_Find sources:_ ["Takeoff"](https://www.google.com/search?as_eq=wikipedia&q=%22Takeoff%22) – [news](https://www.google.com/search?tbm=nws&q=%22Takeoff%22+-wikipedia&tbs=ar:1) **·** [newspapers](https://www.google.com/search?&q=%22Takeoff%22&tbs=bkt:s&tbm=bks) **·** [books](https://www.google.com/search?tbs=bks:1&q=%22Takeoff%22+-wikipedia) **·** [scholar](https://scholar.google.com/scholar?q=%22Takeoff%22) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch?Query=%22Takeoff%22&acc=on&wc=on) _( December 2025)__([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))_  
+---|---  
+  
+### Power settings
+
+[[edit](/w/index.php?title=Takeoff&action=edit&section=2 "Edit section: Power settings")]
+
+For [light aircraft](/wiki/Light_aircraft "Light aircraft"), full power is usually used during takeoff. Large [transport category](/wiki/Transport_category "Transport category") (airliner) aircraft may use a [reduced power](/wiki/Flex_temp "Flex temp") for takeoff, where less than full power is applied in order to prolong engine life, reduce maintenance costs and reduce noise emissions. In some emergency cases, the power used can then be increased to increase the aircraft's performance. Before takeoff, the engines, particularly [piston engines](/wiki/Piston_engine "Piston engine"), are routinely run up at high power to check for engine-related problems. The aircraft is permitted to accelerate to rotation speed (often referred to as Vr). The term _[rotation](/wiki/Rotation_\(aeronautics\) "Rotation \(aeronautics\)")_ is used because the aircraft pivots around the axis of its main [landing gear](/wiki/Landing_gear "Landing gear") while still on the ground, usually because of gentle manipulation of the [flight controls](/wiki/Aircraft_flight_control_system "Aircraft flight control system") to make or facilitate this change in [aircraft attitude](/wiki/Aircraft_attitude "Aircraft attitude") (once proper air displacement occurs under / over the wings, an aircraft will lift off on its own; controls are to ease that in). 
+
+The nose is raised to a nominal 5[°](/wiki/Degree_\(angle\) "Degree \(angle\)")-15° nose up [pitch](/wiki/Flight_dynamics "Flight dynamics") attitude to increase lift from the [wings](/wiki/Wing "Wing") and effect liftoff. For most aircraft, attempting a takeoff without a pitch-up would require cruise speeds while still on the runway. 
+
+[](/wiki/File:Three_way_take_off_at_Beijing_Capital_International_Airport.jpg)Three airliners taking off simultaneously (note similar pitch attitudes)
+
+Fixed-wing aircraft designed for high-speed operation (such as commercial [jet aircraft](/wiki/Jet_aircraft "Jet aircraft")) have difficulty generating enough lift at the low speeds encountered during takeoff. These are therefore fitted with [high-lift devices](/wiki/High-lift_device "High-lift device"), often including [slats](/wiki/Leading_edge_slats "Leading edge slats") and usually [flaps](/wiki/Flap_\(aircraft\) "Flap \(aircraft\)"), which increase the [camber](/wiki/Camber_\(aerodynamics\) "Camber \(aerodynamics\)") and often area of the wing, making it more effective at low speed, thus creating more lift. These are deployed from the wing before takeoff, and retracted during the [climb](/wiki/Climb_\(aeronautics\) "Climb \(aeronautics\)"). They can also be deployed at other times, such as before [landing](/wiki/Landing "Landing"). 
+
+### Required speeds
+
+[[edit](/w/index.php?title=Takeoff&action=edit&section=3 "Edit section: Required speeds")]
+
+The _takeoff speed required_ varies with aircraft weight and aircraft configuration (flap or slat position, as applicable), and is provided to the flight crew as [indicated airspeed](/wiki/Indicated_airspeed "Indicated airspeed"). 
+
+Operations with transport category aircraft employ the concept of the takeoff [V-speeds](/wiki/V-speed "V-speed"): V1, VR and V2. These speeds are determined not only by the above factors affecting takeoff performance, but also by the length and slope of the runway and any peculiar conditions, such as obstacles off the end of the runway. Below V1, in case of critical failures, the takeoff should be aborted; above V1 the pilot continues the takeoff and returns for landing. After the co-pilot calls V1, they will call VR or "rotate," marking speed at which to rotate the aircraft. The VR for transport category aircraft is calculated such as to allow the aircraft to reach the regulatory screen height at V2 with one engine failed. Then, V2 (the safe takeoff speed) is called. This speed must be maintained after an engine failure to meet performance targets for rate of climb and angle of climb. 
+
+[](/wiki/File:Boeing_737-800_\(EI-ENI\)_of_Ryanair_departs_Bristol_Airport,_England_23Aug2014_arp.jpg)A [Boeing 737-800](/wiki/Boeing_737-800 "Boeing 737-800") retracting its [undercarriages](/wiki/Landing_gear "Landing gear") during takeoff
+
+In a single-engine or light twin-engine aircraft, the pilot calculates the length of runway required to take off and clear any obstacles, to ensure sufficient runway to use for takeoff. A safety margin can be added to provide the option to stop on the runway in case of a [rejected takeoff](/wiki/Rejected_takeoff "Rejected takeoff"). In most such aircraft, any engine failure results in a rejected takeoff as a matter of course, since even overrunning the end of the runway is preferable to lifting off with insufficient power to maintain flight. 
+
+If an obstacle needs to be cleared, the pilot climbs at the speed for maximum climb angle (Vx), which results in the greatest altitude gain per unit of horizontal distance travelled. If no obstacle needs to be cleared, or after an obstacle is cleared, the pilot can accelerate to the best rate of climb speed (Vy), where the aircraft will gain the most altitude in the least amount of time. Generally speaking, Vx is a lower speed than Vy, and requires a higher pitch attitude to achieve. 
+
+The speeds needed for takeoff are relative to the motion of the air ([indicated airspeed](/wiki/Indicated_airspeed "Indicated airspeed")). A [headwind](/wiki/Headwind "Headwind") will reduce the ground speed needed for takeoff, as there is a greater flow of air over the wings. Typical takeoff air speeds for jetliners are in the range of 240–285 [km/h](/wiki/Kilometres_per_hour "Kilometres per hour") (130–154 [kn](/wiki/Knot_\(unit\) "Knot \(unit\)"); 149–177 [mph](/wiki/Miles_per_hour "Miles per hour")). Light aircraft, such as a [Cessna 150](/wiki/Cessna_150 "Cessna 150"), take off at around 100 [km/h](/wiki/Kilometres_per_hour "Kilometres per hour") (54 [kn](/wiki/Knot_\(unit\) "Knot \(unit\)"); 62 [mph](/wiki/Miles_per_hour "Miles per hour")). [Ultralights](/wiki/Ultralight "Ultralight") have even lower takeoff speeds. For a given aircraft, the takeoff speed is usually dependent on the aircraft weight; the heavier the weight, the greater the speed needed.[1] Some aircraft are specifically designed for [short takeoff and landing (STOL)](/wiki/Short_takeoff_and_landing "Short takeoff and landing"), which they achieve by becoming airborne at very low speeds. 
+
+### Assistance
+
+[[edit](/w/index.php?title=Takeoff&action=edit&section=4 "Edit section: Assistance")]
+
+Main article: [Assisted takeoff](/wiki/Assisted_takeoff "Assisted takeoff")
+
+[](/wiki/File:Glider_in_flight.JPG)Tow line and towing aircraft seen from the cockpit of a [glider](/wiki/Glider_\(sailplane\) "Glider \(sailplane\)")
+
+**Assisted takeoff** is any system for helping [aircraft](/wiki/Aircraft "Aircraft") into the air (as opposed to strictly under its own power). The reason it might be needed is due to the aircraft's weight exceeding the normal [maximum takeoff weight](/wiki/Maximum_Takeoff_Weight "Maximum Takeoff Weight"), insufficient power, or the available [runway](/wiki/Runway "Runway") length may be insufficient, or a [hot and high](/wiki/Hot_and_high "Hot and high") airfield, or a combination of all four factors. Assisted takeoff is also required for [gliders](/wiki/Glider_\(sailplane\) "Glider \(sailplane\)"), which do not have an engine and so are unable to take off by themselves. Hence assisted takeoff is required. 
+
+## Vertical
+
+[[edit](/w/index.php?title=Takeoff&action=edit&section=5 "Edit section: Vertical")]
+
+[](/wiki/File:Yellow.balloon.lifts.in.bath.arp.jpg)Takeoff of a [hot air balloon](/wiki/Hot_air_balloon "Hot air balloon")
+
+Vertical takeoff refers to aircraft or rockets that take off in a vertical [trajectory](/wiki/Trajectory "Trajectory"). Vertical takeoff eliminates the need for airfields. Most vertical take off aircraft are also able to land horizontally, but there were certain [rocket-powered aircraft](/wiki/Rocket-powered_aircraft "Rocket-powered aircraft") of the _[Luftwaffe](/wiki/Luftwaffe "Luftwaffe")_ that only took off vertically, landing in other ways. The [Bachem Ba 349](/wiki/Bachem_Ba_349 "Bachem Ba 349") _Natter_ landed under a parachute after having taken off vertically. Other late projects developed in [Nazi Germany](/wiki/Nazi_Germany "Nazi Germany"), such as the [Heinkel P.1077](/wiki/Heinkel_P.1077 "Heinkel P.1077") _Julia_ or the [Focke-Wulf _Volksjäger_ 2](/wiki/Focke-Wulf_Volksj%C3%A4ger "Focke-Wulf Volksjäger"), climbed to their ceiling at a nearly vertical angle and landed later on a skid.[2]
+
+### VTOL
+
+[[edit](/w/index.php?title=Takeoff&action=edit&section=6 "Edit section: VTOL")]
+
+Main article: [VTOL](/wiki/VTOL "VTOL")
+
+[](/wiki/File:US_Navy_050423-N-6214F-004_Aviation_Boatswain%27s_Mate_2nd_Class_Courtney_F._Godfrey_runs_behind_the_foul_line_as_a_Marine_Corps_AV-8B_Harrier_II-_performs_a_vertical_takeoff.jpg)The [Harrier jump jet](/wiki/Harrier_jump_jet "Harrier jump jet"), a [VTOL](/wiki/VTOL "VTOL") aircraft
+
+**Vertical take-off and landing** (**VTOL**) [aircraft](/wiki/Aircraft "Aircraft") include [fixed-wing aircraft](/wiki/Fixed-wing_aircraft "Fixed-wing aircraft") that can hover, [take off and land](/wiki/Takeoff_and_landing "Takeoff and landing") vertically as well as [helicopters](/wiki/Helicopter "Helicopter") and other aircraft with powered rotors, such as [tiltrotors](/wiki/Tiltrotor "Tiltrotor").[3][4][5][6] Some VTOL aircraft can operate in other modes as well, such as [CTOL](/wiki/CTOL "CTOL") (conventional take-off and landing), [STOL](/wiki/STOL "STOL") (short take-off and landing), and/or [STOVL](/wiki/STOVL "STOVL") (short take-off and vertical landing). Others, such as some helicopters, can only operate by VTOL, due to the aircraft lacking [landing gear](/wiki/Landing_gear "Landing gear") that can handle horizontal motion. VTOL is a subset of [V/STOL](/wiki/V/STOL "V/STOL") (vertical and/or short take-off and landing). 
+
+Besides the helicopter, there are two types of VTOL aircraft in military service: craft using a [tiltrotor](/wiki/Tiltrotor "Tiltrotor"), such as the [Bell](/wiki/Bell_Helicopter_Textron "Bell Helicopter Textron") [Boeing](/wiki/Boeing "Boeing") [V-22 Osprey](/wiki/V-22_Osprey "V-22 Osprey"), and some aircraft using directed jet thrust such as the [Harrier family](/wiki/Harrier_jump_jet "Harrier jump jet"). 
+
+### Rocket launch
+
+[[edit](/w/index.php?title=Takeoff&action=edit&section=7 "Edit section: Rocket launch")]
+
+Main article: [Space launch](/wiki/Space_launch "Space launch")
+
+[](/wiki/File:Space_Shuttle_Columbia_launching.jpg)[Space Shuttle](/wiki/Space_Shuttle "Space Shuttle") _[Columbia](/wiki/Space_Shuttle_Columbia "Space Shuttle Columbia")_ in the process of lifting off from the launch pad during [STS-1](/wiki/STS-1 "STS-1")
+
+The takeoff phase of the flight of a [rocket](/wiki/Rocket "Rocket") is called "rocket launch". Launches for [orbital spaceflights](/wiki/Orbital_spaceflight "Orbital spaceflight"), or launches into [interplanetary space](/wiki/Interplanetary_space "Interplanetary space"), are usually from a fixed location on the ground, but may also be from a floating platform such as the [San Marco platform](/wiki/San_Marco_platform "San Marco platform"), or the [Sea Launch](/wiki/Sea_Launch "Sea Launch") launch vessel. [Lists of rocket launches](/wiki/Lists_of_rocket_launches "Lists of rocket launches") can be seen here. 
+
+## See also
+
+[[edit](/w/index.php?title=Takeoff&action=edit&section=8 "Edit section: See also")]
+
+  * [Aviation portal](/wiki/Portal:Aviation "Portal:Aviation")
+
+
+  * [Index of aviation articles](/wiki/Index_of_aviation_articles "Index of aviation articles")
+  * [Balanced field takeoff](/wiki/Balanced_field_takeoff "Balanced field takeoff")
+  * [Climb (aeronautics)](/wiki/Climb_\(aeronautics\) "Climb \(aeronautics\)")
+  * [Cruise (aeronautics)](/wiki/Cruise_\(aeronautics\) "Cruise \(aeronautics\)")
+  * [Descent (aeronautics)](/wiki/Descent_\(aeronautics\) "Descent \(aeronautics\)")
+  * [Landing](/wiki/Landing "Landing")
+  * [V speeds](/wiki/V_speeds "V speeds")
+
+
+
+## References
+
+[[edit](/w/index.php?title=Takeoff&action=edit&section=9 "Edit section: References")]
+
+[](/wiki/File:Wiktionary-logo-en-v2.svg)
+
+Look up _**[takeoff](https://en.wiktionary.org/wiki/takeoff "wiktionary:takeoff")**_ or _**[take off](https://en.wiktionary.org/wiki/take_off "wiktionary:take off")**_ in Wiktionary, the free dictionary.
+
+[](/wiki/File:Commons-logo.svg)
+
+Wikimedia Commons has media related to [Starts in aviation](https://commons.wikimedia.org/wiki/Category:Starts_in_aviation "commons:Category:Starts in aviation").
+
+  1. **^** Scott, Jeff (4 August 2002) "[Airliner Takeoff Speeds](http://www.aerospaceweb.org/question/performance/q0088.shtml)". Aerospace Web. Retrieved 12 August 2015
+  2. **^** [Ulrich Albrecht: Artefakte des Fanatismus; Technik und nationalsozialistische Ideologie in der Endphase des Dritten Reiches](http://www.wissenschaft-und-frieden.de/seite.php?artikelID=0833) [Archived](https://web.archive.org/web/20200413090345/https://www.wissenschaft-und-frieden.de/seite.php?artikelID=0833) 2020-04-13 at the [Wayback Machine](/wiki/Wayback_Machine "Wayback Machine") (in German)
+  3. **^** "Vertical Takeoff & Landing Aircraft," John P. Campbell, The MacMillan Company, New York, 1962.
+  4. **^** Rogers 1989.
+  5. **^** Laskowitz, I.B. "Vertical Take-Off and Landing (VTOL) Aircraft." _Annals of the New York Academy of Sciences,_ Vol. 107, Art. 1, 25 March 1963.
+  6. **^** "Straight Up - A History of Vertical Flight," Steve Markman and Bill Holder, Schiffer Publishing, 2000.
+
+
+
+  * [v](/wiki/Template:Types_of_take-off_and_landing "Template:Types of take-off and landing")
+  * [t](/wiki/Template_talk:Types_of_take-off_and_landing "Template talk:Types of take-off and landing")
+  * [e](/wiki/Special:EditPage/Template:Types_of_take-off_and_landing "Special:EditPage/Template:Types of take-off and landing")
+
+Types of [takeoff and landing](/wiki/Takeoff_and_landing "Takeoff and landing")  
+---  
+Takeoff| 
+
+  * [Balanced field takeoff](/wiki/Balanced_field_takeoff "Balanced field takeoff")
+  * [Non-rocket spacelaunch](/wiki/Non-rocket_spacelaunch "Non-rocket spacelaunch")
+  * [Rejected takeoff](/wiki/Rejected_takeoff "Rejected takeoff")
+  * [Rocket launch](/wiki/Rocket_launch "Rocket launch")
+  * [Space launch](/wiki/Space_launch "Space launch")
+  * [Zero-length launch](/wiki/Zero-length_launch "Zero-length launch")
+
+  
+[Assisted take-off](/wiki/Assisted_take-off "Assisted take-off")| 
+
+  * [Catapult](/wiki/Aircraft_catapult "Aircraft catapult")
+  * [Ground carriage](/wiki/Ground_carriage "Ground carriage")
+  * [JATO](/wiki/JATO "JATO")
+  * [Rocket sled](/wiki/Rocket_sled_launch "Rocket sled launch")
+  * [Ski-jump](/wiki/Ski-jump_\(aviation\) "Ski-jump \(aviation\)")
+  * [Turbo-Cat](/wiki/All_American_Turbo-Cat "All American Turbo-Cat")
+
+  
+[Takeoff and landing](/wiki/Takeoff_and_landing "Takeoff and landing")| 
+
+  * [Brodie landing system](/wiki/Brodie_landing_system "Brodie landing system")
+  * [CATOBAR](/wiki/CATOBAR "CATOBAR")
+  * [CTOL](/wiki/CTOL "CTOL")
+  * [eVTOL](/wiki/EVTOL "EVTOL")
+  * [PTOL](/wiki/PTOL "PTOL")
+  * [Rough-field capability](/wiki/STOL#Rough_field_capability "STOL")
+  * [QTOL](/wiki/QTOL "QTOL")
+  * [RTOL](/wiki/RTOL "RTOL")
+  * [STOBAR](/wiki/STOBAR "STOBAR")
+  * [STOL](/wiki/STOL "STOL")
+  * [STOVL](/wiki/STOVL "STOVL")
+  * [V/STOL](/wiki/V/STOL "V/STOL")
+  * [VTHL](/wiki/VTHL "VTHL")/[VTOHL](/wiki/VTOHL "VTOHL")
+  * [VTOL](/wiki/VTOL "VTOL")
+  * [Launch and recovery cycle](/wiki/Launch_and_recovery_cycle "Launch and recovery cycle")
+  * [VTVL](/wiki/VTVL "VTVL")
+  * [VTHL](/wiki/VTHL "VTHL")
+  * [HTHL](/wiki/HTHL "HTHL")
+  * [HTVL](/wiki/HTVL "HTVL")
+
+  
+[Landing](/wiki/Landing "Landing")| 
+
+  * [Belly landing](/wiki/Belly_landing "Belly landing")
+  * [Corkscrew landing](/wiki/Corkscrew_landing "Corkscrew landing")
+  * [Crosswind landing](/wiki/Crosswind_landing "Crosswind landing")
+  * [Deadstick landing](/wiki/Deadstick_landing "Deadstick landing")
+  * [Emergency landing](/wiki/Emergency_landing "Emergency landing")
+  * [Flexible deck](/wiki/Flight_deck#Flexible_decks "Flight deck")
+  * [Forced landing](/wiki/Forced_landing "Forced landing")
+  * [Hard landing](/wiki/Hard_landing "Hard landing")
+  * [Shipborne rolling vertical landing](/wiki/Shipborne_rolling_vertical_landing "Shipborne rolling vertical landing")
+  * [Short-field landing](/wiki/Short-field_landing "Short-field landing")
+  * [Soft landing](/wiki/Soft_landing "Soft landing")
+  * [Splashdown](/wiki/Splashdown "Splashdown")
+  * [Touch-and-go landing](/wiki/Touch-and-go_landing "Touch-and-go landing")
+  * [Water landing/ditching](/wiki/Water_landing "Water landing")
+  * [Floating landing platform](/wiki/Floating_launch_vehicle_operations_platform "Floating launch vehicle operations platform")
+
+  
+  
+  * [v](/wiki/Template:Flight_phases "Template:Flight phases")
+  * [t](/wiki/Template_talk:Flight_phases "Template talk:Flight phases")
+  * [e](/wiki/Special:EditPage/Template:Flight_phases "Special:EditPage/Template:Flight phases")
+
+[Flight phases](/wiki/Category:Flight_phases "Category:Flight phases")  
+---  
+Main phases| 
+
+  * [Taxiing](/wiki/Taxiing "Taxiing")
+  * Takeoff
+  * [Climb](/wiki/Climb_\(aeronautics\) "Climb \(aeronautics\)")
+  * [Cruise](/wiki/Cruise_\(aeronautics\) "Cruise \(aeronautics\)")
+  * [Descent](/wiki/Descent_\(aeronautics\) "Descent \(aeronautics\)")
+  * [Landing](/wiki/Landing "Landing")
+
+  
+Related topics| 
+
+  * [Takeoff and landing](/wiki/Takeoff_and_landing "Takeoff and landing")
+    * [types](/wiki/Template:Types_of_take-off_and_landing "Template:Types of take-off and landing")
+  * [Holding](/wiki/Holding_\(aeronautics\) "Holding \(aeronautics\)")
+  * [Rotation](/wiki/Rotation_\(aeronautics\) "Rotation \(aeronautics\)")
+  * [Step climb](/wiki/Step_climb "Step climb")
+  * [Top of climb](/wiki/Top_of_climb "Top of climb")
+  * [Loiter](/wiki/Loiter_\(aeronautics\) "Loiter \(aeronautics\)")
+  * [Top of descent](/wiki/Top_of_descent "Top of descent")
+  * [Final approach](/wiki/Final_approach_\(aeronautics\) "Final approach \(aeronautics\)")
+  * [Go-around](/wiki/Go-around "Go-around")
+
+  
+  
+Retrieved from "[https://en.wikipedia.org/w/index.php?title=Takeoff&oldid=1341832670](https://en.wikipedia.org/w/index.php?title=Takeoff&oldid=1341832670)"
+
+[Categories](/wiki/Help:Category "Help:Category"): 
+
+  * [Flight phases](/wiki/Category:Flight_phases "Category:Flight phases")
+  * [Types of take-off and landing](/wiki/Category:Types_of_take-off_and_landing "Category:Types of take-off and landing")
+  * [Aircraft performance](/wiki/Category:Aircraft_performance "Category:Aircraft performance")
+
+
+
+Hidden categories: 
+
+  * [Webarchive template wayback links](/wiki/Category:Webarchive_template_wayback_links "Category:Webarchive template wayback links")
+  * [Articles with short description](/wiki/Category:Articles_with_short_description "Category:Articles with short description")
+  * [Short description is different from Wikidata](/wiki/Category:Short_description_is_different_from_Wikidata "Category:Short description is different from Wikidata")
+  * [Articles needing additional references from December 2025](/wiki/Category:Articles_needing_additional_references_from_December_2025 "Category:Articles needing additional references from December 2025")
+  * [All articles needing additional references](/wiki/Category:All_articles_needing_additional_references "Category:All articles needing additional references")
+  * [Commons category link is locally defined](/wiki/Category:Commons_category_link_is_locally_defined "Category:Commons category link is locally defined")
+  * [Articles containing video clips](/wiki/Category:Articles_containing_video_clips "Category:Articles containing video clips")
+
+
+
+  * This page was last edited on 5 March 2026, at 08:48 (UTC).
+  * Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License"); additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.
+
+
+  * [Privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy)
+  * [About Wikipedia](/wiki/Wikipedia:About)
+  * [Disclaimers](/wiki/Wikipedia:General_disclaimer)
+  * [Contact Wikipedia](//en.wikipedia.org/wiki/Wikipedia:Contact_us)
+  * [Legal & safety contacts](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information)
+  * [Code of Conduct](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct)
+  * [Developers](https://developer.wikimedia.org)
+  * [Statistics](https://stats.wikimedia.org/#/en.wikipedia.org)
+  * [Cookie statement](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement)
+  * [Mobile view](//en.wikipedia.org/w/index.php?title=Takeoff&mobileaction=toggle_view_mobile)
+
+
+  * [](https://www.wikimedia.org/)
+  * [](https://www.mediawiki.org/)
+
+
+
+Search
+
+Search
+
+Toggle the table of contents
+
+Takeoff
+
+35 languages Add topic
+
+
+
+  *[Ref(s).]: References
+  *[Ref.]: Reference(s)
+  *[v]: View this template
+  *[t]: Discuss this template
+  *[e]: Edit this template
+  *[JAM]: Jamaica
+  *[USA]: United States
+  *[BOT]: Botswana
+  *[A]: Mark set at altitude
+  *[WR]: World record
+  *[Ath.#]: Athlete rank
+  *[Perf.#]: Performance rank
+  *[URS]: Soviet Union
+  *[h]: hand timed
+  *[TRI]: Trinidad and Tobago
+  *[CUB]: Cuba
+  *[ITA]: Italy
+  *[NGR]: Nigeria
+  *[GBR]: Great Britain
+  *[CAN]: Canada
+  *[AUS]: Australia
+  *[GDR]: East Germany
+  *[POL]: Poland
+  *[FRG]: West Germany
+  *[BUL]: Bulgaria
+  *[RUS]: Russia
+  *[UKR]: Ukraine
+  *[BAH]: Bahamas
+  *[CIV]: Ivory Coast
+  *[SKN]: Saint Kitts and Nevis
+  *[GER]: Germany
+  *[GRE]: Greece
+  *[FRA]: France
+  *[NED]: Netherlands
+  *[LCA]: Saint Lucia
+  *[c.]: circa
+  *[Pos]: Position
+  *[Pld]: Played
+  *[W]: Matches won
+  *[D]: Matches drawn
+  *[L]: Matches lost
+  *[GF]: Goals for
+  *[GA]: Goals against
+  *[GAv]: Goal average
+  *[Pts]: Points
+  *[Conf.]: Conference record
+  *[T]: Tries
+  *[NOC]: National Olympic Committee
+  *[FL]: Fastest lap
+  *[Max.]: Maximum
+  *[USGS]: United States Geological Survey
+  *[Pos.]: Position
+  *[No.]: Number
+  *[DOB]: Date of birth
+  *[ W ]: Games won
+  *[ L ]: Games lost
+  *[ PCT ]: Winning percentage
+  *[ GB ]: Games behind
+  *[ Home ]: Home record
+  *[ Road ]: Road record
+  *[ Div ]: Division record
+  *[Rnd.]: Draft round
+  *[Pick]: Overall selection number
+  *[Team]: NFL team which made selection
+  *[College]: Most recent college attended
+  *[Original NFL team]: Team which signed the player after the draft
+  *[GD]: Goal difference
+  *[R]: Recurring
+  *[G]: Goals
+  *[P]: Points
+  *[Pts.]: Points
+  *[GP]: Games played
+  *[Grp]: Group
+  *[FB]: Fullback
+  *[KR]: Kick returner
+  *[LS]: Long snapper
+  *[C]: Center
+  *[DE]: Defensive end
+  *[DT]: Defensive tackle
+  *[OLB]: Outside linebacker
+  *[MLB]: Middle linebacker
+  *[FS]: Free safety
+  *[CB]: Cornerback
+  *[CB/S]: Cornerback / safety
+  *[SS]: Strong safety
+  *[K]: Kicker
+  *[S]: Safety
+  *[TE]: Tight end
+  *[PCT]: Winning percentage
+  *[PF]: Points For (Total points scored)
+  *[PA]: Points Against (Total points allowed)
+  *[STK]: Current Winning or Losing Streak
+  *[GK]: Goalkeeper
+  *[DF]: Defender
+  *[MF]: Midfielder
+  *[FW]: Forward
+  *[Nat]: Nationality
+  *[Div]: Division record
+  *[+/-]: Plus/minus
+  *[PIM]: Penalties in minutes
+  *[GS]: Games started
+  *[SA]: Shots against
+  *[GAA]: Goals against average
+  *[SV%]: Save percentage
+  *[SO]: Shutouts
+  *[TOI]: Time on Ice
+  *[PR]: Punt returner
+  *[C/G]: Center / offensive guard
+  *[T/G]: Offensive tackle / guard
+  *[G/T]: Offensive guard / tackle
+  *[CB/FS]: Cornerback / free safety
+  *[LB]: Linebacker
+  *[DE/DT]: Defensive end / defensive tackle
+  *[QB]: Quarterback
+  *[RB]: Running back
+  *[OT]: Overtime
+  *[DIV]: Win–Loss record within their division
+  *[CONF]: Win–Loss record within their conference
+  *[pop.]: population
+  *[lit.]: literal translation
+  *[GB]: Games behind
+  *[Home]: Home record
+  *[Road]: Road record
+  *[WL]: World leading performance
+  *[MR]: Meet record
+  *[QAT]: Qatar
+  *[DJI]: Djibouti
+  *[ETH]: Ethiopia
+  *[PAN]: Panama
+  *[SB]: Super Bowl
+  *[GRN]: Grenada
+  *[KEN]: Kenya
+  *[PUR]: Puerto Rico
+  *[RSA]: Republic of South Africa
+  *[AR]: Area (continental) record
+  *[BIH]: Bosnia and Herzegovina
+  *[NR]: non-
+  *[PB]: Personal best
+  *[TTO]: Trinidad and Tobago
+  *[MAR]: Morocco
+  *[DLR]: Diamond League record
+  *[FIN]: Finland
+  *[CZE]: Czech Republic
+  *[CHN]: China
+  *[BEL]: Belgium
+  *[NZL]: New Zealand
+  *[DEN]: Denmark
+  *[TUN]: Tunisia
+  *[LTU]: Lithuania
+  *[CRO]: Croatia
+  *[COL]: Colombia
+  *[ESP]: Spain
+  *[BRA]: Brazil
+  *[ISR]: Israel
+  *[SRB]: Serbia
+  *[KAZ]: Kazakhstan
+  *[LAT]: Latvia
+  *[Agg.]: Aggregate score
+  *[Total]: Total season attendance
+  *[High]: Highest season attendance
+  *[Low]: Lowest season attendance
+  *[Average]: Average season attendance
+  *[Change]: Change in number of seats from the 2012 election to the 2018 election
+  *[Q]: Qualified for final by place
+  *[q]: Qualified for final by time
+  *[N]: Squad Number
+  *[Nat.]: Nationality
+  *[Name]: Name of the player
+  *[Age]: Current age or age on the end of the season
+  *[SW]: Sets won
+  *[SL]: Sets lost
+  *[SR]: Strike rate
+  *[SPW]: Setpoints won
+  *[SPL]: Setpoints lost
+  *[SPR]: Setpoint ratio
+  *[TBA]: To be announced
+  *[ POS ]: Position
+  *[ GP ]: Games played
+  *[ GS ]: Games starter
+  *[ MP ]: Minutes played
+  *[ REB ]: Rebounds
+  *[ AST ]: Assists
+  *[ STL ]: Steals
+  *[ BLK ]: Blocks
+  *[ PTS ]: Points
+  *[ MPG ]: Minutes per game
+  *[ RPG ]: Rebounds per game
+  *[ APG ]: Assists per game
+  *[ SPG ]: Steals per game
+  *[ BPG ]: Blocks per game
+  *[ PPG ]: Points per game
+  *[Uniform]: Uniform number
+  *[Starts]: Number of Opening Day starts with this team
+  *[SLO]: Slovenia
+  *[AUT]: Austria
+  *[NLD]: Netherlands
+  *[LUX]: Luxembourg
+  *[NOR]: Norway
+  *[POR]: Portugal
+  *[SUI]: Switzerland
+  *[CRI]: Costa Rica
+  *[ERI]: Eritrea
+  *[SVK]: Slovakia
+  *[IRL]: Ireland
+  *[m.]: married
+  *[posth.]: posthumously
+  *[EPs]: Extended plays
+  *[NZ]: New Zealand
+  *[SWE]: Sweden
+  *[SWI]: Switzerland
+  *[UK]: United Kingdom
+  *[US]: United States
+  *[WW]: Worldwide
+  *[Main.]: Mainstream Rock
+  *[Apps]: League appearances
+  *[ Gls]: League goals
+  *[Grant]: Dick Grant
+  *[Finlay]: Andrew Finlay
+  *[Moore]: Curtis Moore
+  *[Holbert]: Gene Holbert
+  *[Broaddus]: Ron Broaddus
+  *[Young]: Donald Young
+  *[Cole]: Tim Cole
+  *[Roberts]: Jay Roberts
+  *[Shumate]: Jacob Shumate
+  *[Zapp]: A. J. Zapp
+  *[Cameron]: Troy Cameron
+  *[Burrus]: Josh Burrus
+  *[Lewis]: Richard Lewis
+  *[B. Jones]: Beau Jones
+  *[C. Johnson]: Clint Johnson
+  *[Evarts]: Steven Evarts
+  *[Gilmore]: Jon Gilmore
+  *[DeVall]: Brett DeVall
+  *[Lipka]: Matthew Lipka
+  *[WIA]: Wounded in action
+  *[†]: Extinct
+  *[Pop.]: Population
+  *[%±]: Percent change
+  *[±% p.a.]: Per annum growth rate
+  *[div.]: divorced
+  *[[lit.](/wiki/Literal_translation "Literal translation")]: literal translation
+  *[Manahan]: Austin Manahan
+  *[Christianson]: Ryan Christianson
+  *[Heaverlo]: Jeff Heaverlo
+  *[GSA]: Germany, Switzerland, Austria
+  *[ lit.]: literal translation
+  *[CRDP]: Centre de Recherche et de Développement Pédagogique (Centre of research and pedagogical development)
+  *[MAO]: Musique assistée par ordinateur (Computer music)
+  *[BD]: Bande dessinée (comic strip)
+  *[±%]: Percent change
+  *[no.]: number
+  *[Pub. L.]: Public Law
+  *[LV]: Launch Vehicle serial number
+  *[CSM]: Commmand and Service Module Serial Number
+  *[LM]: Lunar Module Serial Number
+  *[ v]: View this template
+  *[#]: Number
+  *[ NR]: National record
+  *[OR]: 'or'
+  *[WJR]: World under-20 record
+  *[[WR](/wiki/List_of_world_records_in_athletics "List of world records in athletics")]: World record
+  *[11,190–11,035–154]: 11,190 wins, 11,035 losses, 154 ties
+  *[4,926–4,547–8]: 4,926 wins, 4,547 losses, 8 ties
+  *[Ref]: Reference
+  *[Ref(s)]: Reference(s)
+  *[(?)]: Signal intelligence and cipher training organisations
+  *[OCLC]: Online Computer Library Center number
+  *[LC Class]: Library of Congress Classification
+  *[JCR]: Junior common room
+  *[MCR]: Middle common room
+  *[RG]: Right guard
+  *[RT]: Right tackle
+  *[LG]: Left guard
+  *[LT]: Left tackle
+  *[NT]: Nose tackle
+  *[ILB]: Inside linebacker
+  *[active]: Capped at 53. Expands to 90 in the offseason.
+  *[exempt]: Does not count against the roster limit
+  *[Times]: Number of times achieved
+  *[Refs]: References
+  *[Dickerson]: Doug Dickerson
+  *[Grigas]: Joe Grigas
+  *[Bedard]: John Bedard
+  *[Peltier]: Dwayne Peltier
+  *[Parke]: Jim Parke
+  *[Nicely]: Anthony Nicely
+  *[Garnett]: Brad Garnett
+  *[Aubin]: Gerry Aubin
+  *[DeLucchi]: Ron DeLucchi
+  *[Andersh]: Kevin Andersh
+  *[Zimmerman]: Mike Zimmerman
+  *[Farrell]: Jon Farrell
+  *[S. Walker]: Shon Walker
+  *[Peterson]: Jayson Peterson
+  *[Rice]: Andy Rice
+  *[Barnes]: Barrett Barnes
+  *[CID]: Compound ID
+  *[EPA]: U.S. Environmental Protection Agency
+  *[~]: approximately
+  *[ c.]: circa
+  *[ †]: Extinct
+  *[**%DV**]: Percentage of Daily Value
+  *[Dr.]: Doctor
+  *[NCATA]: National Collegiate Acrobatics and Tumbling Association
+  *[Eps.]: Episodes
+  *[Dur.]: Duration
+  *[ WW]: Worldwide
+  *[Rec]: Receptions
+  *[Yds]: Rushing yards
+  *[Y/R]: Yards per reception
+  *[Lng]: Longest rushing attempt
+  *[TD]: Rushing touchdowns
+  *[Att]: Rushing attempts
+  *[Y/A]: Yards per passing attempt
+  *[Fum]: Fumbles
+  *[Lost]: Fumbles lost
+  *[DNP]: Did not play
+  *[transl.]: translation
+  *[RR]: Revised Romanization of Korean
+  *[CVU]: Council on Vertical Urbanism
+  *[H302]: H302: Harmful if swallowed.
+  *[H314]: H314: Causes severe skin burns and eye damage.
+  *[H315]: H315: Causes skin irritation.
+  *[H335]: H335: May cause respiratory irritation.
+  *[P260]: P260: Do not breathe dust/fume/gas/mist/vapours/spray.
+  *[P264]: P264: Wash hands [and ...] thoroughly after handling.
+  *[P270]: P270: Do not eat, drink or smoke when using this product.
+  *[P271]: P271: Use only outdoors or with adequate ventilation.
+  *[P280]: P280: Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...
+  *[P301+P312]: P301+P312: (Obsolete) IF SWALLOWED: Call a POISON CENTER or doctor/physician if you feel unwell.
+  *[P301+P330+P331]: P301+P330+P331: IF SWALLOWED: Rinse mouth. Do NOT induce vomiting.
+  *[P302+P352]: P302+P352: IF ON SKIN: Wash with plenty of water/...
+  *[P303+P361+P353]: P303+P361+P353: IF ON SKIN (or hair): Remove/Take off immediately all contaminated clothing. Rinse skin with water [or shower].
+  *[P304+P340]: P304+P340: IF INHALED: Remove person to fresh air and keep comfortable for breathing.
+  *[P305+P351+P338]: P305+P351+P338: IF IN EYES: Rinse continuously with water for several minutes. Remove contact lenses, if present and easy to do. Continue rinsing.
+  *[P310]: P310: (Obsolete) Immediately call a POISON CENTER or doctor/physician.
+  *[P312]: P312: (Obsolete) Call a POISON CENTER or doctor/physician if you feel unwell.
+  *[P321]: P321: Specific treatment (see information on this label and safety data sheet).
+  *[P330]: P330: Rinse mouth.
+  *[P332+P313]: P332+P313: (Obsolete) If skin irritation occurs: Get medical advice/attention.
+  *[P362]: P362: Take off contaminated clothing.
+  *[P363]: P363: Wash contaminated clothing before reuse.
+  *[P403+P233]: P403+P233: Store in a well-ventilated place. Keep container tightly closed.
+  *[P405]: P405: Store locked up.
+  *[P501]: P501: Dispose of contents/container to ...
+  *[sep.]: separated
+  *[5–10–5]: 5 wins, 10 losses, 5 draws
+  *[1–13–4]: 1 win, 13 losses, 4 draws
+  *[10–4–8]: 10 wins, 4 losses, 8 draws
+  *[eng.]: engaged
+  *[died]: d.
+  *[ P]: Procession
+  *[Noms.]: Nominations
+  *[W–L]: Win–loss
+  *[C20]: 20th century
+  *[JFK]: John F. Kennedy
+  *[CRHP]: Canadian Register of Historic Places
+  *[unsigned]: Draft pick(s) who have yet to sign their rookie contract
+  *[AU]: Australia
+  *[DeNeff]: Jim DeNeff
+  *[Nunn]: Mike Nunn
+  *[Taylor]: Billy Taylor
+  *[Doran]: Mark Doran
+  *[Carr]: Terry Carr
+  *[Green]: Daryl Green
+  *[Janicki]: Pete Janicki
+  *[Bachanov]: Jonathan Bachanov
+  *[Kehrer]: Tyler Kehrer
+  *[Clarke]: Chevy Clarke
+  *[TUR]: Turkey
+  *[IRN]: Iran
+  *[HUN]: Hungary
+  *[TCH]: Czechoslovakia
+  *[MLD]: Moldova
+  *[IRI]: Iran
+  *[GEO]: Georgia
+  *[UZB]: Uzbekistan
+  *[AZE]: Azerbaijan
+  *[MPG]: Minutes per game
+  *[FG%]: Field goal percentage
+  *[3P%]: 3-point field-goal percentage
+  *[FT%]: Free-throw percentage
+  *[RPG]: Rebounds per game
+  *[APG]: Assists per game
+  *[SPG]: Steals per game
+  *[BPG]: Blocks per game
+  *[PPG]: Points per game
+  *[Jones]: John Jones
+  *[Prod.]: Production
+  *[AI]: Appreciation Index
+  *[M]: Main
+  *[Rev.]: Reverend
+  *[Avg.]: Average
+  *[W–L%]: Win–loss perecentage
+  *[PG]: Playoff games
+  *[PW]: Playoff games won
+  *[PL]: Playoff games lost
+  *[PW–L%]: Playoff games win–loss percentage
+  *[GRDP]: Gross regional domestic product
+  *[(2022)]: 2022
+  *[(2023e)]: 2023
+  *[(2024f)]: 2024
+  *[Record]: Record as a starting quarterback
+  *[Cmp]: Passes completed
+  *[Pct]: Completion percentage
+  *[Int]: Interceptions
+  *[Rtg]: Passer rating
+  *[Sck]: Times sacked
+  *[SckY]: Yards lost due to sacks
+  *[Opp.]: Opponent
+  *[incl.]: including
+  *[Segovia]: Santiago Segovia
+  *[J. Giménez]: Juan Giménez
+  *[Cantizano]: Giovanni Cantizano
+  *[Duarte]: Gaspar Duarte
+  *[D. Fernández]: Damián Fernández
+  *[Oviedo]: Fabricio Oviedo
+  *[Ovando]: Ignacio Ovando
+  *[Raffin]: Luca Raffin
+  *[feat.]: featuring
+  *[R/O]: Running order
+  *[Show(s)]: Indicates if a particular broadcaster transmitted the final only, semi-final only or both shows.
+  *[SF1]: Semi-final 1
+  *[SF2]: Semi-final 2
+  *[[it]]: us
+  *[[would]]: will
+  *[[he]]: the man
+  *[POW]: Prisoner of war
+  *[exec.]: executive producer
+  *[CT]: Cumulative total
+  *[Ed.]: Edition #
+  *[SCEA]: Sony Computer Entertainment America
+  *[Added]: Incorporated to Ford Motor Co.
+  *[Years]: Participating years
+  *[Florentin]: Jeremias Florentin
+  *[Gómez]: Matías Gómez
+  *[Alastra]: Ignacio Alastra
+  *[Cáceres]: Mateo Cáceres
+  *[Baroni]: Giovanni Baroni
+  *[Dávila]: Valentín Dávila
+  *[Win %]: Win percentage
+  *[pl.]: plural
+  *[Lysionok]: Ernestas Lysionok
+  *[Best finish]: Best season finish in the championship
+  *[est.]: estimation
+  *[_P_]: Pressure
+  *[ _T_]: Temperature
+  *[TAN]: Tanzania
+  *[UGA]: Uganda
+  *[CHE]: Switzerland
+  *[fl.]: flourished
+  *[r.]: reigned
+  *[d.]: died
+  *[b]: built
+  *[Mx]: mixed gender race
+  *[Wo]: women only race
+  *[BDI]: Burundi
+  *[BHR]: Bahrain
+  *[a]: Assisted road course (downhill or favouring wind)
+  *[+]: time set en-route to a longer distance
+  *[MEX]: Mexico
+  *[CRC]: Costa Rica
+  *[JPN]: Japan
+  *[NCL]: New Caledonia
+  *[HMHS]: His Majesty's Hospital Ship
+  *[OTW]: Overtime win
+  *[OTL]: Overtime loss
+  *[dd]: day
+  *[mm]: month
+  *[yyyy]: year
+  *[ *]: Eumetabola = (Psocodea + (rest of Paraneoptera + Holometabola))
+  *[_[Mecoptera(scorpionflies)](/wiki/Mecoptera "Mecoptera")_ \+ [Siphonaptera (fleas)](/wiki/Flea "Flea")]: A clade comprising paraphyletic order Mecoptera and monophyletic order Siphonaptera.
+  *[NHS]: National Highway System
+  *[Discontinued and unsupported]: Discontinued device that is no longer receiving OS updates.
+  *[Discontinued and supported]: Discontinued device that is no longer being sold in the Apple Store, but still receives updates.
+  *[Current]: Current versions of devices and/or still being sold.
+  *[Upcoming]: Announced device that is yet to be released.
+  *[ca.]: circa
+  *[sg.]: singular form
+  *[[PA](/wiki/Plate_appearances "Plate appearances")]: Plate Appearances
+  *[[AB](/wiki/At_bat "At bat")]: At Bats
+  *[[R](/wiki/Run_\(baseball\) "Run \(baseball\)")]: Runs
+  *[[H](/wiki/Hit_\(baseball\) "Hit \(baseball\)")]: Hits
+  *[[2B](/wiki/Double_\(baseball\) "Double \(baseball\)")]: Doubles
+  *[[3B](/wiki/Triple_\(baseball\) "Triple \(baseball\)")]: Triples
+  *[[HR](/wiki/Home_runs "Home runs")]: Home Runs
+  *[[RBI](/wiki/Runs_batted_in "Runs batted in")]: Runs Batted In
+  *[[BB](/wiki/Base_on_balls "Base on balls")]: Base on Balls
+  *[[SO](/wiki/Strikeouts "Strikeouts")]: Strikeouts
+  *[[AVG](/wiki/Batting_average_\(baseball\) "Batting average \(baseball\)")]: Batting Average
+  *[[OBP](/wiki/On-base_percentage "On-base percentage")]: On-Base Percentage
+  *[[SLG](/wiki/Slugging_percentage "Slugging percentage")]: Slugging Percentage
+  *[[FLD%](/wiki/Fielding_percentage "Fielding percentage")]: Fielding percentage
+  *[KOR]: South Korea
+  *[a.k.a.]: also known as
+  *[Reference(s)]: 
+  *[Maxwell]: Charles Maxwell
+  *[Quiroga]: Roger Quiroga
+  *[Simpson]: Hayden Simpson
+  *[Hibner]: David Hibner
+  *[Maki]: Tim Maki
+  *[Head]: Mike Head
+  *[Heard]: Scott Heard
+  *[Main]: Michael Main
+  *[Skole]: Jake Skole
+  *[Matthews]: Kevin Matthews
+  *[Cone]: Zach Cone
+  *[3:45]: 3 minutes, 45 seconds
+  *[OST]: original soundtrack
+  *[Dig.]: Digital
+  *[Phy.]: Physical
+  *[DQ]: Disqualification
+  *[RTD]: Corner retirement
+  *[SD]: Split decision
+  *[PTS]: Points decision
+  *[UD]: Unanimous decision
+  *[TKO]: Technical knockout
+  *[KO]: Knockout
+  *[BS]: Bachelor of Science
+  *[MS]: Master of Science
+  *[PhD]: Doctor of Philosophy
+  *[Wilder]: Paul Wilder
+  *[Washington]: LeVon Washington
+  *[Vettleson]: Drew Vettleson
+  *[Martin]: Brandon Martin
+  *[Carter]: Kes Carter
+  *[Harris]: James Harris
+  *[d·n·]: DOMINUS NOSTER
+  *[p·f·]: PIUS FELIX
+  *[aug·]: AUGUSTUS
+  *[Int.]: International Player Pathway
+  *[Holden]: Packie Holden
+  *[Purcell]: Pat Purcell
+  *[McCarthy]: Brian McCarthy
+  *[Tracy]: Shane Tracy
+  *[Haverty]: Noel Haverty
+  *[DOM  
+Ang.  
+Air.]: Dominican Republic Anglo Airplay
+  *[PAN  
+Ang.  
+Air.]: Panama Anglo Airplay
+  *[PRY  
+Ang.  
+Air.]: Paraguay Anglo Airplay
+  *[ tem]: tempore
+  *[IV]: Intravenous infusion
+  *[1,3-DMBA]: 1,3-dimethylbutylamine
+  *[1,4-DMAA]: 1,4-dimethylamylamine
+  *[1,3-DMAA]: 1,3-dimethylamylamine
+  *[mCPP]: meta-chlorophenylpiperazine
+  *[TFMPP]: trifluoromethylphenylpiperazine
+  *[oMPP]: ortho-methylphenylpiperazine
+  *[pFPP]: para-fluorophenylpiperazine
+  *[pMeOPP]: para-methoxyphenylpiperazine
+  *[%]: percentage
+  *[#Ep]: Number of episodes credited
+  *[ep.]: episodes
+  *[Abadia]: Cesar Abadia
+  *[Shaw]: Alexander Shaw (soccer, born 2008)
+  *[Pérez]: Rafael Pérez (football)
+  *[Alquiza]: Diter Alquiza
+  *[C′]: C-prime
+  *[ROU]: Romania
+  *[CHI]: Chile
+  *[cal.]: calendar
+  *[Intr.]: Introduced
+  *[Disc.]: Discontinued
+  *[Gen.]: Generation(s)
+  *[Region]: Region/country where it was marketed under the "Chevrolet" brand
+  *[Produced]: Period of production under the "Chevrolet" brand
+  *[Original model]: Rebadged from or based on, except where it indicates
+  *[ZTW]: ''Zizhi Tongjian Waiji'' lengths
+  *[Trad]: Traditional reign lengths
+  *[CHAC]: The Cambridge History of Ancient China
+  *[ No.]: Number
+  *[POTUS  
+No.]: Number
+  *[b.]: born
+  *[q.v.]: see also
+  *[25]: Not actually given in Africanus; the number is deduced from Manetho's other copyists, as well as Africanus' own sum of years.
+  *[69 years]: The correct sum should be 97; the total excluding Queen Hatshepsut is 75 years.
+  *[263 years]: This is actually the sum of the first 13 kings, which amounts to 262 years. Adding the reign of the 14th king raises the number to 267 years.
+  *[348 years]: The sum of the first thirteen kings is 263 years, just as Africanus. The "correct" sum of years would be 376.
+  *[41 years]: Africanus gives 46 years, but this does not match the stated total.
+  *[35 years]: Africanus gives 14 years, but this does not match the stated total.
+  *[ 120 years]: Africanus' sum of items comes to 130 years.
+  *[40 years]: Eusebius gives 25 years
+  *[8 years]: Eusebius gives 12 years
+  *[ 40 years]: Eusebius gives 44 years
+  *[14 years]: Eusebius gives 12 years
+  *[18 years]: Eusebius gives 20 years
+  *[Parl.]: Parliament
+  *[Ldr.]: named party leader in
+  *[Reps.]: Number of House Representatives
+  *[2–2]: 2 wins, 2 losses
+  *[27–29]: 27 wins, 29 losses
+  *[29–27]: 29 wins, 27 losses
+  *[1–0]: 1 win, 0 losses
+  *[0–1]: 0 wins, 1 loss
+  *[2–0]: 2 wins, 0 losses
+  *[1–1]: 1 win, 1 loss
+  *[2–1]: 2 wins, 1 loss
+  *[0–2]: 0 wins, 2 losses
+  *[0–3]: 0 wins, 3 losses
+  *[1–2]: 1 win, 2 losses
+  *[0–4]: 0 wins, 4 losses
+  *[3–0]: 3 wins, 0 losses
+  *[2–3]: 2 wins, 3 losses
+  *[4–0]: 4 wins, 0 losses
+  *[3–1]: 3 wins, 1 loss
+  *[3–2]: 3 wins, 2 losses
+  *[3–3]: 3 wins, 3 losses
+  *[4–3]: 4 wins, 3 losses
+  *[5–0]: 5 wins, 0 losses
+  *[5–3]: 5 wins, 3 losses
+  *[4–1]: 4 wins, 1 loss
+  *[1–4]: 1 win, 4 losses
+  *[2–4]: 2 wins, 4 losses
+  *[5–1]: 5 wins, 1 loss
+  *[6–1]: 6 wins, 1 loss
+  *[6–2]: 6 wins, 2 losses
+  *[3–4]: 3 wins, 4 losses
+  *[2–5]: 2 wins, 5 losses
+  *[4–4]: 4 wins, 4 losses
+  *[3–5]: 3 wins, 5 losses
+  *[5–4]: 5 wins, 4 losses
+  *[5–5]: 5 wins, 5 losses
+  *[6–5]: 6 wins, 5 losses
+  *[1–3]: 1 win, 3 losses
+  *[5–2]: 5 wins, 2 losses
+  *[4–2]: 4 wins, 2 losses
+  *[6–6]: 6 wins, 6 losses
+  *[SVN]: Slovenia
+  *[AoC]: Articles of Confederation
+  *[ST]: State or district
+  *[Indiv. starts]: Individual starts
+  *[Indiv. podiums]: Individual podiums
+  *[Team starts]: Including team, mixed team and super team events
+  *[NC]: No contest
+  *[cf.]: compare
+  *[C1]: consonant I
+  *[V]: vocal
+  *[C2]: consonant II
+  *[PREP]: preposition, prepositional case
+  *[1]: First quarter
+  *[POSS]: possessive marker
+  *[PFV]: perfective aspect
+  *[2]: Second quarter
+  *[PRO]: pronoun
+  *[ERG]: ergative case
+  *[ABS]: absolutive case
+  *[1SG]: first person, singular
+  *[1PL]: first person, plural
+  *[INCL]: inclusive person
+  *[2HON]: second peson, honorific
+  *[EXCL]: exclusive person
+  *[2FAM]: second person, familiar
+  *[3]: Third quarter
+  *[IPFV]: imperfective aspect
+  *[3PRO]: third person, free pronoun
+  *[ORD]: ordinal
+  *[DEF]: definite
+  *[RDP]: reduplication
+  *[PERS]: personal
+  *[1PRO]: first person, free pronoun
+  *[NEG]: negation/negative
+  *[IPF]: imperfective
+  *[BV]: bivalent
+  *[2FAMPRO]: second person familiar, free pronoun
+  *[LIM]: limitative
+  *[ADJ]: adjective
+  *[MW]: monovalent
+  *[FUT]: future tense
+  *[MV-]: monovalent
+  *[BCS]: 'because'
+  *[PASS]: passive voice
+  *[HON]: second person, honorific
+  *[FAMa]: Forces Armées Maliennes
+  *[FG]: Field goals
+  *[DLC]: Downloadable content
+  *[TAAP]: Thonburi Automotive Assembly Plant Co., Ltd.
+  *[Class  
+pos.]: Class position
+  *[sing.]: singular
+  *[nordwand]: north wall
+  *[ibnlt]: including but not limited to
+  *[H300]: H300: Fatal if swallowed.
+  *[H310]: H310: Fatal in contact with skin.
+  *[H319]: H319: Causes serious eye irritation.
+  *[H330]: H330: Fatal if inhaled.
+  *[P262]: P262: Do not get in eyes, on skin, or on clothing.
+  *[P284]: P284: In case of inadequate ventilation wear respiratory protection.
+  *[P301+P310]: P301+P310: (Obsolete) IF SWALLOWED: Immediately call a POISON CENTER or doctor/physician.
+  *[P302+P350]: P302+P350: (Obsolete) IF ON SKIN: Gently wash with soap and water.
+  *[P320]: P320: Specific treatment is urgent (see information on this label and safety data sheet).
+  *[P337+P313]: P337+P313: (Obsolete) If eye irritation persists: Get medical advice/attention.
+  *[P361]: P361: Take off immediately all contaminated clothing.
+  *[8–0–3]: 8 wins, 0 losses, 3 ties
+  *[6–1–6]: 6 wins, 1 loss, 6 ties
+  *[6–1–4]: 6 wins, 1 loss, 4 ties
+  *[POS]: Position
+  *[ANA]: Authorised Neutral Athletes
+  *[MHz]: megahertz
+  *[KB]: kilobyte
+  *[RAM]: random-access memory
+  *[DPCM]: differential pulse-code modulation
+  *[SRAM]: static random-access memory
+  *[AV]: audiovisual
+  *[Refs.]: References
+  *[pop. >50,000]: population greater than 50,000 people
+  *[CMA]: Census metropolitan area
+  *[Y/G]: Passing yards per game
+  *[Avg]: Yards per rushing attempt
+  *[TNVS]: transport network vehicle service
+  *[BGM]: Background music
+  *[MGA]: ''Municipal Government Act''
+  *[Prov/  
+Terr]: Province/territory
+  *[Ind]: Independent or No Affiliation
+  *[Peixoto]: Guilherme Peixoto
+  *[Karssies]: Sam Karssies
+  *[Gerritsen]: Yannick Gerritsen
+  *[Titulaer]: Björn Titulaer
+  *[CA]: Canada
+  *[CAR]: Constitutive androstane receptor
+  *[PXR]: Pregnane X receptor
+  *[ENG]: England
+  *[WAL]: Wales
+  *[1st Pref Votes]: 1st Preference Votes
+  *[F/Laps]: Fastest laps
+  *[WDC]: World Drivers' Championship standing
+  *[Burk]: Dean Burk
+  *[Rickey]: Ralph Rickey
+  *[Wehmeier]: Jeff Wehmeier
+  *[Vernoy]: Brian Vernoy
+  *[Rosinski]: Mike Rosinski
+  *[Woods]: Tony Woods
+  *[Boderick]: Stan Boderick
+  *[Davidson]: Jackie Davidson
+  *[Masters]: Dave Masters
+  *[Cunningham]: Earl Cunningham
+  *[Noel]: Todd Noel
+  *[Christensen]: Ben Christensen
+  *[Brownlie]: Bobby Brownlie
+  *[Hagerty]: Luke Hagerty
+  *[Blasko]: Chadd Blasko
+  *[Clanton]: Matthew Clanton
+  *[Harvey]: Ryan Harvey
+  *[H410]: H410: Very toxic to aquatic life with long lasting effects.
+  *[P273]: P273: Avoid release to the environment.
+  *[P391]: P391: Collect spillage.
+  *[AA]: All-Around
+  *[VT]: Vault
+  *[UB]: Uneven bars
+  *[BB]: Balance beam
+  *[FX]: Floor
+  *[WD]: Biles withdrew from the floor exercise final
+  *[R1]: Biles was first reserve for the uneven bars final
+  *[ROM]: Romania
+  *[RGF]: Russian Gymnastics Federation
+  *[AIN]: Individual Neutral Athletes
+  *[DDR]: East Germany
+  *[BGR]: Bulgaria
+  *[BLR]: Belarus
+  *[PRK]: North Korea
+  *[11,363–10,486–152]: 11,363 wins, 10,486 losses, 152 ties
+  *[9–0]: 9 wins, 0 losses
+  *[4]: Fourth quarter
+  *[YUG]: Yugoslavia
+  *[CIS]: CIS
+  *[abbr.]: abbreviated
